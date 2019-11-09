@@ -1,0 +1,62 @@
+{
+  "program": {
+    "fileInfos": {
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.d.ts": {
+        "version": "49ff9798f592c8b7e628fd881401e68810c1b3589ecd7a41b32b3c287374cde0",
+        "signature": "49ff9798f592c8b7e628fd881401e68810c1b3589ecd7a41b32b3c287374cde0"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0",
+        "signature": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4",
+        "signature": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+        "version": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b",
+        "signature": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts": {
+        "version": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9",
+        "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/gates/index.ts": {
+        "version": "911cecd0e592ede7c65304fcf8acb912649d90b6ffc661cf1b001c4a9fe95fdf",
+        "signature": "de948898a76370e681129b036470d87505334a312041e156c3c4082838de9da0"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/index.ts": {
+        "version": "e7aaf65be9f14e88d1a31378c2f408c3eceb0d0529001329c56bf6d390422ed8",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      }
+    },
+    "options": {
+      "target": 1,
+      "module": 1,
+      "outDir": "C:/webStuff/projects/JCScottComp/dist",
+      "rootDir": "C:/webStuff/projects/JCScottComp/src",
+      "composite": true,
+      "downlevelIteration": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "watch": true,
+      "configFilePath": "C:/webStuff/projects/JCScottComp/tsconfig.json"
+    },
+    "referencedMap": {
+      "c:/webstuff/projects/jcscottcomp/src/index.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/gates/index.ts"
+      ]
+    },
+    "exportedModulesMap": {},
+    "semanticDiagnosticsPerFile": [
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
+      "c:/webstuff/projects/jcscottcomp/src/gates/index.ts",
+      "c:/webstuff/projects/jcscottcomp/src/index.ts"
+    ]
+  },
+  "version": "3.5.3"
+}

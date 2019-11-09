@@ -1,23 +1,34 @@
-class Nand {
-	output: number[] = [];
-	input: number[] = [];
-	constructor(private a: number, private b: number) {
-		this.input.push(a);
-		this.input.push(b);
-		if (this.input[0] === 1 && this.input[1] === 1) {
-			this.output[0] = 0;
-		} else {
-			this.output[0] = 1;
-		}
-	}
+import Wire from './Wire';
 
-	run = (): number[] => {
-		return this.output;
-	};
+class Gate {
+	input: Wire[] = [];
+	output: Wire[] = [{ value: 0, name: 'output' }];
 
+	constructor() {}
 	print(): void {
-		console.log(this.input);
+		console.log(this.output);
 	}
+
+	addOutput = (value: number, name: string): void => {
+		this.output.push({ value, name });
+		return;
+	};
 }
 
+class Nand extends Gate {
+	constructor(inputs: any) {
+		super();
+		this.input = [...inputs];
+		this.output.push({ value: 1, name: 'carry' });
+	}
+	run = (): Wire => {
+		if (this.input[0].value === 1 && this.input[1].value === 1) {
+			this.output[0].value = 0;
+		} else {
+			this.output[0].value = 1;
+		}
+
+		return this.output[0];
+	};
+}
 export default Nand;

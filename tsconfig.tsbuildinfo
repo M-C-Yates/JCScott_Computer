@@ -21,12 +21,16 @@
         "version": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9",
         "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
       },
+      "c:/webstuff/projects/jcscottcomp/src/gates/wire.ts": {
+        "version": "47e97bdaed5a409e9487a8649e15be8a942e1beec4bd5d150e735d0ed1aba54d",
+        "signature": "91a47e7c6db767c4a8cbe5cea7a5829e2299456590edd16356f5a9eaa587376b"
+      },
       "c:/webstuff/projects/jcscottcomp/src/gates/index.ts": {
-        "version": "911cecd0e592ede7c65304fcf8acb912649d90b6ffc661cf1b001c4a9fe95fdf",
-        "signature": "de948898a76370e681129b036470d87505334a312041e156c3c4082838de9da0"
+        "version": "4a4c90ee82d5e2588ae5227cce8682d2ff13ed21bf360980e08cb40c22907d3e",
+        "signature": "749a47f152a868900dc281d2266d3f50343353701c66364d2ff21e648e6119fd"
       },
       "c:/webstuff/projects/jcscottcomp/src/index.ts": {
-        "version": "e7aaf65be9f14e88d1a31378c2f408c3eceb0d0529001329c56bf6d390422ed8",
+        "version": "0321828a21545951182bd61a64de163f192b0ae6af509fcb8b6fa62b84efd9be",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       }
     },
@@ -43,19 +47,27 @@
       "configFilePath": "C:/webStuff/projects/JCScottComp/tsconfig.json"
     },
     "referencedMap": {
+      "c:/webstuff/projects/jcscottcomp/src/gates/index.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/gates/wire.ts"
+      ],
       "c:/webstuff/projects/jcscottcomp/src/index.ts": [
         "c:/webstuff/projects/jcscottcomp/src/gates/index.ts"
       ]
     },
-    "exportedModulesMap": {},
+    "exportedModulesMap": {
+      "c:/webstuff/projects/jcscottcomp/src/gates/index.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/gates/wire.ts"
+      ]
+    },
     "semanticDiagnosticsPerFile": [
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
-      "c:/webstuff/projects/jcscottcomp/src/gates/index.ts",
-      "c:/webstuff/projects/jcscottcomp/src/index.ts"
+      "c:/webstuff/projects/jcscottcomp/src/gates/wire.ts",
+      "c:/webstuff/projects/jcscottcomp/src/index.ts",
+      "c:/webstuff/projects/jcscottcomp/src/gates/index.ts"
     ]
   },
   "version": "3.5.3"

@@ -1,8 +1,11 @@
 import Wire from './Wire';
-
+interface Connection {
+	Connection: Wire;
+}
 class Gate {
-	input: Wire[] = [];
-	output: Wire[] = [{ value: 0, name: 'output' }];
+	input: Connection[] = [];
+	value: number = 0;
+	output: Connection[] = [];
 
 	constructor() {}
 	print(): void {
@@ -10,25 +13,25 @@ class Gate {
 	}
 
 	addOutput = (value: number, name: string): void => {
-		this.output.push({ value, name });
+		// this.output.push({ value, name });
 		return;
 	};
 }
 
-class Nand extends Gate {
+export class Nand extends Gate {
 	constructor(inputs: any) {
 		super();
 		this.input = [...inputs];
-		this.output.push({ value: 1, name: 'carry' });
+		// this.output.push({ value: 1, name: 'carry' });
 	}
-	run = (): Wire => {
-		if (this.input[0].value === 1 && this.input[1].value === 1) {
-			this.output[0].value = 0;
-		} else {
-			this.output[0].value = 1;
-		}
-
-		return this.output[0];
+	run = (): void => {
+		// if (this.input[0].value === 1 && this.input[1].value === 1) {
+		// 	this.output[0].value = 0;
+		// } else {
+		// 	this.output[0].value = 1;
+		// }
 	};
 }
+
+class Not {}
 export default Nand;

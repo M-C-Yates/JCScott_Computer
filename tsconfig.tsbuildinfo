@@ -22,12 +22,12 @@
         "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
       },
       "c:/webstuff/projects/jcscottcomp/src/gates/wire.ts": {
-        "version": "47e97bdaed5a409e9487a8649e15be8a942e1beec4bd5d150e735d0ed1aba54d",
-        "signature": "91a47e7c6db767c4a8cbe5cea7a5829e2299456590edd16356f5a9eaa587376b"
+        "version": "450548be5882a58c91e3d8ec8294500e82a38600d7b3fdca848767bbde2d21b8",
+        "signature": "3dd4f8634df0a7a15dd6280af2fa05382dd3deda9e6786eedef630d87730dbe0"
       },
       "c:/webstuff/projects/jcscottcomp/src/gates/index.ts": {
-        "version": "4a4c90ee82d5e2588ae5227cce8682d2ff13ed21bf360980e08cb40c22907d3e",
-        "signature": "749a47f152a868900dc281d2266d3f50343353701c66364d2ff21e648e6119fd"
+        "version": "d62dd3c903b1a26f97498703fc64d5cd79f0e7101dfd65179129910e0cbee6c9",
+        "signature": "27589b978bdda9c0cf23b7d5398ab41915d4850fe0d913bfba39ccec859c4c1b"
       },
       "c:/webstuff/projects/jcscottcomp/src/index.ts": {
         "version": "0321828a21545951182bd61a64de163f192b0ae6af509fcb8b6fa62b84efd9be",
@@ -66,8 +66,8 @@
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
       "c:/webstuff/projects/jcscottcomp/src/gates/wire.ts",
-      "c:/webstuff/projects/jcscottcomp/src/index.ts",
-      "c:/webstuff/projects/jcscottcomp/src/gates/index.ts"
+      "c:/webstuff/projects/jcscottcomp/src/gates/index.ts",
+      "c:/webstuff/projects/jcscottcomp/src/index.ts"
     ]
   },
   "version": "3.5.3"

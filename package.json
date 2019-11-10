@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"start": "node ./dist/index.js",
 		"test": "jest"
 	},
 	"repository": {
@@ -19,7 +20,8 @@
 	"homepage": "https://github.com/M-C-Yates/basic-computer#readme",
 	"devDependencies": {
 		"@types/jest": "^24.0.22",
-		"jest": "^24.9.0"
+		"jest": "^24.9.0",
+		"typescript": "^3.7.2"
 	},
 	"dependencies": {
 		"ts-jest": "^24.1.0"

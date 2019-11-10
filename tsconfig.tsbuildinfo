@@ -9,6 +9,10 @@
         "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
         "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
       },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4",
+        "signature": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4"
+      },
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": {
         "version": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52",
         "signature": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52"
@@ -54,7 +58,7 @@
         "signature": "f49bd10df0dbae42d3a08ff8784a887ed86d212679cb83db4e57701bb3c4b30e"
       },
       "c:/webstuff/projects/jcscottcomp/src/index.ts": {
-        "version": "f635ab0f32873307568d65bff30e1983450dc7322600abb4a931a194dadfe9b4",
+        "version": "cc5c0e984373798a02ccd5951a471a33e6aa704e83cf70c0fe918ea037e2cc52",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/bit.ts": {
@@ -62,8 +66,8 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/gates/wire.test.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "version": "a886a1dfbc24d11dac75c5a6dd79805bf1bbea5026a8db50e4523b1f8a722814",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts": {
         "version": "74f9bcff3ff74cf869dd567eefb979e017a6d5d7503c39ee11582f7c10e21d02",
@@ -134,7 +138,8 @@
       "target": 1,
       "module": 1,
       "lib": [
-        "lib.es2015.d.ts"
+        "lib.es2015.d.ts",
+        "lib.dom.d.ts"
       ],
       "declaration": true,
       "sourceMap": true,
@@ -156,6 +161,9 @@
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/bit.ts": [
         "c:/webstuff/projects/jcscottcomp/src/gates/index.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/gates/wire.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/gates/wire.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts": [
         "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
@@ -240,6 +248,7 @@
     "semanticDiagnosticsPerFile": [
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts",
@@ -251,20 +260,9 @@
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
       "c:/webstuff/projects/jcscottcomp/src/gates/wire.ts",
       "c:/webstuff/projects/jcscottcomp/src/gates/index.ts",
-      [
-        "c:/webstuff/projects/jcscottcomp/src/index.ts",
-        [
-          {
-            "file": "c:/webstuff/projects/jcscottcomp/src/index.ts",
-            "start": 190,
-            "length": 7,
-            "messageText": "Cannot find name 'console'. Do you need to change your target library? Try changing the `lib` compiler option to include 'dom'.",
-            "category": 1,
-            "code": 2584
-          }
-        ]
-      ],
+      "c:/webstuff/projects/jcscottcomp/src/index.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/bit.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/gates/wire.test.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts",
@@ -280,8 +278,7 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/gates/wire.test.ts"
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts"
     ]
   },
   "version": "3.5.3"

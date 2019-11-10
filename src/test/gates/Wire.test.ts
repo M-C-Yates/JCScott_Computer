@@ -5,12 +5,12 @@ describe('Wire', () => {
 		const val = true;
 		const wire = new Wire('o', val);
 		expect(wire.name).toEqual('o');
-		expect(wire.value).toEqual(true);
+		expect(wire.get()).toEqual(true);
 	});
 	it('should let you set the value', () => {
 		const wire = new Wire('o', false);
-		expect(wire.value).toEqual(false);
+		expect(wire.get()).toEqual(false);
 		wire.set(true);
-		expect(wire.value).toEqual(true);
+		expect(wire.get()).toEqual(true);
 	});
 });

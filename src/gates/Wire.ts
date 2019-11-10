@@ -1,5 +1,5 @@
 class Wire {
-	constructor(public name: string, public value: boolean) {}
+	constructor(public name: string, private value: boolean) {}
 	set = (value: boolean) => {
 		this.value = value;
 	};

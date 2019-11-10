@@ -26,11 +26,11 @@
         "signature": "3dd4f8634df0a7a15dd6280af2fa05382dd3deda9e6786eedef630d87730dbe0"
       },
       "c:/webstuff/projects/jcscottcomp/src/gates/index.ts": {
-        "version": "4a16adbe2754ed3d0f37973ad7dfc2f809a6d04bcb8c614813b6e9bcae94a488",
-        "signature": "50d11083bdb70f72c51bde5763344327cac0c60a75da281b360a7b0121f442cf"
+        "version": "3c74180c6bfa223fec46cbea3575f44b8d284d7d57532d0edacdef83c3e87a88",
+        "signature": "96806f2b9533c54224588945f7386aabcacf18d60e8fc2d9fa3f0c678d71812c"
       },
       "c:/webstuff/projects/jcscottcomp/src/index.ts": {
-        "version": "57af9343509323ee450ec54e3dea41d367720bead75a17f1f0b704f9029c1bfc",
+        "version": "51c9c747ba8343e3733a1825ddb05b376e17536c0ccd54a5af7133cc59f8bfd7",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       }
     },
@@ -65,9 +65,9 @@
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
+      "c:/webstuff/projects/jcscottcomp/src/gates/wire.ts",
       "c:/webstuff/projects/jcscottcomp/src/gates/index.ts",
-      "c:/webstuff/projects/jcscottcomp/src/index.ts",
-      "c:/webstuff/projects/jcscottcomp/src/gates/wire.ts"
+      "c:/webstuff/projects/jcscottcomp/src/index.ts"
     ]
   },
   "version": "3.5.3"

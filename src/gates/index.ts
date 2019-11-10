@@ -10,5 +10,12 @@ export class Nand {
 	};
 }
 
-class Not {}
+export class Not extends Nand {
+	constructor() {
+		super();
+	}
+	update = (inputA: boolean) => {
+		this.output.set(!inputA);
+	};
+}
 export default Nand;

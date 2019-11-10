@@ -1,0 +1,27 @@
+{
+	"name": "JCScottComp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/M-C-Yates/basic-computer.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/M-C-Yates/basic-computer/issues"
+	},
+	"homepage": "https://github.com/M-C-Yates/basic-computer#readme",
+	"devDependencies": {
+		"@types/jest": "^24.0.22",
+		"jest": "^24.9.0"
+	},
+	"dependencies": {
+		"ts-jest": "^24.1.0"
+	}
+}

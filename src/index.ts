@@ -1,10 +1,11 @@
-import Nand, { Not } from './gates/index';
+import Nand, { And, Not } from './gates/index';
 
-const gate1 = new Nand();
+// const gate1 = new Nand();
 
-// gate1.update(true, true);
-// console.log(gate1.get());
+// const not1 = new Not();
 
-const not1 = new Not();
-not1.update(false);
-console.log(not1.get());
+const and1 = new And();
+and1.update(true, false);
+
+let out = and1.get();
+console.log(out);

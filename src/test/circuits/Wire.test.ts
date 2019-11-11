@@ -1,4 +1,4 @@
-import Wire from '../../gates/Wire';
+import Wire from '../../circuit/Wire';
 
 describe('Wire', () => {
 	it('should be initialized with correct values', () => {

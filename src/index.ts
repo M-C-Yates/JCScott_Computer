@@ -1,10 +1,14 @@
-import Bit from './components/Bit';
+import Byte from './circuit/Byte';
 
-const bit = new Bit();
-bit.update(true, false);
-bit.update(false, false);
-bit.update(true, true);
-bit.update(false, true);
-bit.update(false, false);
+const byte = new Byte();
 
-console.log(bit.get());
+const byteIn = [true, false, false, true, false, true, true, false];
+const byteIn2 = [false, false, false, false, false, false, false, false];
+const byteIn3 = [true, false, false, true, false, true, true, false];
+
+byte.update(byteIn, true);
+byte.update(byteIn2, false);
+console.log(byte.get());
+byte.update(byteIn2, true);
+byte.update(byteIn3, false);
+console.log(byte.get());

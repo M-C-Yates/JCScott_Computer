@@ -1,4 +1,4 @@
-import Bit from '../../components/Bit';
+import Bit from '../../circuit/Bit';
 
 describe('Bit testing', () => {
 	it('truth 1', () => {

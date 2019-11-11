@@ -1,4 +1,4 @@
-import Nand, { And, Not } from '../../gates/Gates';
+import Nand, { And, Not } from '../../circuit/Gates';
 
 describe('Nand Gate', () => {
 	it('should give correct output', () => {

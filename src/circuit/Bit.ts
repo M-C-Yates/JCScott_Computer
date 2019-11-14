@@ -1,15 +1,14 @@
 import { Nand } from "./Gates";
-import Wire from "./Wire";
 
 class Bit {
   private nand1 = new Nand();
   private nand2 = new Nand();
   private nand3 = new Nand();
   private nand4 = new Nand();
-  public output: Wire = new Wire("o");
+  public output: boolean = false;
   constructor() {}
   get = (): boolean => {
-    return this.output.get();
+    return this.output;
   };
   update = (inputI: boolean, inputS: boolean) => {
     this.nand1.update(inputI, inputS);
@@ -18,7 +17,7 @@ class Bit {
     this.nand3.update(this.nand1.get(), this.nand4.get());
     this.nand4.update(this.nand3.get(), this.nand2.get());
     if (inputS) {
-      this.output.set(this.nand3.get());
+      this.output = this.nand3.get();
     }
   };
 }

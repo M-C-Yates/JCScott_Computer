@@ -1,7 +1,5 @@
-import Wire from "../circuit/Wire";
-
 class Bus {
-  private wires: Wire[] = new Array(8).fill(new Wire("b"));
+  private data: boolean[] = new Array(8).fill(false);
 
   constructor(public width: number) {}
 }

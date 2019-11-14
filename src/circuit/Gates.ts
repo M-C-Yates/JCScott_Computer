@@ -31,4 +31,15 @@ export class And {
   };
 }
 
+export class And3 {
+  private output: boolean = false;
+
+  get = () => {
+    return this.output;
+  };
+  update = (inputA: boolean, inputB: boolean, inputC: boolean) => {
+    this.output = inputA && inputB && inputC;
+  };
+}
+
 export default Nand;

@@ -89,6 +89,10 @@
         "version": "58a16892d8a9aebf2c8f2bb451898bc15555f1b36b6b8eff41626e038ec2623e",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts": {
+        "version": "231849def0cbf8ed30a2850d3ee395079cb9f1f4d197730a98fbfd420017b71f",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
       "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts": {
         "version": "2e32d9476a2467042e4dba9abd79153a42073dc546e27673be2ef07245a190fa",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
@@ -206,6 +210,9 @@
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
       ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts"
       ],
@@ -306,6 +313,7 @@
       "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
       "c:/webstuff/projects/jcscottcomp/src/index.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts",
@@ -329,7 +337,7 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/register.ts"
+      "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts"
     ]
   },
   "version": "3.5.3"

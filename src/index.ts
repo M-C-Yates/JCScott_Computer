@@ -1,9 +1,6 @@
-import Enabler from "./components/Enabler";
+import Register from "./components/Register";
 
-const enabler = new Enabler();
-
-const enabInput = [true, false, true, false, true, false, true, false];
-console.log(enabler.get());
-enabler.update(enabInput, false);
-console.log("\n ================== \n");
-console.log(enabler.get());
+const register = new Register("f");
+const registerByte = [false, false, false, false, false, false, false, true];
+register.update(registerByte, true, true);
+console.log(register.get());

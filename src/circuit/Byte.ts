@@ -8,10 +8,10 @@ class Byte {
   get = () => {
     return this.output;
   };
-  update = (bitInputs: boolean[], inputS: boolean) => {
+  update = (inputs: boolean[], inputS: boolean) => {
     if (inputS) {
       this.bits.forEach((bit, i) => {
-        bit.update(bitInputs[i], inputS);
+        bit.update(inputs[i], inputS);
         this.output[i] = this.bits[i].get();
       });
     }

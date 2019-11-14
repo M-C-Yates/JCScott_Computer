@@ -22,16 +22,13 @@ export class Not {
 }
 
 export class And {
-  private nand: Nand = new Nand();
-  private not: Not = new Not();
-  output: boolean = false;
+  private output: boolean = false;
   get = (): boolean => {
     return this.output;
   };
   update = (inputA: boolean, inputB: boolean) => {
-    this.nand.update(inputA, inputB);
-    this.not.update(this.nand.get());
-    this.output = this.not.get();
+    this.output = inputA && inputB;
   };
 }
+
 export default Nand;

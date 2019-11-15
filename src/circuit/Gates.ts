@@ -1,6 +1,5 @@
 export class Nand {
   output: boolean = false;
-  constructor() {}
   get = (): boolean => {
     return this.output;
   };
@@ -12,7 +11,6 @@ export class Nand {
 export class Not {
   private nand = new Nand();
   public output: boolean = false;
-  constructor() {}
   get = () => {
     return this.output;
   };
@@ -38,7 +36,26 @@ export class And3 {
     return this.output;
   };
   update = (inputA: boolean, inputB: boolean, inputC: boolean) => {
-    this.output = inputA && inputB && inputC;
+    let gate1 = inputA && inputB;
+    this.output = gate1 && inputC;
+  };
+}
+
+export class And4 {
+  private output: boolean = false;
+
+  get = () => {
+    return this.output;
+  };
+  update = (
+    inputA: boolean,
+    inputB: boolean,
+    inputC: boolean,
+    inputD: boolean
+  ) => {
+    let gate1 = inputA && inputB;
+    let gate2 = inputC && inputD;
+    this.output = gate1 && gate2;
   };
 }
 

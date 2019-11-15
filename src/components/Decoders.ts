@@ -1,4 +1,4 @@
-import { And, And3, Not } from "./../circuit/Gates";
+import { And, And3, And4, Not } from "./../circuit/Gates";
 
 class Decoder2x4 {
   private andGates: And[] = [new And(), new And(), new And(), new And()];
@@ -59,7 +59,6 @@ export class Decoder3x8 {
       this.notGates[1].get(),
       inputC
     );
-
     this.outputs[1] = this.andGates[1].get();
 
     this.andGates[2].update(
@@ -90,4 +89,31 @@ export class Decoder3x8 {
   };
 }
 
+export class Decoder4x16 {
+  private andGates: And[] = [
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And(),
+    new And()
+  ];
+  private notGates: Not[] = [new Not(), new Not(), new Not(), new Not()];
+  private output: boolean[] = new Array(16).fill(false);
+  private index: number = 0;
+
+  getIndex = () => {
+    return this.index;
+  };
+}
 export default Decoder2x4;

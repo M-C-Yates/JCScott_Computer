@@ -121,67 +121,83 @@ describe("Decoder4x16", () => {
   const result = new Array(16).fill(false);
   it("should return correct outputs", () => {
     decoder.update(false, false, false, false);
-    expect(decoder.get()).toEqual((result[0] = true));
+    result[0] = true;
+    expect(decoder.get()).toEqual(result);
     result[0] = false;
 
-    decoder.update(false, false, false, false);
-    expect(decoder.get()).toEqual((result[1] = true));
+    decoder.update(false, false, false, true);
+    result[1] = true;
+    expect(decoder.get()).toEqual(result);
     result[1] = false;
 
-    decoder.update(false, false, false, false);
-    expect(decoder.get()).toEqual((result[2] = true));
+    decoder.update(false, false, true, false);
+    result[2] = true;
+    expect(decoder.get()).toEqual(result);
     result[2] = false;
 
-    decoder.update(false, false, false, false);
-    expect(decoder.get()).toEqual((result[3] = true));
+    decoder.update(false, false, true, true);
+    result[3] = true;
+    expect(decoder.get()).toEqual(result);
     result[3] = false;
 
-    decoder.update(false, false, false, false);
-    expect(decoder.get()).toEqual((result[4] = true));
+    decoder.update(false, true, false, false);
+    result[4] = true;
+    expect(decoder.get()).toEqual(result);
     result[4] = false;
 
-    decoder.update(false, false, false, false);
-    expect(decoder.get()).toEqual((result[5] = true));
+    decoder.update(false, true, false, true);
+    result[5] = true;
+    expect(decoder.get()).toEqual(result);
     result[5] = false;
 
-    decoder.update(false, false, false, false);
-    expect(decoder.get()).toEqual((result[6] = true));
+    decoder.update(false, true, true, false);
+    result[6] = true;
+    expect(decoder.get()).toEqual(result);
     result[6] = false;
 
-    decoder.update(false, false, false, false);
-    expect(decoder.get()).toEqual((result[7] = true));
+    decoder.update(false, true, true, true);
+    result[7] = true;
+    expect(decoder.get()).toEqual(result);
     result[7] = false;
 
-    decoder.update(false, false, false, false);
-    expect(decoder.get()).toEqual((result[8] = true));
+    decoder.update(true, false, false, false);
+    result[8] = true;
+    expect(decoder.get()).toEqual(result);
     result[8] = false;
 
-    decoder.update(false, false, false, false);
-    expect(decoder.get()).toEqual((result[9] = true));
+    decoder.update(true, false, false, true);
+    result[9] = true;
+    expect(decoder.get()).toEqual(result);
     result[9] = false;
 
-    decoder.update(false, false, false, false);
-    expect(decoder.get()).toEqual((result[10] = true));
+    decoder.update(true, false, true, false);
+    result[10] = true;
+    expect(decoder.get()).toEqual(result);
     result[10] = false;
 
     decoder.update(true, false, true, true);
-    expect(decoder.get()).toEqual((result[11] = true));
+    result[11] = true;
+    expect(decoder.get()).toEqual(result);
     result[11] = false;
 
     decoder.update(true, true, false, false);
-    expect(decoder.get()).toEqual((result[12] = true));
+    result[12] = true;
+    expect(decoder.get()).toEqual(result);
     result[12] = false;
 
     decoder.update(true, true, false, true);
-    expect(decoder.get()).toEqual((result[13] = true));
+    result[13] = true;
+    expect(decoder.get()).toEqual(result);
     result[13] = false;
 
     decoder.update(true, true, true, false);
-    expect(decoder.get()).toEqual((result[14] = true));
+    result[14] = true;
+    expect(decoder.get()).toEqual(result);
     result[14] = false;
 
     decoder.update(true, true, true, true);
-    expect(decoder.get()).toEqual((result[15] = true));
+    result[15] = true;
+    expect(decoder.get()).toEqual(result);
     result[15] = false;
   });
 });

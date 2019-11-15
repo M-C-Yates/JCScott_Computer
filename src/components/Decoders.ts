@@ -190,7 +190,7 @@ export class Decoder4x16 {
       this.notGates[2].get(),
       this.notGates[3].get()
     );
-    this.andGates[13].update(inputA, inputB, this.notGates[3].get(), inputD);
+    this.andGates[13].update(inputA, inputB, this.notGates[2].get(), inputD);
     this.andGates[14].update(inputA, inputB, inputC, this.notGates[3].get());
     this.andGates[15].update(inputA, inputB, inputC, inputD);
 

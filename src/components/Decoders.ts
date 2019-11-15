@@ -90,30 +90,117 @@ export class Decoder3x8 {
 }
 
 export class Decoder4x16 {
-  private andGates: And[] = [
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And(),
-    new And()
-  ];
-  private notGates: Not[] = [new Not(), new Not(), new Not(), new Not()];
+  private andGates: And4[] = new Array(16);
+  private notGates: Not[] = new Array(4);
   private output: boolean[] = new Array(16).fill(false);
   private index: number = 0;
-
+  constructor() {
+    for (let i = 0; i < 4; i++) {
+      this.notGates[i] = new Not();
+    }
+    for (let i = 0; i < 16; i++) {
+      this.andGates[i] = new And4();
+    }
+  }
   getIndex = () => {
     return this.index;
+  };
+  get = () => {
+    return this.output;
+  };
+  update = (
+    inputA: boolean,
+    inputB: boolean,
+    inputC: boolean,
+    inputD: boolean
+  ) => {
+    this.notGates[0].update(inputA);
+    this.notGates[1].update(inputB);
+    this.notGates[2].update(inputC);
+    this.notGates[3].update(inputD);
+
+    this.andGates[0].update(
+      this.notGates[0].get(),
+      this.notGates[1].get(),
+      this.notGates[2].get(),
+      this.notGates[3].get()
+    );
+    this.andGates[1].update(
+      this.notGates[0].get(),
+      this.notGates[1].get(),
+      this.notGates[2].get(),
+      inputD
+    );
+    this.andGates[2].update(
+      this.notGates[0].get(),
+      this.notGates[1].get(),
+      inputC,
+      this.notGates[3].get()
+    );
+    this.andGates[3].update(
+      this.notGates[0].get(),
+      this.notGates[1].get(),
+      inputC,
+      inputD
+    );
+
+    this.andGates[4].update(
+      this.notGates[0].get(),
+      inputB,
+      this.notGates[2].get(),
+      this.notGates[3].get()
+    );
+    this.andGates[5].update(
+      this.notGates[0].get(),
+      inputB,
+      this.notGates[2].get(),
+      inputD
+    );
+    this.andGates[6].update(
+      this.notGates[0].get(),
+      inputB,
+      inputC,
+      this.notGates[3].get()
+    );
+    this.andGates[7].update(this.notGates[0].get(), inputB, inputC, inputD);
+
+    this.andGates[8].update(
+      inputA,
+      this.notGates[1].get(),
+      this.notGates[2].get(),
+      this.notGates[3].get()
+    );
+    this.andGates[9].update(
+      inputA,
+      this.notGates[1].get(),
+      this.notGates[2].get(),
+      inputD
+    );
+    this.andGates[10].update(
+      inputA,
+      this.notGates[1].get(),
+      inputC,
+      this.notGates[3].get()
+    );
+    this.andGates[11].update(inputA, this.notGates[1].get(), inputC, inputD);
+
+    this.andGates[12].update(
+      inputA,
+      inputB,
+      this.notGates[2].get(),
+      this.notGates[3].get()
+    );
+    this.andGates[13].update(inputA, inputB, this.notGates[3].get(), inputD);
+    this.andGates[14].update(inputA, inputB, inputC, this.notGates[3].get());
+    this.andGates[15].update(inputA, inputB, inputC, inputD);
+
+    for (let i = 0; i < 16; i++) {
+      let val = this.andGates[i].get();
+      if (val) {
+        this.index = i;
+      }
+      this.output[i] = val;
+    }
   };
 }
 export default Decoder2x4;

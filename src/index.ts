@@ -1,7 +1,5 @@
-import { Decoder3x8 } from "./components/Decoders";
+import { Decoder4x16 } from "./components/Decoders";
 
-const decoder = new Decoder3x8();
-
-decoder.update(false, false, true);
-
+const decoder = new Decoder4x16();
+decoder.update(true, true, true, false);
 console.log(decoder.get());

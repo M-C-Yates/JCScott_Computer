@@ -19,6 +19,7 @@ class Register {
     this.enabler.get().forEach((val, i) => (this.output[i] = val));
     if (inputE) {
       this.outputBus.update(this.output);
+      this.outputBus.update(this.output);
     }
   };
 }

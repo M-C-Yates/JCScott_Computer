@@ -33,7 +33,7 @@ class Cell {
 }
 
 class Memory256B {
-  public addressRegister = new Register(
+  private addressRegister = new Register(
     this.addressBus,
     this.addressBus,
     "MAR"

@@ -203,4 +203,22 @@ export class Decoder4x16 {
     }
   };
 }
+
+export class Decoder8x256 {
+  private decoders: Decoder4x16[] = new Array(16);
+  private index: number = 0;
+  private output: boolean[] = new Array(256).fill(false);
+  private selector = new Decoder4x16();
+  constructor() {
+    for (let i = 0; i < 15; i++) {
+      this.decoders[i] = new Decoder4x16();
+    }
+  }
+  update = (input: boolean[]) => {
+    this.selector.update(input[4], input[5], input[6], input[7]);
+    const sIndex = this.selector.getIndex();
+    this.decoders[sIndex].update(input[0], input[1], input[2], input[3]);
+    this.index = this.decoders[sIndex].getIndex();
+  };
+}
 export default Decoder2x4;

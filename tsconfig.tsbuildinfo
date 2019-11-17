@@ -70,8 +70,8 @@
         "signature": "f51ac229d524fa2d1a37a831a94b92f563447f6e52c8381eae6bb7bd19e7206d"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": {
-        "version": "d32f58b2ba51da406ac644189de05e31e66d23a9a196d25e1b673bd06c4e223d",
-        "signature": "83b26fd0c3e454d29c7795f76fe1886188b52aed3c19bde98f5336d65f6d2c33"
+        "version": "74c15a32c4ecac74fb8cadca08fa2e58c0dec847ad451c5e7afc791786b0b214",
+        "signature": "a96d36dea9275f2fe2d5f2ab2fdd42d695258564ac63c0e243e6f5ed0bbf6808"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts": {
         "version": "7bd593fae87bbc608ad00084bc23f58a450241b132cbb0c376b332baedd3e7fb",
@@ -82,7 +82,7 @@
         "signature": "4bdb5174bde082fa9bc5b5c7c196c08edc526047749dca725a49d50146db5040"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/memory.ts": {
-        "version": "f0e42acd0411495c434b8cddeb3b754b8919fb00f7e919008b7dca3c1d23d6ab",
+        "version": "c7243bf34f04ea67c8b47e18986c1e4976b493153a8e90806515d2f4bd49fc19",
         "signature": "75d2ba589cd65737bfd8fea2589d4e92355e70a30cb878f6a3316e4b5afaced6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts": {
@@ -352,7 +352,6 @@
       "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/memory.ts",
@@ -362,6 +361,7 @@
       "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/decoders.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/memory.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/register.test.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts",
@@ -379,7 +379,7 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/components/memory.test.ts"
+      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts"
     ]
   },
   "version": "3.5.3"

@@ -53,11 +53,13 @@ class Memory256B {
         this.memory[i][j] = new Cell(this.inputBus, this.outputBus);
       }
     }
-    this.addressRegister.set();
     this.addressRegister.enable();
   }
   update = (set: boolean, enable: boolean) => {
+    this.addressRegister.set();
     this.addressRegister.update();
+    this.addressRegister.unSet();
+
     const address = this.addressRegister.get();
     this.decoderRow.update(address[0], address[1], address[2], address[3]);
     this.decoderCol.update(address[4], address[5], address[6], address[7]);

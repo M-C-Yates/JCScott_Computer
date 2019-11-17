@@ -16,18 +16,24 @@ describe("Register", () => {
   ];
   it("should correctly set and enable byte", () => {
     bus.update(inputs);
-    register.update(true, true);
+    register.updateSet(true);
+    register.updateEnable(true);
+    register.update();
     expect(register.get()).toEqual(inputs);
   });
   it("should set byte but not enable it", () => {
     bus.update(inputs);
-    register.update(true, false);
+    register.updateSet(true);
+    register.updateEnable(false);
+    register.update();
     expect(register.get()).toEqual(new Array(8).fill(false));
     expect(register.readByte()).toEqual(inputs);
   });
   it("should not set byte", () => {
     bus.update(inputs);
-    register.update(false, false);
+    register.updateSet(false);
+    register.updateEnable(false);
+    register.update();
     expect(register.get()).toEqual(new Array(8).fill(false));
   });
 });

@@ -15,24 +15,24 @@ describe("Register", () => {
     true
   ];
   it("should correctly set and enable byte", () => {
-    bus.update(inputs);
-    register.updateSet(true);
-    register.updateEnable(true);
+    bus.set(inputs);
+    register.set();
+    register.enable();
     register.update();
     expect(register.get()).toEqual(inputs);
   });
   it("should set byte but not enable it", () => {
-    bus.update(inputs);
-    register.updateSet(true);
-    register.updateEnable(false);
+    bus.set(inputs);
+    register.set();
+    register.disable();
     register.update();
     expect(register.get()).toEqual(new Array(8).fill(false));
     expect(register.readByte()).toEqual(inputs);
   });
   it("should not set byte", () => {
-    bus.update(inputs);
-    register.updateSet(false);
-    register.updateEnable(false);
+    bus.set(inputs);
+    register.unSet();
+    register.disable();
     register.update();
     expect(register.get()).toEqual(new Array(8).fill(false));
   });

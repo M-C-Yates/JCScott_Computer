@@ -5,7 +5,7 @@ class Bus {
   get = () => {
     return this.data;
   };
-  update = (input: boolean[]) => {
+  set = (input: boolean[]) => {
     this.data = input;
   };
 }

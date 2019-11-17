@@ -7,7 +7,7 @@ describe("Bus", () => {
     expect(bus.get().length).toBe(8);
   });
   it("should correctly update it's data", () => {
-    bus.update(data);
+    bus.set(data);
     expect(bus.get()).toEqual(data);
   });
 });

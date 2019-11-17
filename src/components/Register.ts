@@ -4,10 +4,10 @@ import Bus from "./Bus";
 
 class Register {
   private byte = new Byte();
-  private enable: boolean = false;
+  private enableOutput: boolean = false;
   private enabler = new Enabler();
   private output: boolean[] = new Array(8).fill(false);
-  private set: boolean = false;
+  private setInput: boolean = false;
   constructor(
     private inputBus: Bus,
     private outputBus: Bus,
@@ -20,18 +20,25 @@ class Register {
     return this.byte.get();
   };
   update = () => {
-    this.byte.update(this.inputBus.get(), this.set);
-    this.enabler.update(this.byte.get(), this.enable);
+    this.byte.update(this.inputBus.get(), this.setInput);
+    this.enabler.update(this.byte.get(), this.enableOutput);
     this.enabler.get().forEach((val, i) => (this.output[i] = val));
-    if (this.enable) {
-      this.outputBus.update(this.output);
+    if (this.enableOutput) {
+      this.outputBus.set(this.output);
     }
   };
-  updateEnable = (enable: boolean) => {
-    this.enable = enable;
+
+  disable = () => {
+    this.enableOutput = false;
   };
-  updateSet = (set: boolean) => {
-    this.set = set;
+  enable = () => {
+    this.enableOutput = true;
+  };
+  set = () => {
+    this.setInput = true;
+  };
+  unSet = () => {
+    this.setInput = false;
   };
 }
 

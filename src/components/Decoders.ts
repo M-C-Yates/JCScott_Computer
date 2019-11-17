@@ -214,6 +214,9 @@ export class Decoder8x256 {
       this.decoders[i] = new Decoder4x16();
     }
   }
+  getIndex = () => {
+    return this.index;
+  };
   update = (input: boolean[]) => {
     this.selector.update(input[4], input[5], input[6], input[7]);
     const sIndex = this.selector.getIndex();

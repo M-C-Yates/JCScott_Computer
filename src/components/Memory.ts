@@ -1,7 +1,7 @@
 import Bus from "./Bus";
 import Byte from "../circuit/Byte";
 import Register from "./Register";
-import { Decoder4x16 } from "./Decoders";
+import { Decoder4x16, Decoder8x256 } from "./Decoders";
 import { And } from "../circuit/Gates";
 
 class Cell {
@@ -66,6 +66,42 @@ class Memory256B {
 
     this.address[0] = this.decoderRow.getIndex();
     this.address[1] = this.decoderCol.getIndex();
+    this.memory[this.address[0]][this.address[1]].update(set, enable);
+  };
+
+  readMem = (row: number, col: number) => {
+    return this.memory[row][col].get();
+  };
+}
+
+class Memory64K {
+  private address = new Array(2).fill(0);
+  private decoderCol = new Decoder8x256();
+  private decoderRow = new Decoder8x256();
+  private memory: Cell[][] = new Array(256).fill([]);
+
+  constructor(
+    private inputBus: Bus,
+    private outputBus: Bus,
+    private addressBus: Bus
+  ) {
+    for (let i = 0; i < 256; i++) {
+      for (let j = 0; j < 256; j++) {
+        this.memory[i][j] = new Cell(this.inputBus, this.outputBus);
+      }
+    }
+  }
+  update = (set: boolean, enable: boolean) => {
+    const address = this.addressBus.get();
+    const rowAddr = address.slice(0, 7);
+    const colAddr = address.slice(8);
+
+    this.decoderCol.update(colAddr);
+    this.decoderRow.update(rowAddr);
+
+    this.address[0] = this.decoderRow.getIndex();
+    this.address[1] = this.decoderCol.getIndex();
+
     this.memory[this.address[0]][this.address[1]].update(set, enable);
   };
 

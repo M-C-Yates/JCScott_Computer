@@ -19,8 +19,12 @@ class Register {
   readByte = () => {
     return this.byte.get();
   };
-  update = () => {
-    this.byte.update(this.inputBus.get(), this.setInput);
+  update = (input?: boolean[]) => {
+    if (input) {
+      this.byte.update(input, this.setInput);
+    } else {
+      this.byte.update(this.inputBus.get(), this.setInput);
+    }
     this.enabler.update(this.byte.get(), this.enableOutput);
     this.enabler.get().forEach((val, i) => (this.output[i] = val));
     if (this.enableOutput) {

@@ -1,4 +1,4 @@
-import { And } from "./../circuit/Gates";
+import { And } from "../circuit/Gates";
 
 class Enabler /* implements ComponentInterface */ {
   private gates: And[] = new Array(8).fill(new And());

@@ -1,4 +1,4 @@
-import { And, And3, And4, Not } from "./../circuit/Gates";
+import { And, And3, And4, Not } from "../circuit/Gates";
 
 class Decoder2x4 {
   private andGates: And[] = [new And(), new And(), new And(), new And()];

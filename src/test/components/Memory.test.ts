@@ -1,5 +1,5 @@
 import Bus from "../../components/Bus";
-import Memory256B from "../../components/Memory";
+import Memory256B from "../../memory/Memory";
 
 describe("Memory", () => {
   const bus = new Bus(8);

@@ -77,11 +77,17 @@ export class Or {
 
 export class Xor {
   private output: boolean = false;
+  private nandGates = [new Nand(), new Nand(), new Nand()];
   constructor() {}
   get = () => {
     return this.output;
   };
-  update = (inputA: boolean, inputB: boolean) => {};
+  update = (inputA: boolean, inputB: boolean) => {
+    this.nandGates[0].update(!inputA, inputB);
+    this.nandGates[1].update(inputA, !inputB);
+    this.nandGates[2].update(this.nandGates[0].get(), this.nandGates[1].get());
+    this.output = this.nandGates[2].get();
+  };
 }
 
 export default Nand;

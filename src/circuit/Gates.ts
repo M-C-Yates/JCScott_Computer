@@ -75,4 +75,13 @@ export class Or {
   };
 }
 
+export class Xor {
+  private output: boolean = false;
+  constructor() {}
+  get = () => {
+    return this.output;
+  };
+  update = (inputA: boolean, inputB: boolean) => {};
+}
+
 export default Nand;

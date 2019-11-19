@@ -1,15 +1,15 @@
-import Memory256B from "./memory/Memory";
+import leftShifter from "./components/Shifters";
 import Bus from "./components/Bus";
 
 const bus = new Bus(8);
-const addressBus = new Bus(8);
-const memory = new Memory256B(bus, bus, addressBus);
+const left = new leftShifter(bus, bus);
 
-const addressByte = [false, false, false, false, true, true, true, true];
-const testVal = [false, false, false, false, false, false, true, true];
+const testByte = [true, false, false, false, false, false, false, true];
 
-addressBus.set(addressByte);
-bus.set(testVal);
+// bus.set(testByte);
+// left.update(false);
+// console.log(bus.get());
 
-memory.update(true, true);
-console.log(memory.readMem(0, 15));
+bus.set(testByte);
+left.update(true);
+console.log(bus.get());

@@ -11,14 +11,16 @@ class leftShifter {
     this.shiftIn = shiftIn;
     this.shiftOut = this.output[0];
 
-    // console.log(this.output);
     this.output[0] = this.output[1];
     this.output[1] = this.output[2];
     this.output[2] = this.output[3];
     this.output[3] = this.output[4];
     this.output[4] = this.output[5];
     this.output[5] = this.output[6];
+    // console.log(this.output);
     this.output[6] = this.output[7];
+    // console.log(this.output);
+
     this.output[7] = this.shiftIn;
     // console.log(this.output);
 

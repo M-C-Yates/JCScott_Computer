@@ -1,4 +1,4 @@
-import Nand, { And, Not } from "../../circuit/Gates";
+import Nand, { And, Not, Or } from "../../circuit/Gates";
 
 describe("Nand Gate", () => {
   it("should give correct output", () => {
@@ -36,3 +36,24 @@ describe("And Gate", () => {
     expect(and.get()).toEqual(true);
   });
 });
+
+describe("Or Gate", () => {
+  const or = new Or();
+  it("should give correct output", () => {
+    or.update(false, false);
+    expect(or.get()).toEqual(false);
+
+    or.update(false, true);
+    expect(or.get()).toEqual(true);
+
+    or.update(true, false);
+    expect(or.get()).toEqual(true);
+
+    or.update(true, true);
+    expect(or.get()).toEqual(true);
+  });
+});
+
+// describe("Or Gate", () => {
+//   it("", () => {})
+// })

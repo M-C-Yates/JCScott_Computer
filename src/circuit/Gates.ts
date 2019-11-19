@@ -59,4 +59,20 @@ export class And4 {
   };
 }
 
+export class Or {
+  private output: boolean = false;
+  private nand = new Nand();
+  private notGates = [new Not(), new Not()];
+  get = () => {
+    return this.output;
+  };
+  update = (inputA: boolean, inputB: boolean) => {
+    this.notGates[0].update(inputA);
+    this.notGates[1].update(inputB);
+    this.nand.update(this.notGates[0].get(), this.notGates[1].get());
+
+    this.output = this.nand.get();
+  };
+}
+
 export default Nand;

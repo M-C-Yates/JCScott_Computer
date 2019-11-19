@@ -1,5 +1,6 @@
 import Register from "../components/Register";
 import Bus from "../components/Bus";
+import Memory256B from "../memory/Memory";
 
 class Cpu {
   private accBus = new Bus(8);
@@ -24,7 +25,7 @@ class Cpu {
   private flagsReg = new Register(this.aluToFlagBus, this.flagBus, "flags");
   private irReg = new Register(this.mainBus, this.controlBus, "ir");
   private iarREG = new Register(this.mainBus, this.mainBus, "iar");
-  constructor() {
+  constructor(private memory: Memory256B) {
     const initVal = new Array(8).fill(false);
     this.irReg.disable();
     this.flagsReg.enable();

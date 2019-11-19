@@ -1,7 +1,11 @@
 class Bus {
-  private data: boolean[] = new Array(this.width).fill(false);
+  private data: boolean[] = new Array(this.width);
 
-  constructor(public width: number) {}
+  constructor(public width: number) {
+    for (let i = 0; i < this.width; i++) {
+      this.data[i] = false;
+    }
+  }
   get = () => {
     return this.data;
   };

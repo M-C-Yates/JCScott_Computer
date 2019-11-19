@@ -35,37 +35,37 @@ describe("left shifter", () => {
   });
 });
 
-describe("right Shifter", () => {
-  const bus = new Bus(8);
-  const rShift = new rightShifter(bus, bus);
-  const testByte = [true, false, false, false, false, false, false, true];
+// describe("right Shifter", () => {
+//   const bus = new Bus(8);
+//   const rShift = new rightShifter(bus, bus);
+//   const testByte = [true, false, false, false, false, false, false, true];
 
-  it("should give the correct output with wrapping disabled", () => {
-    bus.set(testByte);
-    rShift.update(false);
-    expect(bus.get()).toEqual([
-      false,
-      true,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false
-    ]);
-  });
-  it("should give the correct output with wrapping enabled", () => {
-    bus.set(testByte);
-    rShift.update(true);
-    expect(bus.get()).toEqual([
-      true,
-      true,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false
-    ]);
-  });
-});
+//   it("should give the correct output with wrapping disabled", () => {
+//     bus.set(testByte);
+//     rShift.update(false);
+//     expect(bus.get()).toEqual([
+//       false,
+//       true,
+//       false,
+//       false,
+//       false,
+//       false,
+//       false,
+//       false
+//     ]);
+//   });
+//   it("should give the correct output with wrapping enabled", () => {
+//     bus.set(testByte);
+//     rShift.update(true);
+//     expect(bus.get()).toEqual([
+//       true,
+//       true,
+//       false,
+//       false,
+//       false,
+//       false,
+//       false,
+//       false
+//     ]);
+//   });
+// });

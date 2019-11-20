@@ -1,4 +1,4 @@
-import { Ander, ORer } from "./../../components/Components";
+import { Ander, ORer, XORer } from "./../../components/Components";
 import Notter from "../../components/Components";
 import Bus from "../../components/Bus";
 
@@ -72,6 +72,30 @@ describe("ORer", () => {
       true,
       true,
       true
+    ]);
+  });
+});
+
+describe("XORer", () => {
+  const busA = new Bus(8);
+  const busB = new Bus(8);
+  const busC = new Bus(8);
+  const xorer = new XORer(busA, busB, busC);
+  const testByte1 = [false, true, true, false, false, true, false, true];
+  const testByte2 = [true, true, false, true, false, false, true, true];
+  it("should give the correct output", () => {
+    busA.set(testByte1);
+    busB.set(testByte2);
+    xorer.update();
+    expect(busC.get()).toEqual([
+      true,
+      false,
+      true,
+      true,
+      false,
+      true,
+      true,
+      false
     ]);
   });
 });

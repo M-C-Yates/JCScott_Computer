@@ -1,17 +1,21 @@
 import Bit from "./Bit";
 
 class Byte {
-  private bits: Bit[] = new Array(8).fill(new Bit());
+  private bits: Bit[] = new Array(8);
   private output: boolean[] = new Array(8).fill(false);
-  constructor() {}
+  constructor() {
+    for (let i = 0; i < 8; i++) {
+      this.bits[i] = new Bit();
+    }
+  }
 
   get = () => {
     return this.output;
   };
-  update = (inputs: boolean[], inputS: boolean) => {
+  update = (input: boolean[], inputS: boolean) => {
     if (inputS) {
       this.bits.forEach((bit, i) => {
-        bit.update(inputs[i], inputS);
+        bit.update(input[i], inputS);
         this.output[i] = this.bits[i].get();
       });
     }

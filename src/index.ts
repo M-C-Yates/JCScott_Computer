@@ -1,7 +1,15 @@
-import { Decoder3x8 } from "./components/Decoders";
+import leftShifter from "./components/Shifters";
+import Bus from "./components/Bus";
 
-const decoder = new Decoder3x8();
+const bus = new Bus(8);
+const left = new leftShifter(bus, bus);
 
-decoder.update(false, false, true);
+const testByte = [true, false, false, false, false, false, false, true];
 
-console.log(decoder.get());
+// bus.set(testByte);
+// left.update(false);
+// console.log(bus.get());
+
+bus.set(testByte);
+left.update(true);
+console.log(bus.get());

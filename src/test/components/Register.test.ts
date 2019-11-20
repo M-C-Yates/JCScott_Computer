@@ -1,7 +1,9 @@
 import Register from "../../components/Register";
+import Bus from "../../components/Bus";
 
 describe("Register", () => {
-  const register = new Register("f");
+  const bus = new Bus(8);
+  const register = new Register(bus, bus);
   const inputs: boolean[] = [
     false,
     false,
@@ -13,16 +15,25 @@ describe("Register", () => {
     true
   ];
   it("should correctly set and enable byte", () => {
-    register.update(inputs, true, true);
+    bus.set(inputs);
+    register.set();
+    register.enable();
+    register.update();
     expect(register.get()).toEqual(inputs);
   });
   it("should set byte but not enable it", () => {
-    register.update(inputs, true, false);
+    bus.set(inputs);
+    register.set();
+    register.disable();
+    register.update();
     expect(register.get()).toEqual(new Array(8).fill(false));
     expect(register.readByte()).toEqual(inputs);
   });
   it("should not set byte", () => {
-    register.update(inputs, false, false);
+    bus.set(inputs);
+    register.unSet();
+    register.disable();
+    register.update();
     expect(register.get()).toEqual(new Array(8).fill(false));
   });
 });

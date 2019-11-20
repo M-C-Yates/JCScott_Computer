@@ -18,6 +18,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "10.x"
-      - run: echo ls
       - run: npm install
+      - run: tsc
       - run: npm test

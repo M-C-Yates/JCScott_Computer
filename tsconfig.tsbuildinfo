@@ -54,7 +54,7 @@
         "signature": "f51ac229d524fa2d1a37a831a94b92f563447f6e52c8381eae6bb7bd19e7206d"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts": {
-        "version": "c411b32d02fb1eef3a0b2d595180bca30891175dae31c7f6b6284b3f0dd0c20f",
+        "version": "b9b2017a8603172a5f15d520e1b3391fe2d5e1b983e3df7aaf106c861d7270e4",
         "signature": "e8d2a1be0238fbc8f8260247604f023b96321f0e0ddcbcc6993c72889f6cc478"
       },
       "c:/webstuff/projects/jcscottcomp/src/index.ts": {
@@ -82,7 +82,7 @@
         "signature": "d27f18194584f2ac4effd8e50f989e49988397c78377a8bfe332ace7a47efb76"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/register.ts": {
-        "version": "1c54801e871c083e8533d67c2dab78d9e195fe05de913d51ba4b42f1003e5a99",
+        "version": "fb4fd8bde5ef8871816938fa9f0b7f37621af57da3cbd428e8ef3dd1bb3d5cf3",
         "signature": "b6ab6a001602b5a87a32701d22aa6f77ffdac9b13538c6d4b974d10b33cc382c"
       },
       "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": {
@@ -134,7 +134,7 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts": {
-        "version": "8f27050d73b61e3ec708317f7d64a8996da4219ee4b9001739e38a0a1aa1e601",
+        "version": "c62553fff8ee633f1f3ce8d721aadebb6ff3423a8ebe7dd263a4934b8efd61af",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts": {
@@ -402,7 +402,6 @@
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts",
       "c:/webstuff/projects/jcscottcomp/src/index.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
@@ -422,6 +421,7 @@
       "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/memory.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/register.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts",
@@ -438,7 +438,7 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts"
+      "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts"
     ]
   },
   "version": "3.5.3"

@@ -23,7 +23,7 @@ class Register {
     if (input) {
       this.byte.update(input, this.setInput);
     } else {
-      this.byte.update(this.inputBus.get(), this.setInput);
+      this.byte.update([...this.inputBus.get()], this.setInput);
     }
     this.enabler.update(this.byte.get(), this.enableOutput);
     this.enabler.get().forEach((val, i) => (this.output[i] = val));

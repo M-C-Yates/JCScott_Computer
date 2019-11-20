@@ -1,4 +1,4 @@
-import { And, Not } from "./../circuit/Gates";
+import { And, Not, Or } from "./../circuit/Gates";
 import Bus from "./Bus";
 class Notter {
   private notGates = [
@@ -56,6 +56,38 @@ export class Ander {
       this.output[i] = this.andGates[i].get();
     }
 
+    this.outputBus.set([...this.output]);
+  };
+}
+
+export class ORer {
+  private orGates = [
+    new Or(),
+    new Or(),
+    new Or(),
+    new Or(),
+    new Or(),
+    new Or(),
+    new Or(),
+    new Or()
+  ];
+  private data1 = new Array(8).fill(false);
+  private data2 = new Array(8).fill(false);
+  private output = new Array(8).fill(false);
+  constructor(
+    private inputA: Bus,
+    private inputB: Bus,
+    private outputBus: Bus
+  ) {}
+
+  update = () => {
+    this.data1 = [...this.inputA.get()];
+    this.data2 = [...this.inputB.get()];
+
+    for (let i = 0; i < 8; i++) {
+      this.orGates[i].update(this.data1[i], this.data2[i]);
+      this.output[i] = this.orGates[i].get();
+    }
     this.outputBus.set([...this.output]);
   };
 }

@@ -1,5 +1,6 @@
 import { And, Or, Xor } from "./../circuit/Gates";
 import { thisExpression } from "@babel/types";
+import Bus from "./Bus";
 
 export class Add {
   private and1 = new And();
@@ -28,6 +29,36 @@ export class Add {
     this.carryout = this.or1.get();
   };
 }
-export class Adder {}
+export class Adder {
+  private carryOut: boolean = false;
+  private carryIn: boolean = false;
+  private adds: Add[] = new Array(8);
+  private sum: boolean[] = new Array(8);
+  constructor() {
+    for (let i = 0; i < 8; i++) {
+      this.adds[i] = new Add();
+    }
+  }
+  get = () => {
+    return this.sum;
+  };
+  getCarry = () => {
+    return this.carryOut;
+  };
+
+  update = (inputA: boolean[], inputB: boolean[], carryIn: boolean) => {
+    const byte1 = [...inputA];
+    const byte2 = [...inputB];
+    this.carryIn = carryIn;
+    for (let i = 7; i >= 0; i--) {
+      this.adds[i].update(byte1[i], byte2[i], this.carryIn);
+      this.sum[i] = this.adds[i].get();
+      this.carryIn = this.adds[i].getCarryOut();
+      this.carryOut = this.adds[i].getCarryOut();
+    }
+    console.log(this.sum);
+    this.carryIn = false;
+  };
+}
 
 export default Adder;

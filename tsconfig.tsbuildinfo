@@ -78,8 +78,8 @@
         "signature": "74f9bcff3ff74cf869dd567eefb979e017a6d5d7503c39ee11582f7c10e21d02"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": {
-        "version": "8d8a80c52936b273d4392dfa292a1aa92a71c0979a71d5e8ae153e701b64bff7",
-        "signature": "3f13bd1bec0a593fae42aa7905953a57059ee88cd4776d366387cab9b0e0258f"
+        "version": "509ff64e62254ee7b793630e4f6f75df6e306e4b6659d607bba5d0cacc21ee93",
+        "signature": "da1cd876c50905ad401ac01b9f237547ab07c0b873329faf5e45d80a00952eab"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/components.ts": {
         "version": "13b1b9269427f42bd556e3c12bc3f916b7475c07a73838ab1735c9b3b6c97e51",
@@ -126,7 +126,7 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/adder.test.ts": {
-        "version": "9ac9c86fc439ec33a84b2056a6b9029ce2a605c36c244ef4261eebb8c7393e03",
+        "version": "ad17c592291f2fb77508551244dd9348400a3616a9f75b898e4f652b2a97e6b7",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts": {
@@ -252,7 +252,8 @@
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": [
         "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
-        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/components.ts": [
         "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
@@ -300,7 +301,8 @@
         "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/adder.test.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/adder.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/adder.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"

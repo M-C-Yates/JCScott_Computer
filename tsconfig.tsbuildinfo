@@ -74,8 +74,8 @@
         "signature": "c5578226bab27e7dc612305234097ba7353e384e60a706b62912657ba6de7ae8"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/components.ts": {
-        "version": "36379df146da9ff4540fb0fff5422902fe55c48576475d7ccf0eb7ad65fb524c",
-        "signature": "6109ecf95b1b322a8f3073001a13f2d3f9b1384ad8a494a9be30fde8f8b7464c"
+        "version": "24654fe6c281b1a2bed3c36666d3b15507aaf49446cac6dba4f67a34feaaca2f",
+        "signature": "7f86bc2d8244409d4c301b64a20034d0cb44188f3419e920118d75d32ed52fb1"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": {
         "version": "451e8c37dd1912156c39938d671e3b122148f382dae149213f1e6586df0916ea",
@@ -243,6 +243,7 @@
         "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/components.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": [

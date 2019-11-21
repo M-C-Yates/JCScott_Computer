@@ -80,12 +80,23 @@ class Alu {
 
   updateAdder = () => {
     this.adder.update(this.carryIn);
-    this.enablers[this.index].update(this.adder.get(), true);
+    this.enablers[this.index].update(this.enablerBus.get(), true);
     this.outputBus.set(this.enablers[this.index].get());
   };
 
   updateXorer = () => {
-    this.enablers[this.index].update(this.comparator.get(), true);
+    this.enablers[this.index].update(this.enablerBus.get(), true);
+    this.outputBus.set(this.enablers[this.index].get());
+  };
+
+  updateOr = () => {
+    this.orer.update();
+    this.enablers[this.index].update(this.enablerBus.get(), true);
+    this.outputBus.set(this.enablers[this.index].get());
+  };
+  updateAnd = () => {
+    this.ander.update();
+    this.enablers[this.index].update(this.enablerBus.get(), true);
     this.outputBus.set(this.enablers[this.index].get());
   };
 

@@ -34,7 +34,7 @@ export class Adder {
   private carryIn: boolean = false;
   private adds: Add[] = new Array(8);
   private sum: boolean[] = new Array(8);
-  constructor() {
+  constructor(private inputA: Bus, private inputB: Bus) {
     for (let i = 0; i < 8; i++) {
       this.adds[i] = new Add();
     }
@@ -46,9 +46,9 @@ export class Adder {
     return this.carryOut;
   };
 
-  update = (inputA: boolean[], inputB: boolean[], carryIn: boolean) => {
-    const byte1 = [...inputA];
-    const byte2 = [...inputB];
+  update = (carryIn: boolean) => {
+    const byte1 = [...this.inputA.get()];
+    const byte2 = [...this.inputB.get()];
     this.carryIn = carryIn;
     for (let i = 7; i >= 0; i--) {
       this.adds[i].update(byte1[i], byte2[i], this.carryIn);
@@ -56,7 +56,6 @@ export class Adder {
       this.carryIn = this.adds[i].getCarryOut();
       this.carryOut = this.adds[i].getCarryOut();
     }
-    console.log(this.sum);
     this.carryIn = false;
   };
 }

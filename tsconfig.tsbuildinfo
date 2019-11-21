@@ -94,8 +94,8 @@
         "signature": "d27f18194584f2ac4effd8e50f989e49988397c78377a8bfe332ace7a47efb76"
       },
       "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts": {
-        "version": "e0b0776e0e02fd16d01587756d16c4af8cdac178a198abb1a21cca50ae02f34b",
-        "signature": "00ca3c910376799d492b21aaef55a8953c865ab64dbaffda052c73d1f15d4dff"
+        "version": "c3078a11895fe350f01513a862db45843b45d9c6640e1888530bf3e20f483fce",
+        "signature": "d87aa6b2b800f8c49e832d15b090cd6e2bdd3e14eb85ceb321bd6ff1dfb95827"
       },
       "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts": {
         "version": "36e49f6565ac2ff1fc10605fee1988d3a3a603c5c551b14ba7e28922ba9ec402",
@@ -522,7 +522,6 @@
       "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
       "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/byte.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts",
@@ -551,45 +550,8 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      [
-        "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
-        [
-          {
-            "file": "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
-            "start": 3386,
-            "length": 9,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property 'updateNot' does not exist on type 'Alu'. Did you mean 'updateOr'?",
-            "relatedInformation": [
-              {
-                "file": "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
-                "start": 2622,
-                "length": 8,
-                "messageText": "'updateOr' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
-            "start": 3430,
-            "length": 17,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'updateLeftShifter' does not exist on type 'Alu'."
-          },
-          {
-            "file": "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
-            "start": 3482,
-            "length": 18,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'updateRightShifter' does not exist on type 'Alu'."
-          }
-        ]
-      ]
+      "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts"
     ]
   },
   "version": "3.5.3"

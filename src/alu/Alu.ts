@@ -26,7 +26,7 @@ class Alu {
   private orer = new ORer(this.inputA, this.inputB, this.enablerBus);
   private ander = new Ander(this.inputA, this.inputB, this.enablerBus);
   private notter = new Notter(this.inputA, this.enablerBus);
-  private leftShift = new leftShifter(this.inputA, this.enablerBus);
+  private leftShifter = new leftShifter(this.inputA, this.enablerBus);
   private rightShifter = new rightShifter(this.inputA, this.enablerBus);
   private adder = new Adder(this.inputA, this.inputB);
   private isZero = new IsZero(this.inputA);
@@ -41,7 +41,6 @@ class Alu {
   private largerThanOut: boolean = false;
   private equalOut: boolean = false;
 
-  private andGates = [new And(), new And(), new And()];
   constructor(
     private inputA: Bus,
     private inputB: Bus,
@@ -96,6 +95,26 @@ class Alu {
   };
   updateAnd = () => {
     this.ander.update();
+    this.enablers[this.index].update(this.enablerBus.get(), true);
+    this.outputBus.set(this.enablers[this.index].get());
+  };
+
+  updateNot = () => {
+    this.notter.update();
+    this.enablers[this.index].update(this.enablerBus.get(), true);
+    this.outputBus.set(this.enablers[this.index].get());
+  };
+
+  updateLeftShifter = () => {
+    this.leftShifter.update(this.carryIn);
+    this.carryOut = this.leftShifter.getShiftOut();
+    this.enablers[this.index].update(this.enablerBus.get(), true);
+    this.outputBus.set(this.enablers[this.index].get());
+  };
+
+  updateRightShifter = () => {
+    this.rightShifter.update(this.carryIn);
+    this.carryOut = this.rightShifter.getShiftOut();
     this.enablers[this.index].update(this.enablerBus.get(), true);
     this.outputBus.set(this.enablers[this.index].get());
   };

@@ -94,8 +94,8 @@
         "signature": "d27f18194584f2ac4effd8e50f989e49988397c78377a8bfe332ace7a47efb76"
       },
       "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts": {
-        "version": "c3078a11895fe350f01513a862db45843b45d9c6640e1888530bf3e20f483fce",
-        "signature": "d87aa6b2b800f8c49e832d15b090cd6e2bdd3e14eb85ceb321bd6ff1dfb95827"
+        "version": "2470fcc76d2e6ab18a6b38847a4ff7ebd667a8ee0f5efa262b46f8fb7d7d10cc",
+        "signature": "99174eca1b8c030c09a82a35814ec0503ce7a3d34c898e5b2f451b4c36e169a8"
       },
       "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts": {
         "version": "36e49f6565ac2ff1fc10605fee1988d3a3a603c5c551b14ba7e28922ba9ec402",
@@ -522,6 +522,7 @@
       "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
       "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/byte.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts",
@@ -550,8 +551,7 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts"
+      "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts"
     ]
   },
   "version": "3.5.3"

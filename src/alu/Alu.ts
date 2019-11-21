@@ -15,6 +15,7 @@ const AND = 3;
 const NOT = 4;
 const SHL = 5;
 const SHR = 6;
+const CMP = 7;
 
 class Alu {
   private enablerBus: Bus = new Bus(8);
@@ -29,7 +30,7 @@ class Alu {
   private leftShifter = new leftShifter(this.inputA, this.enablerBus);
   private rightShifter = new rightShifter(this.inputA, this.enablerBus);
   private adder = new Adder(this.inputA, this.inputB);
-  private isZero = new IsZero(this.inputA);
+  private isZeroer = new IsZero(this.inputA);
 
   private opDecoder = new Decoder3x8();
   private op: boolean[] = new Array(3).fill(false);
@@ -40,11 +41,13 @@ class Alu {
   private carryIn: boolean = false;
   private largerThanOut: boolean = false;
   private equalOut: boolean = false;
+  private isZero: boolean = false;
 
   constructor(
     private inputA: Bus,
     private inputB: Bus,
-    private outputBus: Bus
+    private outputBus: Bus,
+    private flagBus: Bus
   ) {
     for (let i = 0; i < 8; i++) {
       this.enablers[i] = new Enabler();
@@ -52,7 +55,7 @@ class Alu {
   }
 
   getZero = () => {
-    return this.isZero.get();
+    return this.isZero;
   };
 
   getCarry = () => {
@@ -140,7 +143,23 @@ class Alu {
         this.updateLeftShifter();
       case SHR:
         this.updateRightShifter();
+      case CMP:
+        this.isZeroer.update();
+        this.isZero = this.isZeroer.get();
+      default:
+        break;
     }
+
+    this.flagBus.set([
+      this.carryOut,
+      this.largerThanOut,
+      this.equalOut,
+      this.isZero,
+      false,
+      false,
+      false,
+      false
+    ]);
   };
 }
 

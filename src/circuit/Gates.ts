@@ -75,6 +75,34 @@ export class Or {
   };
 }
 
+export class Or8 {
+  private ouput: boolean = false;
+  private orGates: Or[] = [];
+  constructor() {
+    for (let i = 0; i < 7; i++) {
+      this.orGates[i] = new Or();
+    }
+  }
+
+  get = () => {
+    return this.ouput;
+  };
+
+  update = (inputA: boolean[]) => {
+    this.orGates[0].update(inputA[0], inputA[1]);
+    this.orGates[1].update(inputA[2], inputA[3]);
+    this.orGates[2].update(inputA[4], inputA[5]);
+    this.orGates[3].update(inputA[6], inputA[7]);
+
+    this.orGates[4].update(this.orGates[0].get(), this.orGates[1].get());
+    this.orGates[5].update(this.orGates[2].get(), this.orGates[3].get());
+
+    this.orGates[6].update(this.orGates[4].get(), this.orGates[5].get());
+
+    this.ouput = this.orGates[6].get();
+  };
+}
+
 export class Xor {
   private output: boolean = false;
   private nandGates = [new Nand(), new Nand(), new Nand()];

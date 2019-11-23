@@ -22,6 +22,10 @@ describe("Add", () => {
     add.update(true, false, true);
     expect(add.get()).toBe(false);
     expect(add.getCarryOut()).toBe(true);
+
+    add.update(false, true, true);
+    expect(add.get()).toBe(false);
+    expect(add.getCarryOut()).toBe(true);
   });
 });
 
@@ -69,6 +73,26 @@ describe("Adder", () => {
       false,
       false,
       true
+    ]);
+    expect(adder.getCarry()).toEqual(false);
+  });
+
+  it("should return the correct input", () => {
+    const testByte1 = [false, false, false, false, false, false, false, false];
+    const testByte2 = [false, false, false, false, false, false, false, true];
+    busA.set(testByte1);
+    busB.set(testByte2);
+
+    adder.update(true);
+    expect(adder.get()).toEqual([
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
     ]);
     expect(adder.getCarry()).toEqual(false);
   });

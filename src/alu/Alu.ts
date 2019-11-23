@@ -30,7 +30,7 @@ class Alu {
   private leftShifter = new leftShifter(this.inputA, this.enablerBus);
   private rightShifter = new rightShifter(this.inputA, this.enablerBus);
   private adder = new Adder(this.inputA, this.inputB);
-  private isZeroer = new IsZero(this.inputA);
+  private isZeroer = new IsZero(this.enablerBus);
 
   private opDecoder = new Decoder3x8();
   private op: boolean[] = new Array(3).fill(false);
@@ -68,6 +68,14 @@ class Alu {
 
   getEqual = () => {
     return this.equalOut;
+  };
+
+  setCarryIn = (carryIn: boolean) => {
+    this.carryIn = carryIn;
+  };
+
+  setOp = (op: boolean[]) => {
+    this.op = op;
   };
 
   updateOpDecoder = () => {
@@ -131,18 +139,18 @@ class Alu {
     switch (this.index) {
       case ADD:
         this.updateAdder();
-      case XOR:
-        this.updateXorer();
-      case OR:
-        this.updateOr();
-      case AND:
-        this.updateAnd();
-      case NOT:
-        this.updateNot();
       case SHL:
         this.updateLeftShifter();
       case SHR:
         this.updateRightShifter();
+      case NOT:
+        this.updateNot();
+      case AND:
+        this.updateAnd();
+      case OR:
+        this.updateOr();
+      case XOR:
+        this.updateXorer();
       case CMP:
         this.isZeroer.update();
         this.isZero = this.isZeroer.get();

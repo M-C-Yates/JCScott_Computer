@@ -21,14 +21,15 @@ export class Add {
   update = (inputA: boolean, inputB: boolean, carryIn: boolean) => {
     this.xor1.update(inputA, inputB);
     this.xor2.update(this.xor1.get(), carryIn);
+    this.sum = this.xor2.get();
 
     this.and1.update(inputA, inputB);
-    this.and2.update(this.xor1.get(), carryIn);
+    this.and2.update(carryIn, this.xor1.get());
     this.or1.update(this.and1.get(), this.and2.get());
-    this.sum = this.xor2.get();
     this.carryout = this.or1.get();
   };
 }
+
 export class Adder {
   private carryOut: boolean = false;
   private carryIn: boolean = false;
@@ -56,7 +57,6 @@ export class Adder {
       this.carryIn = this.adds[i].getCarryOut();
       this.carryOut = this.adds[i].getCarryOut();
     }
-    this.carryIn = false;
   };
 }
 

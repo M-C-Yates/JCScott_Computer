@@ -9,12 +9,12 @@ import { And } from "../circuit/Gates";
 import Enabler from "../components/Enabler";
 
 const ADD = 0;
-const XOR = 1;
-const OR = 2;
-const AND = 3;
-const NOT = 4;
-const SHL = 5;
-const SHR = 6;
+const SHR = 1;
+const SHL = 2;
+const NOT = 3;
+const AND = 4;
+const OR = 5;
+const XOR = 6;
 const CMP = 7;
 
 class Alu {
@@ -90,6 +90,8 @@ class Alu {
 
   updateAdder = () => {
     this.adder.update(this.carryIn);
+    this.carryOut = this.adder.getCarry();
+
     this.enablers[this.index].update(this.enablerBus.get(), true);
     this.outputBus.set(this.enablers[this.index].get());
   };
@@ -139,10 +141,10 @@ class Alu {
     switch (this.index) {
       case ADD:
         this.updateAdder();
-      case SHL:
-        this.updateLeftShifter();
       case SHR:
         this.updateRightShifter();
+      case SHL:
+        this.updateLeftShifter();
       case NOT:
         this.updateNot();
       case AND:

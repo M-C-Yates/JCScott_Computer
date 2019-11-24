@@ -284,6 +284,39 @@ describe("Alu", () => {
   it("alu ORer tests", () => {
     const OR = [true, false, true];
     testOp(OR, falseArr, falseArr, false, falseArr, true, false, false, true);
+    testOp(
+      OR,
+      [false, false, false, false, false, false, false, true],
+      [false, false, false, false, false, false, false, true],
+      false,
+      [false, false, false, false, false, false, false, true],
+      true,
+      false,
+      false,
+      false
+    );
+    testOp(
+      OR,
+      [false, false, false, false, false, false, false, true],
+      [false, false, false, false, false, false, false, false],
+      false,
+      [false, false, false, false, false, false, false, true],
+      true,
+      true,
+      false,
+      false
+    );
+    testOp(
+      OR,
+      [false, false, false, false, false, true, false, true],
+      [false, false, false, false, false, true, true, false],
+      false,
+      [false, false, false, false, false, true, true, true],
+      true,
+      true,
+      false,
+      false
+    );
   });
 
   it("alu XORer tests", () => {

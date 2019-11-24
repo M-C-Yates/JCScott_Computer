@@ -142,21 +142,37 @@ class Alu {
     switch (this.index) {
       case ADD:
         this.updateAdder();
+        break;
+
       case SHR:
         this.updateRightShifter();
+        break;
+
       case SHL:
         this.updateLeftShifter();
+        break;
+
       case NOT:
         this.updateNot();
+        break;
+
       case AND:
         this.updateAnd();
+        break;
+
       case OR:
         this.updateOr();
+        break;
+
       case XOR:
         this.updateXorer();
+        break;
+
       case CMP:
         this.isZeroer.update();
         this.isZero = this.isZeroer.get();
+        break;
+
       default:
         break;
     }

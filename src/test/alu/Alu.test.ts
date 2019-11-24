@@ -47,76 +47,76 @@ describe("Alu", () => {
   it("Alu Add should have correct output", () => {
     const ADD = [false, false, false];
 
-    testOp(ADD, falseArr, falseArr, false, falseArr, true, false, false, true);
-    testOp(
-      ADD,
-      falseArr,
-      [false, false, false, false, false, false, false, true],
-      false,
-      [false, false, false, false, false, false, false, true],
-      false,
-      false,
-      false,
-      false
-    );
-    testOp(
-      ADD,
-      [false, false, false, false, false, false, false, true],
-      [false, false, false, false, false, false, true, false],
-      false,
-      [false, false, false, false, false, false, true, true],
-      false,
-      false,
-      false,
-      false
-    );
-    testOp(
-      ADD,
-      [false, false, false, false, false, false, true, false],
-      [false, false, false, false, false, false, false, true],
-      false,
-      [false, false, false, false, false, false, true, true],
-      false,
-      true,
-      false,
-      false
-    );
-
-    testOp(
-      ADD,
-      [false, false, false, false, false, false, false, true],
-      [true, true, true, true, true, true, true, false],
-      false,
-      [true, true, true, true, true, true, true, true],
-      false,
-      false,
-      false,
-      false
-    );
-
-    testOp(
-      ADD,
-      [true, true, true, true, true, true, true, false],
-      [false, false, false, false, false, false, false, true],
-      false,
-      [true, true, true, true, true, true, true, true],
-      false,
-      true,
-      true,
-      false
-    );
-
+    // testOp(ADD, falseArr, falseArr, false, falseArr, true, false, false, true);
     // testOp(
     //   ADD,
     //   falseArr,
-    //   falseArr,
-    //   true,
+    //   [false, false, false, false, false, false, false, true],
+    //   false,
     //   [false, false, false, false, false, false, false, true],
     //   false,
     //   false,
     //   false,
     //   false
     // );
+    // testOp(
+    //   ADD,
+    //   [false, false, false, false, false, false, false, true],
+    //   [false, false, false, false, false, false, true, false],
+    //   false,
+    //   [false, false, false, false, false, false, true, true],
+    //   false,
+    //   false,
+    //   false,
+    //   false
+    // );
+    // testOp(
+    //   ADD,
+    //   [false, false, false, false, false, false, true, false],
+    //   [false, false, false, false, false, false, false, true],
+    //   false,
+    //   [false, false, false, false, false, false, true, true],
+    //   false,
+    //   true,
+    //   false,
+    //   false
+    // );
+
+    // testOp(
+    //   ADD,
+    //   [false, false, false, false, false, false, false, true],
+    //   [true, true, true, true, true, true, true, false],
+    //   false,
+    //   [true, true, true, true, true, true, true, true],
+    //   false,
+    //   false,
+    //   false,
+    //   false
+    // );
+
+    // testOp(
+    //   ADD,
+    //   [true, true, true, true, true, true, true, false],
+    //   [false, false, false, false, false, false, false, true],
+    //   false,
+    //   [true, true, true, true, true, true, true, true],
+    //   false,
+    //   true,
+    //   true,
+    //   false
+    // );
+
+    testOp(
+      ADD,
+      falseArr,
+      falseArr,
+      true,
+      [false, false, false, false, false, false, false, true],
+      true,
+      false,
+      false,
+      false
+    );
   });
 
   // it("Alu")

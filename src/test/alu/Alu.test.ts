@@ -347,8 +347,12 @@ describe("Alu", () => {
     );
   });
 
-  // it("alu CMP tests", () => {
-  //   const CMP = [true, true, true];
-  //   testOp(CMP, falseArr, falseArr, false, falseArr, true, false, false, true);
-  // });
+  it("alu CMP tests", () => {
+    const CMP = [true, true, true];
+    const testArr = [false, false, false, false, false, false, false, true];
+    testOp(CMP, falseArr, falseArr, false, falseArr, true, false, false, true);
+    testOp(CMP, testArr, testArr, false, falseArr, true, false, false, true);
+    testOp(CMP, testArr, falseArr, false, falseArr, false, true, false, true);
+    testOp(CMP, falseArr, testArr, false, falseArr, false, false, false, true);
+  });
 });

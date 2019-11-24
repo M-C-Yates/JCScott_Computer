@@ -83,6 +83,10 @@ class Alu {
     this.opDecoder.update(this.op[0], this.op[1], this.op[2]);
   };
 
+  enableComparator = () => {
+    this.outputBus.set(new Array(8).fill(false));
+  };
+
   updateComparator = () => {
     this.comparator.update();
     this.largerThanOut = this.comparator.getLarger();
@@ -169,6 +173,7 @@ class Alu {
         break;
 
       case CMP:
+        this.enableComparator();
         break;
 
       default:

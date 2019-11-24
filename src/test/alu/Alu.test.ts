@@ -241,4 +241,58 @@ describe("Alu", () => {
       true
     );
   });
+
+  it("alu ander tests", () => {
+    const AND = [true, false, false];
+    testOp(AND, falseArr, falseArr, false, falseArr, true, false, false, true);
+    testOp(
+      AND,
+      [false, false, false, false, false, false, false, true],
+      [false, false, false, false, false, false, false, false],
+      false,
+      [false, false, false, false, false, false, false, false],
+      false,
+      true,
+      false,
+      false
+    );
+    testOp(
+      AND,
+      [false, false, false, false, false, false, false, true],
+      [false, false, false, false, false, false, false, true],
+      false,
+      [false, false, false, false, false, false, false, true],
+      true,
+      true,
+      false,
+      false
+    );
+
+    testOp(
+      AND,
+      [true, true, true, true, true, true, true, true],
+      [true, true, true, true, true, true, true, true],
+      false,
+      [true, true, true, true, true, true, true, true],
+      true,
+      true,
+      false,
+      false
+    );
+  });
+
+  it("alu ORer tests", () => {
+    const OR = [true, false, true];
+    testOp(OR, falseArr, falseArr, false, falseArr, true, false, false, true);
+  });
+
+  it("alu XORer tests", () => {
+    const XOR = [true, true, false];
+    testOp(XOR, falseArr, falseArr, false, falseArr, true, false, false, true);
+  });
+
+  it("alu CMP tests", () => {
+    const CMP = [true, true, true];
+    testOp(CMP, falseArr, falseArr, false, falseArr, true, false, false, true);
+  });
 });

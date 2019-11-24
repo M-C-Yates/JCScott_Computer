@@ -322,10 +322,33 @@ describe("Alu", () => {
   it("alu XORer tests", () => {
     const XOR = [true, true, false];
     testOp(XOR, falseArr, falseArr, false, falseArr, true, false, false, true);
+    testOp(
+      XOR,
+      [false, false, false, false, false, false, false, true],
+      [false, false, false, false, false, false, false, true],
+      false,
+      [false, false, false, false, false, false, false, false],
+      true,
+      false,
+      false,
+      true
+    );
+
+    testOp(
+      XOR,
+      [false, false, false, false, false, false, false, true],
+      [false, false, false, false, false, false, false, false],
+      false,
+      [false, false, false, false, false, false, false, true],
+      false,
+      true,
+      false,
+      false
+    );
   });
 
-  it("alu CMP tests", () => {
-    const CMP = [true, true, true];
-    testOp(CMP, falseArr, falseArr, false, falseArr, true, false, false, true);
-  });
+  // it("alu CMP tests", () => {
+  //   const CMP = [true, true, true];
+  //   testOp(CMP, falseArr, falseArr, false, falseArr, true, false, false, true);
+  // });
 });

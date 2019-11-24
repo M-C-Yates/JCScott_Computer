@@ -20,7 +20,7 @@ class leftShifter {
     this.output[6] = this.output[7];
     this.output[7] = this.shiftIn;
 
-    this.outputBus.set(this.output);
+    this.outputBus.set([...this.output]);
   };
   getShiftOut = () => {
     return this.shiftOut;
@@ -46,8 +46,7 @@ export class rightShifter {
     this.output[2] = this.output[1];
     this.output[1] = this.output[0];
     this.output[0] = this.shiftIn;
-
-    this.outputBus.set(this.output);
+    this.outputBus.set([...this.output]);
   };
   getShiftOut = () => {
     return this.shiftOut;

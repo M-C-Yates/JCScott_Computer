@@ -137,8 +137,8 @@ class Alu {
     this.updateOpDecoder();
     this.index = this.opDecoder.getIndex();
     this.updateComparator();
+    this.isZeroer.update();
 
-    // switch statement to handle opcodes
     switch (this.index) {
       case ADD:
         this.updateAdder();
@@ -169,14 +169,13 @@ class Alu {
         break;
 
       case CMP:
-        this.isZeroer.update();
-        this.isZero = this.isZeroer.get();
         break;
 
       default:
         break;
     }
 
+    this.isZero = this.isZeroer.get();
     this.flagBus.set([
       this.carryOut,
       this.largerThanOut,

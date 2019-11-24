@@ -38,73 +38,73 @@ describe("Alu", () => {
     alu.update();
 
     expect(outputBus.get()).toEqual(output);
-    expect(alu.getCarry()).toEqual(expectedCarry);
-    expect(alu.getEqual()).toEqual(expectedEqual);
-    expect(alu.getLarger()).toEqual(expectedIsLarger);
-    expect(alu.getZero()).toEqual(expectedZero);
+    expect(alu.getCarry()).toEqual(flagBus.get()[0]);
+    expect(alu.getEqual()).toEqual(flagBus.get()[3]);
+    expect(alu.getLarger()).toEqual(flagBus.get()[1]);
+    expect(alu.getZero()).toEqual(flagBus.get()[3]);
   };
   const falseArr = [false, false, false, false, false, false, false, false];
   it("Alu Add should have correct output", () => {
     const ADD = [false, false, false];
 
-    // testOp(ADD, falseArr, falseArr, false, falseArr, true, false, false, true);
-    // testOp(
-    //   ADD,
-    //   falseArr,
-    //   [false, false, false, false, false, false, false, true],
-    //   false,
-    //   [false, false, false, false, false, false, false, true],
-    //   false,
-    //   false,
-    //   false,
-    //   false
-    // );
-    // testOp(
-    //   ADD,
-    //   [false, false, false, false, false, false, false, true],
-    //   [false, false, false, false, false, false, true, false],
-    //   false,
-    //   [false, false, false, false, false, false, true, true],
-    //   false,
-    //   false,
-    //   false,
-    //   false
-    // );
-    // testOp(
-    //   ADD,
-    //   [false, false, false, false, false, false, true, false],
-    //   [false, false, false, false, false, false, false, true],
-    //   false,
-    //   [false, false, false, false, false, false, true, true],
-    //   false,
-    //   true,
-    //   false,
-    //   false
-    // );
+    testOp(ADD, falseArr, falseArr, false, falseArr, true, false, false, true);
+    testOp(
+      ADD,
+      falseArr,
+      [false, false, false, false, false, false, false, true],
+      false,
+      [false, false, false, false, false, false, false, true],
+      false,
+      false,
+      false,
+      false
+    );
+    testOp(
+      ADD,
+      [false, false, false, false, false, false, false, true],
+      [false, false, false, false, false, false, true, false],
+      false,
+      [false, false, false, false, false, false, true, true],
+      false,
+      false,
+      false,
+      false
+    );
+    testOp(
+      ADD,
+      [false, false, false, false, false, false, true, false],
+      [false, false, false, false, false, false, false, true],
+      false,
+      [false, false, false, false, false, false, true, true],
+      false,
+      true,
+      false,
+      false
+    );
 
-    // testOp(
-    //   ADD,
-    //   [false, false, false, false, false, false, false, true],
-    //   [true, true, true, true, true, true, true, false],
-    //   false,
-    //   [true, true, true, true, true, true, true, true],
-    //   false,
-    //   false,
-    //   false,
-    //   false
-    // );
+    testOp(
+      ADD,
+      [false, false, false, false, false, false, false, true],
+      [true, true, true, true, true, true, true, false],
+      false,
+      [true, true, true, true, true, true, true, true],
+      false,
+      false,
+      false,
+      false
+    );
 
-    // testOp(
-    //   ADD,
-    //   [true, true, true, true, true, true, true, false],
-    //   [false, false, false, false, false, false, false, true],
-    //   false,
-    //   [true, true, true, true, true, true, true, true],
-    //   false,
-    //   true,
-    //   true,
-    //   false
-    // );
+    testOp(
+      ADD,
+      [true, true, true, true, true, true, true, false],
+      [false, false, false, false, false, false, false, true],
+      false,
+      [true, true, true, true, true, true, true, true],
+      false,
+      true,
+      true,
+      false
+    );
 
     testOp(
       ADD,

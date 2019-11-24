@@ -80,7 +80,7 @@ class Alu {
   };
 
   updateOpDecoder = () => {
-    this.opDecoder.update(this.op[2], this.op[1], this.op[0]);
+    this.opDecoder.update(this.op[0], this.op[1], this.op[2]);
   };
 
   updateComparator = () => {

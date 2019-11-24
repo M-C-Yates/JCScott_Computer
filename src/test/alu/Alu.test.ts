@@ -19,6 +19,8 @@ describe("Alu", () => {
   const flagBus = new Bus(8);
   const alu = new Alu(busA, busB, outputBus, flagBus);
 
+  const falseArr = [false, false, false, false, false, false, false, false];
+
   const testOp = (
     op: boolean[],
     inputA: boolean[],
@@ -33,7 +35,6 @@ describe("Alu", () => {
     busA.set([...inputA]);
     busB.set([...inputB]);
     alu.setCarryIn(carryIn);
-
     alu.setOp(op);
     alu.update();
 
@@ -43,7 +44,6 @@ describe("Alu", () => {
     expect(alu.getLarger()).toEqual(flagBus.get()[1]);
     expect(alu.getZero()).toEqual(flagBus.get()[3]);
   };
-  const falseArr = [false, false, false, false, false, false, false, false];
   it("Alu Add should have correct output", () => {
     const ADD = [false, false, false];
 
@@ -119,5 +119,61 @@ describe("Alu", () => {
     );
   });
 
-  // it("Alu")
+  it("Alu right shifter", () => {
+    // const SHR = [true, false, false];
+    const SHR = [false, false, true];
+    testOp(SHR, falseArr, falseArr, false, falseArr, true, false, false, true);
+    testOp(
+      SHR,
+      [false, false, false, false, false, false, true, false],
+      [false, false, false, false, false, false, true, false],
+      false,
+      [false, false, false, false, false, false, false, true],
+      true,
+      false,
+      false,
+      false
+    );
+    // should have correct carry out
+    testOp(
+      SHR,
+      [true, false, true, false, true, true, false, false],
+      [false, false, false, false, false, false, false, true],
+      false,
+      [false, true, false, true, false, true, true, false],
+      false,
+      true,
+      true,
+      false
+    );
+
+    // carry out
+    testOp(
+      SHR,
+      [true, true, false, false, false, false, false, false],
+      [false, false, false, false, false, false, false, true],
+      true,
+      [true, true, true, false, false, false, false, false],
+      false,
+      true,
+      false,
+      false
+    );
+  });
+
+  it("alu left shifter", () => {
+    const SHL = [false, true, false];
+    testOp(SHL, falseArr, falseArr, false, falseArr, true, false, false, true);
+    testOp(
+      SHL,
+      [false, false, false, false, false, false, true, false],
+      [false, false, false, false, false, false, true, false],
+      false,
+      [false, false, false, false, false, true, false, false],
+      true,
+      false,
+      false,
+      false
+    );
+  });
 });

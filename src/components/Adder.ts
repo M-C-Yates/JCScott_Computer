@@ -1,5 +1,4 @@
 import { And, Or, Xor } from "./../circuit/Gates";
-import { thisExpression } from "@babel/types";
 import Bus from "./Bus";
 
 export class Add {
@@ -23,8 +22,8 @@ export class Add {
     this.xor2.update(this.xor1.get(), carryIn);
     this.sum = this.xor2.get();
 
-    this.and1.update(inputA, inputB);
-    this.and2.update(carryIn, this.xor1.get());
+    this.and1.update(carryIn, this.xor1.get());
+    this.and2.update(inputA, inputB);
     this.or1.update(this.and1.get(), this.and2.get());
     this.carryout = this.or1.get();
   };
@@ -38,6 +37,7 @@ export class Adder {
   constructor(private inputA: Bus, private inputB: Bus) {
     for (let i = 0; i < 8; i++) {
       this.adds[i] = new Add();
+      this.sum[i] = false;
     }
   }
   get = () => {

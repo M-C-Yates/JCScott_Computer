@@ -105,16 +105,18 @@ export class Or8 {
 
 export class Xor {
   private output: boolean = false;
-  private nandGates = [new Nand(), new Nand(), new Nand()];
+  private nandGates = [new Nand(), new Nand(), new Nand(), new Nand()];
   constructor() {}
   get = () => {
     return this.output;
   };
   update = (inputA: boolean, inputB: boolean) => {
-    this.nandGates[0].update(!inputA, inputB);
-    this.nandGates[1].update(inputA, !inputB);
-    this.nandGates[2].update(this.nandGates[0].get(), this.nandGates[1].get());
-    this.output = this.nandGates[2].get();
+    this.nandGates[0].update(inputA, inputB);
+    this.nandGates[1].update(inputA, this.nandGates[0].get());
+    this.nandGates[2].update(this.nandGates[0].get(), inputB);
+    this.nandGates[3].update(this.nandGates[1].get(), this.nandGates[2].get());
+
+    this.output = this.nandGates[3].get();
   };
 }
 

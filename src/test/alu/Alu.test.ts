@@ -52,7 +52,7 @@ describe("Alu", () => {
       ADD,
       falseArr,
       [false, false, false, false, false, false, false, true],
-      true,
+      false,
       [false, false, false, false, false, false, false, true],
       false,
       false,
@@ -70,5 +70,54 @@ describe("Alu", () => {
       false,
       false
     );
+    testOp(
+      ADD,
+      [false, false, false, false, false, false, true, false],
+      [false, false, false, false, false, false, false, true],
+      false,
+      [false, false, false, false, false, false, true, true],
+      false,
+      true,
+      false,
+      false
+    );
+
+    testOp(
+      ADD,
+      [false, false, false, false, false, false, false, true],
+      [true, true, true, true, true, true, true, false],
+      false,
+      [true, true, true, true, true, true, true, true],
+      false,
+      false,
+      false,
+      false
+    );
+
+    testOp(
+      ADD,
+      [true, true, true, true, true, true, true, false],
+      [false, false, false, false, false, false, false, true],
+      false,
+      [true, true, true, true, true, true, true, true],
+      false,
+      true,
+      true,
+      false
+    );
+
+    // testOp(
+    //   ADD,
+    //   falseArr,
+    //   falseArr,
+    //   true,
+    //   [false, false, false, false, false, false, false, true],
+    //   false,
+    //   false,
+    //   false,
+    //   false
+    // );
   });
+
+  // it("Alu")
 });

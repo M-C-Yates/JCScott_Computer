@@ -8,14 +8,15 @@ import IsZero from "../components/IsZero";
 import { And } from "../circuit/Gates";
 import Enabler from "../components/Enabler";
 
-const ADD = 0;
-const SHR = 1;
-const SHL = 2;
-const NOT = 3;
-const AND = 4;
-const OR = 5;
-const XOR = 6;
-const CMP = 7;
+// binary codes represent decoder input
+const ADD = 0; // 000
+const SHR = 1; // 001
+const SHL = 2; // 010
+const NOT = 3; // 011
+const AND = 4; // 100
+const OR = 5; // 101
+const XOR = 6; // 110
+const CMP = 7; // 111
 
 class Alu {
   private enablerBus: Bus = new Bus(8);
@@ -91,7 +92,7 @@ class Alu {
   updateAdder = () => {
     this.adder.update(this.carryIn);
     this.carryOut = this.adder.getCarry();
-
+    this.enablerBus.set([...this.adder.get()]);
     this.enablers[this.index].update(this.enablerBus.get(), true);
     this.outputBus.set(this.enablers[this.index].get());
   };

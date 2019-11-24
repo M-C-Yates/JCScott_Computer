@@ -20,6 +20,7 @@ describe("Alu", () => {
   const alu = new Alu(busA, busB, outputBus, flagBus);
 
   const falseArr = [false, false, false, false, false, false, false, false];
+  const trueArr = [true, true, true, true, true, true, true, true];
 
   const testOp = (
     op: boolean[],
@@ -198,6 +199,46 @@ describe("Alu", () => {
       true,
       false,
       false
+    );
+  });
+
+  it("alu notter tests", () => {
+    const NOT = [false, true, true];
+    testOp(NOT, falseArr, falseArr, false, trueArr, true, false, false, true);
+    testOp(
+      NOT,
+      [false, false, false, false, false, false, false, true],
+      [false, false, false, false, false, false, false, false],
+      false,
+      [true, true, true, true, true, true, true, false],
+      false,
+      true,
+      false,
+      false
+    );
+
+    testOp(
+      NOT,
+      [false, true, false, true, false, true, false, true],
+      [false, false, false, false, false, false, false, false],
+      false,
+      [true, false, true, false, true, false, true, false],
+      false,
+      true,
+      false,
+      false
+    );
+
+    testOp(
+      NOT,
+      [true, true, true, true, true, true, true, true],
+      [false, false, false, false, false, false, false, false],
+      false,
+      [false, false, false, false, false, false, false, false],
+      false,
+      true,
+      false,
+      true
     );
   });
 });

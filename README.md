@@ -1,5 +1,6 @@
 <h1 align="center">basic-computer</h1>
-![Actions Status](https://github.com/{owner}/{repo}/workflows/{workflow_name}/badge.svg)](https://github.com/{owner}/{repo}/actions)
+![Actions Status](https://github.com/{M-C-Yatesr}/{basic-computer}/workflows/{Node CI
+}/badge.svg)](https://github.com/{owner}/{repo}/actions)
 <!-- <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/M-C-Yates/basic-computer#readme" target="_blank">

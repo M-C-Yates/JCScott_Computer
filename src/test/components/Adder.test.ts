@@ -22,6 +22,10 @@ describe("Add", () => {
     add.update(true, false, true);
     expect(add.get()).toBe(false);
     expect(add.getCarryOut()).toBe(true);
+
+    add.update(false, true, true);
+    expect(add.get()).toBe(false);
+    expect(add.getCarryOut()).toBe(true);
   });
 });
 
@@ -30,12 +34,15 @@ describe("Adder", () => {
   const busB = new Bus(8);
   const busC = new Bus(8);
 
-  const adder = new Adder();
+  const adder = new Adder(busA, busB);
 
   it("should return the correct input", () => {
     const testByte1 = [false, false, false, false, false, false, false, false];
     const testByte2 = [false, false, false, false, false, false, false, false];
-    adder.update(testByte1, testByte2, false);
+    busA.set(testByte1);
+    busB.set(testByte2);
+
+    adder.update(false);
     expect(adder.get()).toEqual(new Array(8).fill(false));
     expect(adder.getCarry()).toEqual(false);
   });
@@ -43,7 +50,9 @@ describe("Adder", () => {
   it("should return the correct input", () => {
     const testByte1 = [true, false, false, false, false, false, false, false];
     const testByte2 = [false, true, true, true, true, true, true, true];
-    adder.update(testByte1, testByte2, false);
+    busA.set(testByte1);
+    busB.set(testByte2);
+    adder.update(false);
     expect(adder.get()).toEqual(new Array(8).fill(true));
     expect(adder.getCarry()).toEqual(false);
   });
@@ -51,7 +60,10 @@ describe("Adder", () => {
   it("should return the correct input", () => {
     const testByte1 = [false, false, false, false, false, false, false, false];
     const testByte2 = [false, false, false, false, false, false, false, false];
-    adder.update(testByte1, testByte2, true);
+    busA.set(testByte1);
+    busB.set(testByte2);
+
+    adder.update(true);
     expect(adder.get()).toEqual([
       false,
       false,
@@ -64,10 +76,33 @@ describe("Adder", () => {
     ]);
     expect(adder.getCarry()).toEqual(false);
   });
+
+  it("should return the correct input", () => {
+    const testByte1 = [false, false, false, false, false, false, false, false];
+    const testByte2 = [false, false, false, false, false, false, false, true];
+    busA.set(testByte1);
+    busB.set(testByte2);
+
+    adder.update(true);
+    expect(adder.get()).toEqual([
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+    ]);
+    expect(adder.getCarry()).toEqual(false);
+  });
   it("should return the correct input", () => {
     const testByte1 = new Array(8).fill(true);
     const testByte2 = new Array(8).fill(true);
-    adder.update(testByte1, testByte2, false);
+    busA.set(testByte1);
+    busB.set(testByte2);
+
+    adder.update(false);
     expect(adder.get()).toEqual([
       true,
       true,

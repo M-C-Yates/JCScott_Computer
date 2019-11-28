@@ -38,9 +38,12 @@ export class Decoder3x8 {
   ];
   private notGates: Not[] = [new Not(), new Not(), new Not()];
   private outputs: boolean[] = new Array(8).fill(false);
-
+  private index: number = 0;
   get = () => {
     return this.outputs;
+  };
+  getIndex = () => {
+    return this.index;
   };
   update = (inputA: boolean, inputB: boolean, inputC: boolean) => {
     this.notGates[0].update(inputA);
@@ -86,6 +89,13 @@ export class Decoder3x8 {
 
     this.andGates[7].update(inputA, inputB, inputC);
     this.outputs[7] = this.andGates[7].get();
+
+    for (let i = 0; i < 8; i++) {
+      let val = this.andGates[i].get();
+      if (val) {
+        this.index = i;
+      }
+    }
   };
 }
 

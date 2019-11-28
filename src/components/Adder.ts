@@ -1,5 +1,4 @@
 import { And, Or, Xor } from "./../circuit/Gates";
-import { thisExpression } from "@babel/types";
 import Bus from "./Bus";
 
 export class Add {
@@ -21,22 +20,24 @@ export class Add {
   update = (inputA: boolean, inputB: boolean, carryIn: boolean) => {
     this.xor1.update(inputA, inputB);
     this.xor2.update(this.xor1.get(), carryIn);
-
-    this.and1.update(inputA, inputB);
-    this.and2.update(this.xor1.get(), carryIn);
-    this.or1.update(this.and1.get(), this.and2.get());
     this.sum = this.xor2.get();
+
+    this.and1.update(carryIn, this.xor1.get());
+    this.and2.update(inputA, inputB);
+    this.or1.update(this.and1.get(), this.and2.get());
     this.carryout = this.or1.get();
   };
 }
+
 export class Adder {
   private carryOut: boolean = false;
   private carryIn: boolean = false;
   private adds: Add[] = new Array(8);
   private sum: boolean[] = new Array(8);
-  constructor() {
+  constructor(private inputA: Bus, private inputB: Bus) {
     for (let i = 0; i < 8; i++) {
       this.adds[i] = new Add();
+      this.sum[i] = false;
     }
   }
   get = () => {
@@ -46,9 +47,9 @@ export class Adder {
     return this.carryOut;
   };
 
-  update = (inputA: boolean[], inputB: boolean[], carryIn: boolean) => {
-    const byte1 = [...inputA];
-    const byte2 = [...inputB];
+  update = (carryIn: boolean) => {
+    const byte1 = [...this.inputA.get()];
+    const byte2 = [...this.inputB.get()];
     this.carryIn = carryIn;
     for (let i = 7; i >= 0; i--) {
       this.adds[i].update(byte1[i], byte2[i], this.carryIn);
@@ -56,8 +57,6 @@ export class Adder {
       this.carryIn = this.adds[i].getCarryOut();
       this.carryOut = this.adds[i].getCarryOut();
     }
-    console.log(this.sum);
-    this.carryIn = false;
   };
 }
 

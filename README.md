@@ -1,6 +1,5 @@
 <h1 align="center">basic-computer</h1>
-![Actions Status](https://github.com/{M-C-Yatesr}/{basic-computer}/workflows/{Node CI
-}/badge.svg)](https://github.com/{M-C-Yates}/{basic-computer}/actions)
+
 <!-- <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/M-C-Yates/basic-computer#readme" target="_blank">
@@ -16,6 +15,7 @@
 
 > An implementation of John C. Scotts 8-bit computer written in typescript.
 
+![](https://github.com/M-C-Yates/basic-computer/workflows/test/badge.svg)
 ## Specs
 
 - `Memory`: 256 bytes

@@ -102,8 +102,8 @@
         "signature": "c5578226bab27e7dc612305234097ba7353e384e60a706b62912657ba6de7ae8"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": {
-        "version": "346317422603ea80f83c3e51d66dde3b8d5cb623cff7d6f2723d246dc672da79",
-        "signature": "892e6c1b31fda0e551de70d25d6f9fccf74d02fb458f16c63dd0c37d2402396e"
+        "version": "25b35869fa4f31305b239ae04d20ad18726fc74ded3d943084b2b172e5457ac2",
+        "signature": "ad3bcd9e694824a756108092a9b7b58e54dfd36d7eb85e8f232e3a7eb4700b36"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/register.ts": {
         "version": "fb4fd8bde5ef8871816938fa9f0b7f37621af57da3cbd428e8ef3dd1bb3d5cf3",
@@ -150,7 +150,7 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/busone.test.ts": {
-        "version": "bed7966777052653b147c057b7c41f73eff44f0912b4037bcd469f95f42afe90",
+        "version": "239b5021f10a8c936953eacf0994efd333ace77561746b9470d0d0ea991b4a8f",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/comparator.test.ts": {
@@ -316,7 +316,6 @@
         "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/register.ts": [
@@ -546,6 +545,7 @@
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/adder.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/busone.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/comparator.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/components.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/decoders.test.ts",
@@ -570,32 +570,7 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      [
-        "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
-        [
-          {
-            "file": "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
-            "start": 386,
-            "length": 3,
-            "messageText": "Member 'get' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7008
-          }
-        ]
-      ],
-      [
-        "c:/webstuff/projects/jcscottcomp/src/test/components/busone.test.ts",
-        [
-          {
-            "file": "c:/webstuff/projects/jcscottcomp/src/test/components/busone.test.ts",
-            "start": 475,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'update' does not exist on type 'BusOne'."
-          }
-        ]
-      ]
+      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts"
     ]
   },
   "version": "3.5.3"

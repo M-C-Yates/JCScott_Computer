@@ -10,7 +10,12 @@ describe("BusOne", () => {
 
   it("should correctly set bus to one", () => {
     inputBus.set(testArr1);
-    busOne.update();
+    busOne.update(true);
     expect(outputBus.get()).toEqual(testOut);
+  });
+  it("should correctly keep input byte", () => {
+    inputBus.set(testArr1);
+    busOne.update(false);
+    expect(outputBus.get()).toEqual(testArr1);
   });
 });

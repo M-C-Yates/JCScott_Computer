@@ -3,18 +3,17 @@ import Memory256B from "../../memory/Memory";
 
 describe("Memory", () => {
   const bus = new Bus(8);
-  const addrBus = new Bus(8);
-  const mem = new Memory256B(bus, bus, addrBus);
+  const mem = new Memory256B(bus, bus);
   const address = [false, false, false, false, true, true, true, true]; // [0][15]
   const testVal = [false, false, false, false, false, false, false, true];
   const testVal2 = [false, false, false, false, false, false, true, true];
 
   const falseArr = new Array(8).fill(false);
 
-  addrBus.set(address);
-  bus.set(testVal);
+  bus.set(address);
 
   it("test write", () => {
+    mem.updateAddress();
     bus.set(testVal);
 
     mem.update(true, true);
@@ -34,6 +33,7 @@ describe("Memory", () => {
   });
 
   it("does not update when set is false", () => {
+    mem.updateAddress();
     bus.set(testVal);
     mem.update(false, true);
 

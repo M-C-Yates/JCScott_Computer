@@ -118,8 +118,8 @@
         "signature": "0f8628f67eebb1ab2af27bc057e468a8b9bb482c8a0f7d75c8059d4ba5beb6f3"
       },
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": {
-        "version": "e4d9c681c998d707bbe21cfe24ade0965254e9257cfe066d190766e879d8891d",
-        "signature": "f4848798d1db199a86f3581d43b9f2dba344d7a9877c624c969c87daf0b2d733"
+        "version": "c2200e5b35e89c3b2b37d139bf31e9351afab021126df913ed8cc9360c2a1754",
+        "signature": "297b4954ce9f314915b37eb5b717891d1e6a920bd0ddc1d3d9fcd8da12a6507a"
       },
       "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts": {
         "version": "cb09c3afa993ae7b49f959caaf73c2b4e43b50995aa95a9ff770cfbdfd703442",
@@ -338,7 +338,9 @@
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
-        "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts"
+        "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
+        "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts": [
         "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
@@ -468,7 +470,7 @@
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts": [
         "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
@@ -534,6 +536,7 @@
       "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
       "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
       "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
@@ -569,8 +572,7 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts"
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts"
     ]
   },
   "version": "3.5.3"

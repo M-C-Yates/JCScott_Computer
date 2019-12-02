@@ -5,13 +5,15 @@ import BusOne from "../components/BusOne";
 import Alu from "../alu/Alu";
 
 class Cpu {
+  private clockState: boolean = false;
+
+  // busses
   private accBus = new Bus(8);
   private addressBus = new Bus(8);
   private aluBus = new Bus(8);
   private aluToFlagBus = new Bus(8);
   private controlBus = new Bus(8);
   private ioBus = new Bus(8);
-  private flagBus = new Bus(8);
   private tmpBus = new Bus(8);
 
   // general purpose registers
@@ -26,9 +28,14 @@ class Cpu {
   private flagsReg = new Register(this.aluToFlagBus, this.flagBus, "flags");
 
   // components
-  private alu = new Alu(this.aluBus, this.tmpBus, this.accBus, this.flagBus);
+  private alu = new Alu(
+    this.aluBus,
+    this.tmpBus,
+    this.accBus,
+    this.aluToFlagBus
+  );
 
-  constructor(private mainBus: Bus) {
+  constructor(private mainBus: Bus, private flagBus: Bus) {
     const initVal = new Array(8).fill(false);
     this.flagsReg.enable();
     this.tmpReg.enable();

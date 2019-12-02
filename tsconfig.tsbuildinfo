@@ -110,8 +110,8 @@
         "signature": "b6ab6a001602b5a87a32701d22aa6f77ffdac9b13538c6d4b974d10b33cc382c"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts": {
-        "version": "758514d01147c08957e1f973b771ed2716910b50c6cf2883b0df6c618829a116",
-        "signature": "722a255a61c731c63c860ea349d98e79209a3965b301ea2073bd7d9ef122bacf"
+        "version": "04cb747ba3211d893e8119834a38dc2fcf556cb7461e8112f5684d5164c1d863",
+        "signature": "780e0c334ef4784da07e57293e05ae6361dabac76b7df33f6d44685673de3c9b"
       },
       "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": {
         "version": "e07dcdfefa785ae72d481a7f92051987d0e3b95efd13ae9e41709a7e80756446",
@@ -186,8 +186,8 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/stepper.test.ts": {
-        "version": "9d75ead93f667e4ef936063b2523ee42aee9f9024e9003ba6e205c2b2be98419",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "version": "6f2ee69362eb8e0db00f125b6652aff5c3483bcd1666e5068d75f74812c83388",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts": {
         "version": "d4d1b0b3c88b55dce7d5b70612d3469ac934cefef66b9317fbcc5829ead2622a",
@@ -407,6 +407,9 @@
       "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/stepper.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",

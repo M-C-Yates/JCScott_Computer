@@ -105,6 +105,48 @@ export class Or4 {
     this.output = or1 || or2;
   };
 }
+export class Or5 {
+  private output: boolean = false;
+
+  get = () => {
+    return this.output;
+  };
+
+  update = (
+    inputA: boolean,
+    inputB: boolean,
+    inputC: boolean,
+    inputD: boolean,
+    inputE: boolean
+  ) => {
+    const or1 = inputA || inputB;
+    const or2 = inputC || inputD;
+    const or3 = or1 || or2;
+    this.output = or3 || inputE;
+  };
+}
+
+export class Or6 {
+  private output: boolean = false;
+
+  get = () => {
+    return this.output;
+  };
+
+  update = (
+    inputA: boolean,
+    inputB: boolean,
+    inputC: boolean,
+    inputD: boolean,
+    inputE: boolean,
+    inputF: boolean
+  ) => {
+    const or1 = inputA || inputB;
+    const or2 = inputC || inputD;
+    const or3 = inputE || inputF;
+    this.output = or1 || or2 || or3;
+  };
+}
 
 export class Or8 {
   private ouput: boolean = false;

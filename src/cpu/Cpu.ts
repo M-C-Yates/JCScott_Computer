@@ -1,5 +1,5 @@
 import { Decoder3x8, InstrDecoder3x8 } from "./../components/Decoders";
-import { And, And3, Not, Or } from "./../circuit/Gates";
+import { And, And3, Not, Or, Or4, Or3, Or5, Or6 } from "./../circuit/Gates";
 import Register from "../components/Register";
 import Bus from "../components/Bus";
 import Memory256B from "../memory/Memory";
@@ -63,9 +63,61 @@ class Cpu {
   private irInstructionNotGate = new Not();
 
   private ioBusEnableGate = new And();
-  private registerAEnableOrGate = new Or();
-  private registerBEnableOrGate = new Or();
-  private registerBSetOrGate = new Or();
+
+  private registerAEnableOrGate = new Or3();
+  private registerBEnableOrGate = new Or4();
+  private registerBSetOrGate = new Or4();
+  private registerAEnable = false;
+  private registerBEnable = false;
+
+  private accEnableOrGate = new Or4();
+  private accEnableAndGate = new And();
+
+  private busOneEnableOrGate = new Or4();
+
+  private iarEnableOrGate = new Or4();
+  private iarEnableAndGate = new And();
+
+  private ramEnableOrGate = new Or5();
+  private ramEnableAndGate = new And();
+
+  private gpRegEnableAndGates: And[] = new Array(8);
+  private gpRegEnableOrGates: Or[] = [new Or(), new Or(), new Or(), new Or()];
+  private gpRegSetAndGates: And3[] = [
+    new And3(),
+    new And3(),
+    new And3(),
+    new And3()
+  ];
+
+  private ioBusSetGate = new And();
+
+  private irBit4NotGate = new Not();
+  private irSetAndGate = new And();
+
+  private marSetOrGate = new Or6();
+  private marSetAndGate = new And();
+
+  private iarSetOrGate = new Or6();
+  private iarSetAndGate = new And();
+
+  private accSetOrGate = new Or4();
+
+  private ramSetAndGate = new And();
+
+  private tmpSetAndGate = new And();
+
+  private flagsSetOrGate = new Or();
+  private flagsSetAndGate = new And();
+
+  private registerBSet: boolean = false;
+
+  private flagStateGates = [new And(), new And(), new And(), new And()];
+  private flagStateOrGate = new Or();
+
+  private aluopAndGates = [new And3(), new And3(), new And3()];
+
+  private carryTemp: boolean = false;
 
   constructor(private mainBus: Bus, private flagBus: Bus) {
     const initVal = new Array(8).fill(false);
@@ -80,6 +132,7 @@ class Cpu {
         this.step5Gates[i] = new And();
       }
       this.step4Gates[i] = new And();
+      this.gpRegEnableAndGates[i] = new And();
     }
   }
   cycle = () => {

@@ -177,7 +177,7 @@ class Cpu {
     for (let i = 1; i < 8; i++) {
       this.step4Gates[i].update(
         this.stepper.get()[3],
-        this.instructionDecoder3x8.selectorGates[7].get()
+        this.instructionDecoder3x8.selectorGates[i].get()
       );
     }
   };

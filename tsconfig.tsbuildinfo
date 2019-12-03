@@ -122,7 +122,7 @@
         "signature": "c21ef0021a23fbf155184ff599a97214d7680d505fc503303e0d44cfb695bd4d"
       },
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": {
-        "version": "6be8c2417b3550bb44a3e8e59e5b22564be103eb83eee0dd9e1fb7a4b2c1bf4e",
+        "version": "46524d71d2fba0db48db5cf9b28057a0906034d9faa44b18a52e0a775bb4e5d4",
         "signature": "e36901ae2957c7fa165c5def87e0753569542d444bb505c3bf7184884970b993"
       },
       "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts": {
@@ -562,6 +562,7 @@
       "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts",
       "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
       "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
+      "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/byte.test.ts",
@@ -698,8 +699,7 @@
             "messageText": "Property 'updateStates' does not exist on type 'Cpu'."
           }
         ]
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts"
+      ]
     ]
   },
   "version": "3.5.3"

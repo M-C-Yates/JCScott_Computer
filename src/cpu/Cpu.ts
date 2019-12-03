@@ -1,8 +1,12 @@
+import { Decoder3x8, InstrDecoder3x8 } from "./../components/Decoders";
+import { And, And3, Not, Or } from "./../circuit/Gates";
 import Register from "../components/Register";
 import Bus from "../components/Bus";
 import Memory256B from "../memory/Memory";
 import BusOne from "../components/BusOne";
 import Alu from "../alu/Alu";
+import Stepper from "../components/Stepper";
+import Decoder2x4 from "../components/Decoders";
 
 class Cpu {
   private clockState: boolean = false;
@@ -35,13 +39,95 @@ class Cpu {
     this.aluToFlagBus
   );
 
+  // control section
+  private stepper = new Stepper();
+  private iRegister = new Register(this.mainBus, this.controlBus, "IR"); // Instruction Register
+  private iARegister = new Register(this.mainBus, this.controlBus, "IAR"); // Instruction Address Register
+
+  // decoders
+  private instructionDecoderEnables2x4: Decoder2x4[] = [
+    new Decoder2x4(),
+    new Decoder2x4()
+  ];
+  private instructionDecoderSet2x4: Decoder2x4 = new Decoder2x4();
+  private instructionDecoder3x8: InstrDecoder3x8 = new InstrDecoder3x8();
+  // gates
+  private step4Gates: And[] = new Array(8);
+  private step4Gate3And = new And3();
+  private step5Gates: And[] = new Array(6);
+  private step5Gate3And = new And3();
+  private step6Gates = [new And3(), new And3()];
+  private step6Gates2And = new And();
+
+  private irInstructionAndGate = new And3();
+  private irInstructionNotGate = new Not();
+
+  private ioBusEnableGate = new And();
+  private registerAEnableOrGate = new Or();
+  private registerBEnableOrGate = new Or();
+  private registerBSetOrGate = new Or();
+
   constructor(private mainBus: Bus, private flagBus: Bus) {
     const initVal = new Array(8).fill(false);
     this.flagsReg.enable();
     this.tmpReg.enable();
     this.flagsReg.update(initVal);
     this.tmpReg.update(initVal);
+    this.iRegister.disable();
+
+    for (let i = 0; i < 8; i++) {
+      if (i < 6) {
+        this.step5Gates[i] = new And();
+      }
+      this.step4Gates[i] = new And();
+    }
   }
+  cycle = () => {
+    this.clockState = !this.clockState;
+    this.step();
+    this.clockState = !this.clockState;
+    this.step();
+  };
+  step = () => {
+    this.stepper.update(this.clockState);
+
+    this.runStep4Gates();
+    this.runStep5Gates();
+    this.runStep6Gates();
+
+    this.runEnable(this.clockState);
+    this.updateStates();
+
+    if (this.clockState) {
+      this.runEnable(false);
+      this.updateStates();
+    }
+
+    this.runSet(this.clockState);
+    this.updateStates();
+
+    if (this.clockState) {
+      this.runSet(false);
+      this.updateStates();
+    }
+
+    this.mainBus.clear();
+  };
+
+  updateInstructionDecoder3x8 = () => {};
+
+  runStep4Gates = () => {
+    this.step4Gates[0].update(
+      this.stepper.get()[3],
+      this.iRegister.readByte()[4]
+    );
+    for (let i = 1; i < 8; i++) {
+      this.step4Gates[i].update(
+        this.stepper.get()[3],
+        this.instructionDecoder3x8.selectorGates[7].get()
+      );
+    }
+  };
 }
 
 export default Cpu;

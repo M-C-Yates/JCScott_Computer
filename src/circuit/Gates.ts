@@ -75,6 +75,37 @@ export class Or {
   };
 }
 
+export class Or3 {
+  private output: boolean = false;
+
+  get = () => {
+    return this.output;
+  };
+
+  update = (inputA: boolean, inputB: boolean, inputC: boolean) => {
+    this.output = inputA || inputB || inputC;
+  };
+}
+
+export class Or4 {
+  private output: boolean = false;
+
+  get = () => {
+    return this.output;
+  };
+
+  update = (
+    inputA: boolean,
+    inputB: boolean,
+    inputC: boolean,
+    inputD: boolean
+  ) => {
+    const or1 = inputA || inputB;
+    const or2 = inputC || inputD;
+    this.output = or1 || or2;
+  };
+}
+
 export class Or8 {
   private ouput: boolean = false;
   private orGates: Or[] = [];

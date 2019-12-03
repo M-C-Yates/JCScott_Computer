@@ -50,8 +50,8 @@
         "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/bus.ts": {
-        "version": "189c3f09b9267b98c9270ca10fd17d29041a23bca86b35e515ecc7c468384a56",
-        "signature": "f51ac229d524fa2d1a37a831a94b92f563447f6e52c8381eae6bb7bd19e7206d"
+        "version": "8e853711f43daa8d1fd535ab4ec4228c4dad016c4f81a97d14de89cc2ce2f8a5",
+        "signature": "705fc9eca04fa17bbbf7da483f17185c42d5ced3f7dd3f83455f2b451939dcd1"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts": {
         "version": "d496b17abbcd4fd19e635f2ec8fffe52cd386790b7fda7a06cff936db0b98466",
@@ -62,12 +62,12 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts": {
-        "version": "ded8700cb5f0de3964eeb8d0f5116f7d65c28cd605c0d1b8445ab82e7e929e06",
-        "signature": "222b77a99c13bc35046e3bedbc7dba20bf5903e5fc867c83e2ac94dd0bf411c2"
+        "version": "ec47a1e78c256a190e55c0ace66eddad10819cf22772cc98ed0b2cbf4a1ef1a5",
+        "signature": "f12d93b644b43aebf197a441b9a12fe7c38f1c06ceb69245c0c4a62a727d7389"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": {
-        "version": "1eca2013ac06dc25b9de79361b2b861446a03d0f098ace90983ca46595d81c76",
-        "signature": "3e7739f978968234ae53cc13e8a41d31ee4f63aab1a6037af8591ebccad1aa28"
+        "version": "bb616c62451f52f98464cc6cb3a36d61d5201a478a38404c829b5256b5728d10",
+        "signature": "c7cefd6c843d5d82c9913adda0a97a7f416f7576a2a7a12461844eadafe143b8"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": {
         "version": "9537e3d5f22af8260a734186c30d30dcf960f42ea632df367a697614e9ee6842",
@@ -110,8 +110,8 @@
         "signature": "b6ab6a001602b5a87a32701d22aa6f77ffdac9b13538c6d4b974d10b33cc382c"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts": {
-        "version": "04cb747ba3211d893e8119834a38dc2fcf556cb7461e8112f5684d5164c1d863",
-        "signature": "780e0c334ef4784da07e57293e05ae6361dabac76b7df33f6d44685673de3c9b"
+        "version": "534511c619fa74d59b049a4cd1de24b76fdf4503ed114c7dc712f94c3876914f",
+        "signature": "73a1dbf5d104ba9e4795181ff181e777ec9d6232800921a331dd8e09f3cc1e9e"
       },
       "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": {
         "version": "e07dcdfefa785ae72d481a7f92051987d0e3b95efd13ae9e41709a7e80756446",
@@ -122,8 +122,8 @@
         "signature": "c21ef0021a23fbf155184ff599a97214d7680d505fc503303e0d44cfb695bd4d"
       },
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": {
-        "version": "a6a4e8bbbfc8e7f48d230c1bb265a1179e5ce4536229e0125a9903ef7662ee2a",
-        "signature": "1969a0cc35d0cef2520b689ca5e871bfcb5d04838a5e8e740c6926d864b9bc8e"
+        "version": "04caa3ae6b63201cec6e7bfd7471b6f25e164084ab655cdf61db8394f356a6b5",
+        "signature": "101bb6f7ef6be927a8ca26559d94d927427e2e59b81f17564dda988063961552"
       },
       "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts": {
         "version": "cb09c3afa993ae7b49f959caaf73c2b4e43b50995aa95a9ff770cfbdfd703442",
@@ -348,11 +348,14 @@
         "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
         "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
-        "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts"
+        "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts": [
         "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
@@ -457,6 +460,9 @@
       "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
       ],
+      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
+      ],
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
       ],
@@ -541,38 +547,21 @@
       "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts",
       "c:/webstuff/projects/jcscottcomp/src/index.ts",
-      "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/adder.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
-      "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
-      "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
-      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
-      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
-      "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
-      "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/byte.test.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/adder.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/busone.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/comparator.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/components.test.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/components/decoders.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/iszero.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/register.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/stepper.test.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts",
@@ -589,7 +578,128 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts"
+      "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/adder.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
+      "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
+      "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts",
+      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
+      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
+      [
+        "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+        [
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+            "start": 3216,
+            "length": 13,
+            "code": 2551,
+            "category": 1,
+            "messageText": "Property 'runStep5Gates' does not exist on type 'Cpu'. Did you mean 'runStep4Gates'?",
+            "relatedInformation": [
+              {
+                "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+                "start": 3661,
+                "length": 13,
+                "messageText": "'runStep4Gates' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+            "start": 3243,
+            "length": 13,
+            "code": 2551,
+            "category": 1,
+            "messageText": "Property 'runStep6Gates' does not exist on type 'Cpu'. Did you mean 'runStep4Gates'?",
+            "relatedInformation": [
+              {
+                "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+                "start": 3661,
+                "length": 13,
+                "messageText": "'runStep4Gates' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+            "start": 3272,
+            "length": 9,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'runEnable' does not exist on type 'Cpu'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+            "start": 3310,
+            "length": 12,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'updateStates' does not exist on type 'Cpu'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+            "start": 3368,
+            "length": 9,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'runEnable' does not exist on type 'Cpu'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+            "start": 3398,
+            "length": 12,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'updateStates' does not exist on type 'Cpu'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+            "start": 3433,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'runSet' does not exist on type 'Cpu'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+            "start": 3468,
+            "length": 12,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'updateStates' does not exist on type 'Cpu'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+            "start": 3526,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'runSet' does not exist on type 'Cpu'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+            "start": 3553,
+            "length": 12,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'updateStates' does not exist on type 'Cpu'."
+          }
+        ]
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/decoders.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts"
     ]
   },
   "version": "3.5.3"

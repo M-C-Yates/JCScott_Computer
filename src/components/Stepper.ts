@@ -43,7 +43,7 @@ class Stepper {
     }
   };
 
-  step = () => {
+  private step = () => {
     this.clkInNotGate.update(this.clkIn);
     this.resetNot.update(this.output[6]);
 

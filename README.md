@@ -16,6 +16,7 @@
 > An implementation of John C. Scotts 8-bit computer written in typescript.
 
 ![](https://github.com/M-C-Yates/basic-computer/workflows/test/badge.svg)
+
 ## Specs
 
 - `Memory`: 256 bytes
@@ -42,4 +43,4 @@ npm run test
 ## License
 
 Copyright © 2019 [Matthew Yates](https://github.com/M-C-Yates).<br />
-This project is [ISC](https://github.com/M-C-Yates/basic-computer/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/M-C-Yates/basic-computer/blob/master/LICENSE) licensed.

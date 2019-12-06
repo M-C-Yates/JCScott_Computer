@@ -28,7 +28,13 @@ class Register {
     this.enabler.update(this.byte.get(), this.enableOutput);
     this.enabler.get().forEach((val, i) => (this.output[i] = val));
     if (this.enableOutput) {
-      this.outputBus.set(this.output);
+      this.outputBus.set([...this.output]);
+    }
+  };
+
+  setBus = () => {
+    if (this.enableOutput) {
+      this.outputBus.set([...this.output]);
     }
   };
 

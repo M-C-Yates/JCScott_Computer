@@ -183,17 +183,19 @@ class Cpu {
     this.busOne.update(step);
 
     this.clockEnable = true;
-    this.iarEnableAndGate.update(this.clockEnable, step);
+    // this.iarEnableAndGate.update(this.clockEnable, step);
     this.iARegister.enable();
-
+    this.iARegister.setBus();
     this.clockSet = true;
-
-    this.marSetAndGate.update(this.clockSet, step);
+    // this.marSetAndGate.update(this.clockSet, step);
+    this.memory.updateAddress();
 
     this.accSetAndGate.update(this.clockSet, step);
     this.accReg.set();
+
     this.clockSet = false;
     this.accReg.disable();
+
     this.clockEnable = false;
     this.iARegister.disable();
   };

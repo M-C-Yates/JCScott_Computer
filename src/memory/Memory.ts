@@ -38,7 +38,7 @@ class Memory256B {
   };
   update = (set?: boolean, enable?: boolean) => {
     if (enable !== undefined) {
-      this.enable = enable || this.enable;
+      this.enable = enable;
     }
     if (set !== undefined) {
       this.set = set;

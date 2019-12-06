@@ -9,6 +9,14 @@
         "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
         "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
       },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1",
+        "signature": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743",
+        "signature": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743"
+      },
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
         "version": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4",
         "signature": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4"
@@ -49,17 +57,41 @@
         "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
         "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
       },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0",
+        "signature": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "ff8ad203e83338289b0f5defc1a5b5c253fb7d251b464db497383f915a0df3f4",
+        "signature": "ff8ad203e83338289b0f5defc1a5b5c253fb7d251b464db497383f915a0df3f4"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f",
+        "signature": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c",
+        "signature": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6",
+        "signature": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46",
+        "signature": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46"
+      },
       "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts": {
         "version": "5ceb7d816ce3fedd81b5a543ced5771cbb24c60cd0c151f7bded0e00b62f92cf",
-        "signature": "cad4309a0f33de0311f9424b45eb46952576de29b00b6ede959fde93658af1fc"
+        "signature": "bbb46433059d97ba982d4a5c5b4c6d23fab53066b314b49184fc8c06daf73b29"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": {
         "version": "bb616c62451f52f98464cc6cb3a36d61d5201a478a38404c829b5256b5728d10",
-        "signature": "c7cefd6c843d5d82c9913adda0a97a7f416f7576a2a7a12461844eadafe143b8"
+        "signature": "fd1c211753fd0b5111102caf73690793e0cab0b04df49c8ecc73661146614d52"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts": {
         "version": "0c12ac61fa632e96b8f9b9ed00af4987e3601cf4348f107cb17fa277650f89b4",
-        "signature": "d27f18194584f2ac4effd8e50f989e49988397c78377a8bfe332ace7a47efb76"
+        "signature": "179941dbd8026589676f16e5ef32ce0dbd3b1a8701f6195f7ad362190c35c803"
       },
       "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts": {
         "version": "c29107feeb8178b17bd59923dbcb8e8be07e74ca2e5f9cbf7a4dc46ceaf963ae",
@@ -67,31 +99,31 @@
       },
       "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts": {
         "version": "b4da57f5875a326ede1a3db2860c232037ef4c9955a09964d42604c7ad3a24cb",
-        "signature": "c5578226bab27e7dc612305234097ba7353e384e60a706b62912657ba6de7ae8"
+        "signature": "9645c74773d2d127a7b6d90a5dccc01cc2b42a064fd228508fb9fd32f3e09165"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/bus.ts": {
         "version": "8e853711f43daa8d1fd535ab4ec4228c4dad016c4f81a97d14de89cc2ce2f8a5",
-        "signature": "705fc9eca04fa17bbbf7da483f17185c42d5ced3f7dd3f83455f2b451939dcd1"
+        "signature": "1562d67e4c630340d12643ac089c0bcf144a7f38c9154c7fb82a7030a435273d"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/register.ts": {
         "version": "758d3907349046e0bcda4473204ec0cb43bb8a88f0e6302e7a92dd3df69e4839",
-        "signature": "44d391f22c7e4a042f9a422cbc8d818565034282ff0ead36a05d0bf0292db121"
+        "signature": "b156352dcb2c45cacc08472e53d0217f8fc99a181abac90d9b626febf01fb740"
       },
       "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": {
         "version": "e07dcdfefa785ae72d481a7f92051987d0e3b95efd13ae9e41709a7e80756446",
-        "signature": "b678a69e9ab60f5c9a7b91a854190411f7f29c3f4963ee9f9638f633920a696f"
+        "signature": "676e618373b97ea0c2a20c1510d72d6bcc1055f2b577a0f5da94f39b8162835a"
       },
       "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts": {
         "version": "5ee705483fecdb014ec6caf3ef406585b88a04ef481b56d64c48c81bbd14aedd",
-        "signature": "eb7975c7385a76d8fe575d28a3e5c75a92ddf36cfe29ef32d61dfacbebf1c06e"
+        "signature": "96c8dcf7ff677a676334e5bab4375f9c0dc64ce3fe33c03a84b24197ce09eeff"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": {
         "version": "f43dc2f9f41a6ddb57a5bcdb38e64f5445a6ba3fd2d0050a37dff2a8caefaa0d",
-        "signature": "cf4f585daab08a6caa07ab8a79d13c0436efa58776e946bda4d3ab8ed32cc656"
+        "signature": "450425c93cabb870fbf61182041554a5bc96159dbad71ecec551ad9d04296b38"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": {
         "version": "9537e3d5f22af8260a734186c30d30dcf960f42ea632df367a697614e9ee6842",
-        "signature": "3adb7caea6366fd5c856f426b9878b529803f332eed95baf26ec34e9a6932be4"
+        "signature": "b4cfa8697790834f18c8857a45127864c5d81645948e9a9a1c8ba7b6ec13c3b1"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts": {
         "version": "d496b17abbcd4fd19e635f2ec8fffe52cd386790b7fda7a06cff936db0b98466",
@@ -103,7 +135,7 @@
       },
       "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts": {
         "version": "6c6f827ab62ab0d02acb3d524d9a140900762ed8c9f1f7bbe0edc1c61283ae37",
-        "signature": "8c9107701e3177ead088a5847323f41b3564617097372707e04a9463e087af6e"
+        "signature": "fa0d33153fedcbd85cb2ec380687e29f6be48785a1f4ef30ceb97c26ecb1b59b"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts": {
         "version": "7da569211fdeb0766d60adad4b979fa4fc66af41cc18c104ed20d5be5bbd924a",
@@ -111,11 +143,11 @@
       },
       "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts": {
         "version": "cf0958697580d3caf98ac1cad85b4becf325669c33d387c91a34b3c602fca0ac",
-        "signature": "bb38f8cd7892aca037f394bbe746c6402fe434c33e4362731347afa92f13cc32"
+        "signature": "a7b9a1d2ce3ae305e7ae7d7732b6e9b077f74d1428cf436799d303ddc7e1dcd2"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts": {
         "version": "534511c619fa74d59b049a4cd1de24b76fdf4503ed114c7dc712f94c3876914f",
-        "signature": "73a1dbf5d104ba9e4795181ff181e777ec9d6232800921a331dd8e09f3cc1e9e"
+        "signature": "5ade9ad97635dc8c11fee0afbefac46c98cfebfe91b8b1e80e591374be14579b"
       },
       "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts": {
         "version": "74f9bcff3ff74cf869dd567eefb979e017a6d5d7503c39ee11582f7c10e21d02",
@@ -125,12 +157,12 @@
         "version": "f4cf83bdb593d6cd05c97cd77c98c19f72c4abb820cc88eaff352df47ff81656",
         "signature": "e1972e4c8e2775b492ffbe3578b78f924db418485904855a7448d6b9760d0c53"
       },
-      "c:/webstuff/projects/jcscottcomp/src/utils/booltobinary.ts": {
-        "version": "2620aa5eec70bb23ce41f7b3029d26c645545803b156e93a64160c472fd56cd3",
-        "signature": "91bbc5dae7df89cf3b8967db956c95fad792390bc013451be30be718b2bb0d93"
+      "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts": {
+        "version": "867f414966eecb6c9c313457883da083e9e795ca22c32037dd30f02ea0aa8695",
+        "signature": "597f4ca9b6638e1ed577269d34df876c71e4eb968e08190af7ab6cbb0ff24baa"
       },
       "c:/webstuff/projects/jcscottcomp/src/index.ts": {
-        "version": "a3053504e4353d852fb397b0028b46325c371231b48b8daa3a93cbb700fb5e79",
+        "version": "cc58390dbbd0d98159a2b18e087eb96361e31e1148a4d9892f68a421436a2f8b",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts": {
@@ -201,6 +233,18 @@
         "version": "e5e059896336f89aef70eb0a29b9f9e1ade42d05dc3b4e011543c73d027609b4",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
+      "c:/webstuff/projects/jcscottcomp/src/utils/binnumtostring.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/utils/bintobool.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/utils/booltobinary.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts": {
         "version": "b71b7d1e18c61f41ed9b3917a6ccf2929022278154d9f55e2b8990549c1826a9",
         "signature": "b71b7d1e18c61f41ed9b3917a6ccf2929022278154d9f55e2b8990549c1826a9"
@@ -263,10 +307,10 @@
       }
     },
     "options": {
-      "target": 1,
+      "target": 4,
       "module": 1,
       "lib": [
-        "lib.es2015.d.ts",
+        "lib.es2017.d.ts",
         "lib.dom.d.ts"
       ],
       "declaration": true,
@@ -360,7 +404,7 @@
       ],
       "c:/webstuff/projects/jcscottcomp/src/index.ts": [
         "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
-        "c:/webstuff/projects/jcscottcomp/src/utils/booltobinary.ts"
+        "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts": [
         "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
@@ -536,6 +580,8 @@
     "semanticDiagnosticsPerFile": [
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts",
@@ -546,6 +592,12 @@
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
@@ -565,19 +617,7 @@
       "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
-      [
-        "c:/webstuff/projects/jcscottcomp/src/utils/booltobinary.ts",
-        [
-          {
-            "file": "c:/webstuff/projects/jcscottcomp/src/utils/booltobinary.ts",
-            "start": 97,
-            "length": 1,
-            "messageText": "The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.",
-            "category": 1,
-            "code": 2363
-          }
-        ]
-      ],
+      "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
       "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts",
@@ -595,6 +635,9 @@
       "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/stepper.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/utils/binnumtostring.ts",
+      "c:/webstuff/projects/jcscottcomp/src/utils/bintobool.ts",
+      "c:/webstuff/projects/jcscottcomp/src/utils/booltobinary.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts",

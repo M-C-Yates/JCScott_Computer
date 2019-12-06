@@ -16,8 +16,10 @@ describe("Memory", () => {
     mem.updateAddress();
     bus.set(testVal);
 
-    mem.update(true, true);
-
+    // mem.update(true, true);
+    mem.updateEnable(true);
+    mem.updateSet(true);
+    mem.update();
     expect(mem.readMem(0, 14)).toEqual(falseArr);
     expect(mem.readMem(0, 15)).toEqual(testVal);
     expect(bus.get()).toEqual(testVal);

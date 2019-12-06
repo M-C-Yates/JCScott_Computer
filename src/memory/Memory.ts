@@ -11,6 +11,10 @@ class Memory256B {
   private decoderRow = new Decoder4x16();
   private memory: Cell[][] = new Array(16).fill([]);
 
+  // flags
+  private enable: boolean = false;
+  private set: boolean = false;
+
   constructor(private inputBus: Bus, private outputBus: Bus) {
     for (let i = 0; i < 16; i++) {
       for (let j = 0; j < 16; j++) {
@@ -19,20 +23,34 @@ class Memory256B {
     }
     this.addressRegister.enable();
   }
+  public updateEnable = (enable: boolean) => {
+    this.enable = enable;
+  };
+
+  public updateSet = (set: boolean) => {
+    this.set = set;
+  };
 
   updateAddress = () => {
     this.addressRegister.set();
     this.addressRegister.update();
     this.addressRegister.unSet();
   };
-  update = (set: boolean, enable: boolean) => {
+  update = (set?: boolean, enable?: boolean) => {
+    if (enable !== undefined) {
+      this.enable = enable || this.enable;
+    }
+    if (set !== undefined) {
+      this.set = set;
+    }
+
     const address = this.addressRegister.get();
     this.decoderRow.update(address[0], address[1], address[2], address[3]);
     this.decoderCol.update(address[4], address[5], address[6], address[7]);
 
     this.address[0] = this.decoderRow.getIndex();
     this.address[1] = this.decoderCol.getIndex();
-    this.memory[this.address[0]][this.address[1]].update(set, enable);
+    this.memory[this.address[0]][this.address[1]].update(this.set, this.enable);
   };
 
   readMem = (row: number, col: number) => {

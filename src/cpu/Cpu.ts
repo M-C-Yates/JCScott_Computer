@@ -7,6 +7,7 @@ import BusOne from "../components/BusOne";
 import Alu from "../alu/Alu";
 import Stepper from "../components/Stepper";
 import Decoder2x4 from "../components/Decoders";
+import { throwStatement } from "@babel/types";
 
 class Cpu {
   private clockState: boolean = false;
@@ -65,6 +66,8 @@ class Cpu {
   private step6Gates = [new And3(), new And3()];
   private step6Gates2And = new And();
 
+  // flag gates
+
   private irInstructionAndGate = new And3();
   private irInstructionNotGate = new Not();
   private irBit4NotGate = new Not();
@@ -81,6 +84,8 @@ class Cpu {
 
   private accEnableOrGate = new Or4();
   private accEnableAndGate = new And();
+  private accSetOrGate = new Or4();
+  private accSetAndGate = new And();
 
   private busOneEnableOrGate = new Or4();
 
@@ -104,8 +109,6 @@ class Cpu {
 
   private marSetOrGate = new Or6();
   private marSetAndGate = new And();
-
-  private accSetOrGate = new Or4();
 
   private tmpSetAndGate = new And();
 
@@ -180,15 +183,19 @@ class Cpu {
     this.busOne.update(step);
 
     this.clockEnable = true;
+    this.iarEnableAndGate.update(this.clockEnable, step);
+    this.iARegister.enable();
 
     this.clockSet = true;
+
     this.marSetAndGate.update(this.clockSet, step);
 
-    this.iarEnableAndGate.update(this.clockEnable, step);
-    this.accEnableAndGate.update(this.clockSet, step);
+    this.accSetAndGate.update(this.clockSet, step);
+    this.accReg.set();
     this.clockSet = false;
-
+    this.accReg.disable();
     this.clockEnable = false;
+    this.iARegister.disable();
   };
 
   runStepTwo = () => {
@@ -197,8 +204,10 @@ class Cpu {
 
     this.clockSet = true;
     this.irSetAndGate.update(this.clockSet, step);
+    this.iRegister.set();
 
     this.clockSet = false;
+    this.iRegister.unSet();
     this.ramEnableAndGate.update(this.clockEnable, step);
     this.clockEnable = false;
   };
@@ -208,6 +217,8 @@ class Cpu {
     this.clockEnable = true;
 
     this.clockSet = true;
+    this.iarSetAndGate.update(this.clockSet, step);
+    this.accEnableAndGate.update(this.clockEnable, step);
 
     this.clockSet = false;
 

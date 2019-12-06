@@ -176,8 +176,6 @@ class Cpu {
   updateInstructionDecoder3x8 = () => {};
 
   runStepOne = () => {
-    const step = this.stepper.get()[0];
-
     this.clockEnable = true;
     this.accReg.enable();
 
@@ -202,7 +200,6 @@ class Cpu {
   };
 
   runStepTwo = () => {
-    const step = this.stepper.get()[1];
     this.clockEnable = true;
     this.memory.setMem(0, 0, 0b01);
     this.memory.setBus();
@@ -219,7 +216,6 @@ class Cpu {
   };
 
   runStepThree = () => {
-    const step = this.stepper.get()[2];
     this.clockEnable = true;
     this.accReg.enable();
     this.accReg.setBus();

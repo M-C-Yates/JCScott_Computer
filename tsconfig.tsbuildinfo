@@ -158,7 +158,7 @@
         "signature": "74f9bcff3ff74cf869dd567eefb979e017a6d5d7503c39ee11582f7c10e21d02"
       },
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": {
-        "version": "05f37ca5b5f6e039d8210379ca66fe5e7c92b986f9740066338f3e67c9570f54",
+        "version": "5669a29eef7b5effeb1e59653ffc49fd65b5583ef90294ec71194fbdcdc5fac2",
         "signature": "bff08e2d5a9b838a97eb7215d54e7ff45c0c6a6bb890dbfd5c3ce87f413c4eeb"
       },
       "c:/webstuff/projects/jcscottcomp/src/index.ts": {
@@ -653,7 +653,19 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts"
+      [
+        "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+        [
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+            "start": 5630,
+            "length": 4,
+            "messageText": "Cannot find name 'step'. Did you mean the instance member 'this.step'?",
+            "category": 1,
+            "code": 2663
+          }
+        ]
+      ]
     ]
   },
   "version": "3.5.3"

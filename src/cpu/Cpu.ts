@@ -147,6 +147,8 @@ class Cpu {
   step = () => {
     this.stepper.update(this.clockState);
     this.runStepOne();
+    this.runStepTwo();
+    this.runStepThree();
 
     // this.runStep4Gates();
     // this.runStep5Gates();
@@ -182,13 +184,34 @@ class Cpu {
     this.clockSet = true;
     this.marSetAndGate.update(this.clockSet, step);
 
-    this.iarEnableAndGate.update(step, this.clockEnable);
+    this.iarEnableAndGate.update(this.clockEnable, step);
     this.accEnableAndGate.update(this.clockSet, step);
     this.clockSet = false;
 
     this.clockEnable = false;
+  };
 
-    console.log(this.accEnableAndGate.get());
+  runStepTwo = () => {
+    const step = this.stepper.get()[1];
+    this.clockEnable = true;
+
+    this.clockSet = true;
+    this.irSetAndGate.update(this.clockSet, step);
+
+    this.clockSet = false;
+    this.ramEnableAndGate.update(this.clockEnable, step);
+    this.clockEnable = false;
+  };
+
+  runStepThree = () => {
+    const step = this.stepper.get()[2];
+    this.clockEnable = true;
+
+    this.clockSet = true;
+
+    this.clockSet = false;
+
+    this.clockEnable = false;
   };
 
   // runStep4Gates = () => {

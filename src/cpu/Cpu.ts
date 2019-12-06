@@ -215,19 +215,25 @@ class Cpu {
     this.iRegister.unSet();
 
     this.clockEnable = false;
+    this.mainBus.clear();
   };
 
   runStepThree = () => {
     const step = this.stepper.get()[2];
     this.clockEnable = true;
+    this.accReg.enable();
+    this.accReg.setBus();
 
     this.clockSet = true;
-    this.iarSetAndGate.update(this.clockSet, step);
-    this.accEnableAndGate.update(this.clockEnable, step);
+    this.iARegister.set();
+    this.iARegister.update();
 
     this.clockSet = false;
+    this.iARegister.unSet();
 
     this.clockEnable = false;
+    this.accReg.disable();
+    this.mainBus.clear();
   };
 }
 

@@ -176,6 +176,7 @@ class Cpu {
   updateInstructionDecoder3x8 = () => {};
 
   runStepOne = () => {
+    const step = this.stepper.get()[0];
     this.clockEnable = true;
     this.accReg.enable();
 

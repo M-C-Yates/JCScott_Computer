@@ -16,11 +16,8 @@ class Cpu {
 
   // busses
   private accBus = new Bus(8);
-  private addressBus = new Bus(8);
-  private aluBus = new Bus(8);
   private aluToFlagBus = new Bus(8);
   private controlBus = new Bus(8);
-  private ioBus = new Bus(8);
   private flagBus = new Bus(8);
   private mainBus = new Bus(8);
   private tmpBus = new Bus(8);
@@ -40,7 +37,7 @@ class Cpu {
 
   // components
   private alu = new Alu(
-    this.aluBus,
+    this.mainBus,
     this.tmpBus,
     this.accBus,
     this.aluToFlagBus
@@ -132,7 +129,7 @@ class Cpu {
     this.iARegister.disable();
     this.flagsReg.update(initVal);
     this.tmpReg.update(initVal);
-
+    this.iARegister.setByte(0b0);
     for (let i = 0; i < 8; i++) {
       if (i < 6) {
         this.step5Gates[i] = new And();
@@ -180,37 +177,43 @@ class Cpu {
 
   runStepOne = () => {
     const step = this.stepper.get()[0];
-    this.busOne.update(step);
 
     this.clockEnable = true;
-    // this.iarEnableAndGate.update(this.clockEnable, step);
-    this.iARegister.enable();
-    this.iARegister.setBus();
-    this.clockSet = true;
-    // this.marSetAndGate.update(this.clockSet, step);
-    this.memory.updateAddress();
+    this.accReg.enable();
 
-    this.accSetAndGate.update(this.clockSet, step);
+    this.iARegister.enable();
+    this.iARegister.update();
+
+    this.clockSet = true;
     this.accReg.set();
+    this.busOne.update(step);
+
+    this.memory.updateAddress();
+    this.alu.update();
+    this.accReg.update();
 
     this.clockSet = false;
-    this.accReg.disable();
+    this.accReg.unSet();
 
     this.clockEnable = false;
+    this.accReg.disable();
     this.iARegister.disable();
+    this.mainBus.clear();
   };
 
   runStepTwo = () => {
     const step = this.stepper.get()[1];
     this.clockEnable = true;
+    this.memory.setMem(0, 0, 0b01);
+    this.memory.setBus();
 
     this.clockSet = true;
-    this.irSetAndGate.update(this.clockSet, step);
     this.iRegister.set();
+    this.iRegister.update();
 
     this.clockSet = false;
     this.iRegister.unSet();
-    this.ramEnableAndGate.update(this.clockEnable, step);
+
     this.clockEnable = false;
   };
 
@@ -226,24 +229,6 @@ class Cpu {
 
     this.clockEnable = false;
   };
-
-  // runStep4Gates = () => {
-  //   this.step4Gates[0].update(
-  //     this.stepper.get()[3],
-  //     this.iRegister.readByte()[4]
-  //   );
-  //   for (let i = 1; i < 8; i++) {
-  //     this.step4Gates[i].update(
-  //       this.stepper.get()[3],
-  //       this.instructionDecoder3x8.selectorGates[i].get()
-  //     );
-  //   }
-  //   this.step4Gate3And.update(
-  //     this.stepper.get()[3],
-  //     this.instructionDecoder3x8.selectorGates[7].get(),
-  //     this.ir
-  //   );
-  // };
 }
 
 export default Cpu;

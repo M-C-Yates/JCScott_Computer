@@ -48,13 +48,10 @@ class Stepper {
     this.resetNot.update(this.output[6]);
 
     this.inputOrGates[0].update(this.reset, this.clkInNotGate.get());
-    // console.log(this.reset, this.clkInNotGate.get());
 
     this.inputOrGates[1].update(this.reset, this.clkIn);
-    // console.log(this.reset, this.clkIn);
 
     this.bits[0].update(this.resetNot.get(), this.inputOrGates[0].get());
-    // console.log(this.bits[0].get(), this.inputOrGates[1].get());
     this.bits[1].update(this.bits[0].get(), this.inputOrGates[1].get());
     this.outputNotGates[0].update(this.bits[1].get());
     this.outputOrGate.update(this.outputNotGates[0].get(), this.reset);

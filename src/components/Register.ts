@@ -1,6 +1,8 @@
+import { binToBool } from "./../utils/binUtils";
 import Enabler from "./Enabler";
 import Byte from "../circuit/Byte";
 import Bus from "./Bus";
+import binToString from "../utils/binUtils";
 
 class Register {
   private byte = new Byte();
@@ -36,6 +38,12 @@ class Register {
     if (this.enableOutput) {
       this.outputBus.set([...this.output]);
     }
+  };
+
+  setByte = (byte: number) => {
+    let data = binToBool(binToString(byte));
+
+    this.byte.update([...data], true);
   };
 
   disable = () => {

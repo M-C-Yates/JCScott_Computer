@@ -11,25 +11,14 @@ class Cell {
   constructor(private inputBus: Bus, private outputBus: Bus) {}
 
   get = () => {
-    return this.register.get();
+    return [...this.register.readByte()];
+  };
+
+  setCell = (byte: number) => {
+    this.register.setByte(byte);
   };
 
   update = (set: boolean, enable: boolean) => {
-    // this.gates[0].update(true, set);
-    // this.gates[1].update(true, enable);
-
-    // if (this.gates[0].get()) {
-    //   this.register.set();
-    // } else {
-    //   this.register.unSet();
-    // }
-    // if (this.gates[1].get()) {
-    //   this.register.enable();
-    // } else {
-    //   this.register.disable();
-    // }
-
-    // console.log(set, enable);
     if (set) {
       this.register.set();
     } else {

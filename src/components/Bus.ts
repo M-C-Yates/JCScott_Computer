@@ -12,6 +12,9 @@ class Bus {
   set = (input: boolean[]) => {
     this.data = input;
   };
+  clear = () => {
+    this.data = [...new Array(8).fill(false)];
+  };
 }
 
 export default Bus;

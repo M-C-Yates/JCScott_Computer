@@ -1,7 +1,7 @@
 import Bus from "./Bus";
 class BusOne {
   private output = new Array(8).fill(false);
-  constructor(public inputBus: Bus, public outputBus: Bus) {}
+  constructor(private inputBus: Bus, private outputBus: Bus) {}
   get = () => {
     return this.output;
   };

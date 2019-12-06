@@ -99,6 +99,18 @@ export class Decoder3x8 {
   };
 }
 
+export class InstrDecoder3x8 {
+  public decoder = new Decoder3x8();
+  public selectorGates: And[] = new Array(8);
+  public bit0NotGate: Not = new Not();
+
+  constructor() {
+    for (let i = 0; i < 8; i++) {
+      this.selectorGates[i] = new And();
+    }
+  }
+}
+
 export class Decoder4x16 {
   private andGates: And4[] = new Array(16);
   private notGates: Not[] = new Array(4);

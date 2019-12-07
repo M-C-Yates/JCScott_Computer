@@ -66,62 +66,6 @@ class Cpu {
   private step6Gates = [new And3(), new And3()];
   private step6Gates2And = new And();
 
-  // flag gates
-
-  private irInstructionAndGate = new And3();
-  private irInstructionNotGate = new Not();
-  private irBit4NotGate = new Not();
-  private irSetAndGate = new And();
-
-  private ioBusEnableGate = new And();
-  private ioBusSetGate = new And();
-
-  private registerAEnableOrGate = new Or3();
-  private registerBEnableOrGate = new Or4();
-  private registerBSetOrGate = new Or4();
-  private registerAEnable = false;
-  private registerBEnable = false;
-
-  private accEnableOrGate = new Or4();
-  private accEnableAndGate = new And();
-  private accSetOrGate = new Or4();
-  private accSetAndGate = new And();
-
-  private busOneEnableOrGate = new Or4();
-
-  private iarEnableOrGate = new Or4();
-  private iarEnableAndGate = new And();
-  private iarSetOrGate = new Or6();
-  private iarSetAndGate = new And();
-
-  private ramEnableOrGate = new Or5();
-  private ramEnableAndGate = new And();
-  private ramSetAndGate = new And();
-
-  private gpRegEnableAndGates: And[] = new Array(8);
-  private gpRegEnableOrGates: Or[] = [new Or(), new Or(), new Or(), new Or()];
-  private gpRegSetAndGates: And3[] = [
-    new And3(),
-    new And3(),
-    new And3(),
-    new And3()
-  ];
-
-  private marSetOrGate = new Or6();
-  private marSetAndGate = new And();
-
-  private tmpSetAndGate = new And();
-
-  private flagsSetOrGate = new Or();
-  private flagsSetAndGate = new And();
-
-  private registerBSet: boolean = false;
-
-  private flagStateGates = [new And(), new And(), new And(), new And()];
-  private flagStateOrGate = new Or();
-
-  private aluopAndGates = [new And3(), new And3(), new And3()];
-
   private carryTemp: boolean = false;
 
   constructor() {
@@ -138,7 +82,6 @@ class Cpu {
         this.step5Gates[i] = new And();
       }
       this.step4Gates[i] = new And();
-      this.gpRegEnableAndGates[i] = new And();
     }
   }
   cycle = () => {
@@ -180,9 +123,55 @@ class Cpu {
 
   handleInstruction = () => {
     const instruction = this.instructionDecode();
+    const RA = instruction[2];
+    const RB = instruction[3];
+    // instruction breakdown
+    // alu | op | RA | RB
     switch (instruction[0]) {
       case true:
         this.alu.setOp([...instruction[1]]);
+
+        switch (this.stepper.getIndex()) {
+          case 3:
+            if (this.clockState) {
+              this.gpRegs[RB].setByte(0b0001);
+              this.gpRegs[RB].enable();
+              this.gpRegs[RB].update();
+              this.tmpReg.set();
+              this.tmpReg.update();
+              this.tmpReg.unSet();
+              this.gpRegs[RB].disable();
+              this.mainBus.clear();
+            }
+            break;
+          case 4:
+            this.gpRegs[RA].setByte(0b0001);
+            this.gpRegs[RA].enable();
+            this.gpRegs[RA].update();
+
+            this.alu.update();
+
+            this.accReg.set();
+            this.accReg.update();
+            this.accReg.unSet();
+
+            this.gpRegs[RA].disable();
+
+            this.mainBus.clear();
+            break;
+          case 5:
+            this.accReg.enable();
+            this.gpRegs[RB].set();
+            this.accReg.setBus();
+
+            this.gpRegs[RB].update();
+            this.gpRegs[RB].unSet();
+
+            this.accReg.disable();
+
+            this.mainBus.clear();
+            break;
+        }
         switch (instruction[1]) {
           case [false, false, false]:
             // 1000 RARB | ADD RA,RB | add
@@ -246,6 +235,7 @@ class Cpu {
 
   runStepOne = () => {
     const step = this.stepper.get()[0];
+    console.log(this.stepper.getIndex());
     this.clockEnable = true;
     this.accReg.enable();
 
@@ -304,7 +294,7 @@ class Cpu {
 
   instructionDecode = () => {
     // const instruction = this.iRegister.readByte();
-    const instruction = [true, false, true, false, false, false, true, false];
+    const instruction = [true, false, false, false, false, false, true, false];
     this.instructionDecoderEnables2x4[0].update(instruction[4], instruction[5]);
     this.instructionDecoderEnables2x4[1].update(instruction[6], instruction[7]);
 
@@ -320,7 +310,6 @@ class Cpu {
       registerB
     ];
 
-    console.log(decoded);
     return decoded;
   };
 

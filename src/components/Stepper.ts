@@ -14,6 +14,7 @@ class Stepper {
   private outputAndGates: And[] = new Array(5);
   private outputNotGates: Not[] = new Array(6);
   private outputOrGate: Or = new Or();
+  private index: number = 0;
 
   constructor() {
     for (let i = 0; i < 12; i++) {
@@ -29,6 +30,16 @@ class Stepper {
 
   get = () => {
     return this.output;
+  };
+
+  getIndex = () => {
+    for (let i = 0; i < 8; i++) {
+      if (this.output[i]) {
+        this.index = i;
+        break;
+      }
+    }
+    return this.index;
   };
 
   update = (clockIn: boolean) => {

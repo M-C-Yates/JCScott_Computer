@@ -1,3 +1,4 @@
+import { binToBool } from "./../utils/binUtils";
 import { Decoder3x8, InstrDecoder3x8 } from "./../components/Decoders";
 import { And, And3, Not, Or, Or4, Or3, Or5, Or6 } from "./../circuit/Gates";
 import Register from "../components/Register";
@@ -26,10 +27,12 @@ class Cpu {
   private busOne = new BusOne(this.tmpBus, this.tmpBus);
 
   // general purpose registers
-  private register1 = new Register(this.mainBus, this.mainBus, "gp one");
-  private register2 = new Register(this.mainBus, this.mainBus, "gp two");
-  private register3 = new Register(this.mainBus, this.mainBus, "gp three");
-  private register4 = new Register(this.mainBus, this.mainBus, "gp four");
+  private gpRegs = [
+    new Register(this.mainBus, this.mainBus, "gp one"),
+    new Register(this.mainBus, this.mainBus, "gp two"),
+    new Register(this.mainBus, this.mainBus, "gp three"),
+    new Register(this.mainBus, this.mainBus, "gp four")
+  ];
 
   private tmpReg = new Register(this.mainBus, this.tmpBus, "tmp");
   private accReg = new Register(this.accBus, this.mainBus, "acc");
@@ -149,7 +152,7 @@ class Cpu {
     this.runStepOne();
     this.runStepTwo();
     this.runStepThree();
-
+    this.handleInstruction();
     // this.runStep4Gates();
     // this.runStep5Gates();
     // this.runStep6Gates();
@@ -174,6 +177,72 @@ class Cpu {
   };
 
   updateInstructionDecoder3x8 = () => {};
+
+  handleInstruction = () => {
+    const instruction = this.instructionDecode();
+    switch (instruction[0]) {
+      case true:
+        this.alu.setOp([...instruction[1]]);
+        switch (instruction[1]) {
+          case [false, false, false]:
+            // 1000 RARB | ADD RA,RB | add
+            break;
+          case [false, false, true]:
+            // 1001 RARB | SHR RA,RB | shift right
+            break;
+          case [false, true, false]:
+            // 1010 RARB | SHL RA,RB | shift left
+            break;
+          case [false, true, true]:
+            // 1011 RARB | NOT RA,RB | Not
+            break;
+          case [true, false, false]:
+            // 1100 RARB | AND RA,RB | AND
+            break;
+          case [true, false, true]:
+            // 1101 RARB | OR RA,RB | OR
+            break;
+          case [true, true, false]:
+            // 1110 RARB | XOR RA,RB | XOR
+            break;
+          case [true, true, true]:
+            // 1111 RARB | CMP RA,RB | Compare
+            break;
+          default:
+            break;
+        }
+        break;
+      case false:
+        switch (instruction[1]) {
+          case [false, false, false]:
+            // 0000 RARB | LD RA,RB | load RB from ram addr in RA
+            break;
+          case [false, false, true]:
+            // 0001 RARB | ST RA,RB | store RB to ram addr in RA
+            break;
+          case [false, true, false]:
+            // 0010 00RB | DATA RB,addr | load these 8 bits into RB;
+            break;
+          case [false, true, true]:
+            // 0011 00RB | JMPR RB | jump to the addr in RB
+            break;
+          case [true, false, false]:
+            // 0100 0000 | JMP addr | jump to the address in the next byte
+            break;
+          case [true, false, true]:
+            // 0101 caez | JCAEZ addr | jump if any tested Flag is on
+            break;
+          case [true, true, false]:
+            // 0110 0000 | CLF | clear all flags
+            break;
+          default:
+            break;
+        }
+        break;
+      default:
+        break;
+    }
+  };
 
   runStepOne = () => {
     const step = this.stepper.get()[0];
@@ -232,6 +301,30 @@ class Cpu {
     this.accReg.disable();
     this.mainBus.clear();
   };
+
+  instructionDecode = () => {
+    // const instruction = this.iRegister.readByte();
+    const instruction = [true, false, true, false, false, false, true, false];
+    this.instructionDecoderEnables2x4[0].update(instruction[4], instruction[5]);
+    this.instructionDecoderEnables2x4[1].update(instruction[6], instruction[7]);
+
+    // const op = [instruction[1], instruction[2], instruction[3]];
+    const op = instruction.slice(1, 4);
+    const registerA = this.instructionDecoderEnables2x4[0].getIndex();
+    const registerB = this.instructionDecoderEnables2x4[1].getIndex();
+
+    let decoded: [boolean, boolean[], number, number] = [
+      instruction[0],
+      op,
+      registerA,
+      registerB
+    ];
+
+    console.log(decoded);
+    return decoded;
+  };
+
+  runStepFour = () => {};
 }
 
 export default Cpu;

@@ -1,4 +1,4 @@
-import { binToBool, boolToBinary } from "./../utils/binUtils";
+import binToString, { binToBool, boolToBinary } from "./../utils/binUtils";
 import { Decoder3x8, InstrDecoder3x8 } from "./../components/Decoders";
 import { And, And3, Not, Or, Or4, Or3, Or5, Or6 } from "./../circuit/Gates";
 import Register from "../components/Register";
@@ -108,27 +108,43 @@ class Cpu {
       default:
         break;
     }
-    // this.runStep4Gates();
-    // this.runStep5Gates();
-    // this.runStep6Gates();
-
-    // this.runEnable(this.clockState);
-    // this.updateStates();
-
-    // if (this.clockState) {
-    //   this.runEnable(false);
-    //   this.updateStates();
-    // }
-
-    // this.runSet(this.clockState);
-    // this.updateStates();
-
-    // if (this.clockState) {
-    //   this.runSet(false);
-    //   this.updateStates();
-    // }
-
     this.mainBus.clear();
+  };
+
+  instructionDecode = () => {
+    const instruction = this.iRegister.readByte();
+    this.instructionDecoderEnables2x4[0].update(instruction[4], instruction[5]);
+    this.instructionDecoderEnables2x4[1].update(instruction[6], instruction[7]);
+
+    // const op = [instruction[1], instruction[2], instruction[3]];
+    const registerA = this.instructionDecoderEnables2x4[0].getIndex();
+    const registerB = this.instructionDecoderEnables2x4[1].getIndex();
+    const op = instruction.slice(1, 4);
+    let decoded: [boolean, boolean[], number, number] = [
+      instruction[0],
+      op,
+      registerA,
+      registerB
+    ];
+
+    return decoded;
+  };
+
+  setIR = (instruction: number) => {
+    this.iRegister.setByte(instruction);
+  };
+
+  setGp = (reg: number, byte: number) => {
+    this.gpRegs[reg].setByte(byte);
+  };
+
+  setRam = (cell: number[], byte: number) => {
+    this.instructionDecoderSet2x4.update(false, true);
+    this.memory.setMem(cell[0], cell[1], byte);
+  };
+
+  readGp = (reg: number) => {
+    return this.gpRegs[reg].readByte();
   };
 
   handleInstruction = () => {
@@ -136,13 +152,13 @@ class Cpu {
     const RA = instruction[2];
     const RB = instruction[3];
     const op = boolToBinary(instruction[1]);
+
     if (this.clockState) {
       // instruction breakdown
       // alu | op | RA | RB
       switch (instruction[0]) {
         case true:
           this.alu.op = [...instruction[1]];
-          // const ADD = boolToBinary([false, false, false]);
           const ADD = "00000000";
 
           // const SHR = boolToBinary([false, false, true]);
@@ -169,46 +185,7 @@ class Cpu {
           switch (op) {
             case ADD:
               // 1000 RARB | ADD RA,RB | add
-              this.gpRegs[RB].enable();
-              this.gpRegs[RB].update();
-              this.tmpReg.set();
-              this.tmpReg.update();
-              this.tmpReg.unSet();
-              this.gpRegs[RB].disable();
-              this.mainBus.clear();
-              this.stepper.update(this.clockState);
-              // step 5
-
-              this.gpRegs[RA].set();
-              this.gpRegs[RA].enable();
-              this.gpRegs[RA].update();
-
-              this.alu.update();
-
-              this.accReg.set();
-              this.accReg.enable();
-              this.accReg.update();
-              this.accReg.disable();
-              this.accReg.unSet();
-
-              this.gpRegs[RA].disable();
-
-              this.mainBus.clear();
-              this.stepper.update(this.clockState);
-              // step6
-
-              this.gpRegs[RB].enable();
-              this.gpRegs[RB].set();
-              this.accReg.enable();
-              this.accReg.setBus();
-              this.accReg.disable();
-
-              this.gpRegs[RB].update();
-              this.gpRegs[RB].unSet();
-              this.gpRegs[RB].disable();
-
-              this.mainBus.clear();
-              this.stepper.update(this.clockState);
+              this.addInstr(RA, RB);
               break;
 
             case SHR:
@@ -296,7 +273,6 @@ class Cpu {
 
   runStepTwo = () => {
     this.clockEnable = true;
-    this.memory.setMem(0, 0, 0b01);
     this.memory.setBus();
 
     this.clockSet = true;
@@ -326,26 +302,48 @@ class Cpu {
     this.accReg.disable();
     this.mainBus.clear();
   };
+  addInstr = (RA: number, RB: number) => {
+    this.gpRegs[RB].enable();
+    this.gpRegs[RB].update();
+    this.tmpReg.set();
+    this.tmpReg.update();
+    this.tmpReg.unSet();
+    this.gpRegs[RB].disable();
+    this.mainBus.clear();
+    this.stepper.update(this.clockState);
+    // step 5
 
-  instructionDecode = () => {
-    // const instruction = this.iRegister.readByte();
-    const instruction = [true, false, false, false, false, false, true, false];
-    this.instructionDecoderEnables2x4[0].update(instruction[4], instruction[5]);
-    this.instructionDecoderEnables2x4[1].update(instruction[6], instruction[7]);
+    this.gpRegs[RA].enable();
+    this.gpRegs[RA].update();
 
-    // const op = [instruction[1], instruction[2], instruction[3]];
-    const op = instruction.slice(1, 4);
-    const registerA = this.instructionDecoderEnables2x4[0].getIndex();
-    const registerB = this.instructionDecoderEnables2x4[1].getIndex();
+    this.alu.update();
 
-    let decoded: [boolean, boolean[], number, number] = [
-      instruction[0],
-      op,
-      registerA,
-      registerB
-    ];
+    this.accReg.set();
+    this.accReg.enable();
+    this.accReg.update();
+    this.accReg.disable();
+    this.accReg.unSet();
 
-    return decoded;
+    this.gpRegs[RA].disable();
+
+    this.mainBus.clear();
+    this.stepper.update(this.clockState);
+    // step6
+
+    this.gpRegs[RB].enable();
+    this.gpRegs[RB].set();
+    this.accReg.enable();
+
+    this.accReg.setBus();
+
+    this.gpRegs[RB].update();
+    this.gpRegs[RB].unSet();
+
+    this.accReg.disable();
+    this.gpRegs[RB].disable();
+
+    this.mainBus.clear();
+    this.stepper.update(this.clockState);
   };
 }
 

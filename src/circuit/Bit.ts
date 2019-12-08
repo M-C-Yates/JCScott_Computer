@@ -5,11 +5,18 @@ class Bit {
   private nand2 = new Nand();
   private nand3 = new Nand();
   private nand4 = new Nand();
-  private output: boolean = false;
+  private _output: boolean = false;
   constructor() {}
   get = (): boolean => {
     return this.output;
   };
+
+  get output(): boolean {
+    return this._output;
+  }
+  set output(data: boolean) {
+    this._output = data;
+  }
   update = (inputI: boolean, inputS: boolean) => {
     this.nand1.update(inputI, inputS);
     this.nand2.update(this.nand1.get(), inputS);

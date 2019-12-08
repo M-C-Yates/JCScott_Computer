@@ -31,20 +31,24 @@ class Register {
     this.enabler.update(this.byte.output, this.enableOutput);
     this.enabler.output.forEach((val, i) => (this.output[i] = val));
     if (this.enableOutput) {
-      this.outputBus.data = [...this.output];
+      this.outputBus.data = this.output;
     }
   };
 
   setBus = () => {
     if (this.enableOutput) {
-      this.outputBus.data = [...this.output];
+      this.outputBus.data = this.output;
     }
   };
 
   setByte = (byte: number) => {
-    let data = binToBool(binToString(byte));
-
-    this.byte.update([...data], true);
+    let data: string = binToString(byte);
+    const dataBool = binToBool(data);
+    this.enable();
+    this.set();
+    this.update([...dataBool]);
+    this.disable();
+    this.unSet();
   };
 
   disable = () => {

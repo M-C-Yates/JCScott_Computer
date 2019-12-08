@@ -1,4 +1,4 @@
-import { binToBool } from "./../utils/binUtils";
+import { binToBool, boolToBinary } from "./../utils/binUtils";
 import { Decoder3x8, InstrDecoder3x8 } from "./../components/Decoders";
 import { And, And3, Not, Or, Or4, Or3, Or5, Or6 } from "./../circuit/Gates";
 import Register from "../components/Register";
@@ -92,10 +92,22 @@ class Cpu {
   };
   step = () => {
     this.stepper.update(this.clockState);
-    this.runStepOne();
-    this.runStepTwo();
-    this.runStepThree();
-    this.handleInstruction();
+    switch (this.stepper.getIndex()) {
+      case 0:
+        this.runStepOne();
+        break;
+      case 1:
+        this.runStepTwo();
+        break;
+      case 2:
+        this.runStepThree();
+        break;
+      case 3:
+        this.handleInstruction();
+        break;
+      default:
+        break;
+    }
     // this.runStep4Gates();
     // this.runStep5Gates();
     // this.runStep6Gates();
@@ -119,22 +131,44 @@ class Cpu {
     this.mainBus.clear();
   };
 
-  updateInstructionDecoder3x8 = () => {};
-
   handleInstruction = () => {
     const instruction = this.instructionDecode();
     const RA = instruction[2];
     const RB = instruction[3];
-    // instruction breakdown
-    // alu | op | RA | RB
-    switch (instruction[0]) {
-      case true:
-        this.alu.op = [...instruction[1]];
+    const op = boolToBinary(instruction[1]);
+    if (this.clockState) {
+      // instruction breakdown
+      // alu | op | RA | RB
+      switch (instruction[0]) {
+        case true:
+          this.alu.op = [...instruction[1]];
+          // const ADD = boolToBinary([false, false, false]);
+          const ADD = "00000000";
 
-        switch (this.stepper.getIndex()) {
-          case 3:
-            if (this.clockState) {
-              this.gpRegs[RB].setByte(0b0001);
+          // const SHR = boolToBinary([false, false, true]);
+          const SHR = "00000001";
+
+          // const SHL = boolToBinary([false, true, false]);
+          const SHL = "00000010";
+
+          // const NOT = boolToBinary([false, true, true]);
+          const NOT = "00000011";
+
+          // const AND = boolToBinary([true, false, false]);
+          const AND = "00000100";
+
+          // const OR = boolToBinary([true, false, true]);
+          const OR = "00000101";
+
+          // const XOR = boolToBinary([true, true, false]);
+          const XOR = "00000110";
+
+          // const CMP = boolToBinary([true, true, true]);
+          const CMP = "00000111";
+
+          switch (op) {
+            case ADD:
+              // 1000 RARB | ADD RA,RB | add
               this.gpRegs[RB].enable();
               this.gpRegs[RB].update();
               this.tmpReg.set();
@@ -142,100 +176,101 @@ class Cpu {
               this.tmpReg.unSet();
               this.gpRegs[RB].disable();
               this.mainBus.clear();
-            }
-            break;
-          case 4:
-            this.gpRegs[RA].setByte(0b0001);
-            this.gpRegs[RA].enable();
-            this.gpRegs[RA].update();
+              this.stepper.update(this.clockState);
+              // step 5
 
-            this.alu.update();
+              this.gpRegs[RA].set();
+              this.gpRegs[RA].enable();
+              this.gpRegs[RA].update();
 
-            this.accReg.set();
-            this.accReg.update();
-            this.accReg.unSet();
+              this.alu.update();
 
-            this.gpRegs[RA].disable();
+              this.accReg.set();
+              this.accReg.enable();
+              this.accReg.update();
+              this.accReg.disable();
+              this.accReg.unSet();
 
-            this.mainBus.clear();
-            break;
-          case 5:
-            this.accReg.enable();
-            this.gpRegs[RB].set();
-            this.accReg.setBus();
+              this.gpRegs[RA].disable();
 
-            this.gpRegs[RB].update();
-            this.gpRegs[RB].unSet();
+              this.mainBus.clear();
+              this.stepper.update(this.clockState);
+              // step6
 
-            this.accReg.disable();
+              this.gpRegs[RB].enable();
+              this.gpRegs[RB].set();
+              this.accReg.enable();
+              this.accReg.setBus();
+              this.accReg.disable();
 
-            this.mainBus.clear();
-            break;
-        }
-        switch (instruction[1]) {
-          case [false, false, false]:
-            // 1000 RARB | ADD RA,RB | add
-            break;
-          case [false, false, true]:
-            // 1001 RARB | SHR RA,RB | shift right
-            break;
-          case [false, true, false]:
-            // 1010 RARB | SHL RA,RB | shift left
-            break;
-          case [false, true, true]:
-            // 1011 RARB | NOT RA,RB | Not
-            break;
-          case [true, false, false]:
-            // 1100 RARB | AND RA,RB | AND
-            break;
-          case [true, false, true]:
-            // 1101 RARB | OR RA,RB | OR
-            break;
-          case [true, true, false]:
-            // 1110 RARB | XOR RA,RB | XOR
-            break;
-          case [true, true, true]:
-            // 1111 RARB | CMP RA,RB | Compare
-            break;
-          default:
-            break;
-        }
-        break;
-      case false:
-        switch (instruction[1]) {
-          case [false, false, false]:
-            // 0000 RARB | LD RA,RB | load RB from ram addr in RA
-            break;
-          case [false, false, true]:
-            // 0001 RARB | ST RA,RB | store RB to ram addr in RA
-            break;
-          case [false, true, false]:
-            // 0010 00RB | DATA RB,addr | load these 8 bits into RB;
-            break;
-          case [false, true, true]:
-            // 0011 00RB | JMPR RB | jump to the addr in RB
-            break;
-          case [true, false, false]:
-            // 0100 0000 | JMP addr | jump to the address in the next byte
-            break;
-          case [true, false, true]:
-            // 0101 caez | JCAEZ addr | jump if any tested Flag is on
-            break;
-          case [true, true, false]:
-            // 0110 0000 | CLF | clear all flags
-            break;
-          default:
-            break;
-        }
-        break;
-      default:
-        break;
+              this.gpRegs[RB].update();
+              this.gpRegs[RB].unSet();
+              this.gpRegs[RB].disable();
+
+              this.mainBus.clear();
+              this.stepper.update(this.clockState);
+              break;
+
+            case SHR:
+              // 1001 RARB | SHR RA,RB | shift right
+              break;
+            case SHL:
+              // 1010 RARB | SHL RA,RB | shift left
+              break;
+            case NOT:
+              // 1011 RARB | NOT RA,RB | Not
+              break;
+            case AND:
+              // 1100 RARB | AND RA,RB | AND
+              break;
+            case OR:
+              // 1101 RARB | OR RA,RB | OR
+              break;
+            case XOR:
+              // 1110 RARB | XOR RA,RB | XOR
+              break;
+            case CMP:
+              // 1111 RARB | CMP RA,RB | Compare
+              break;
+            default:
+              break;
+          }
+          break;
+        case false:
+          switch (instruction[1]) {
+            case [false, false, false]:
+              // 0000 RARB | LD RA,RB | load RB from ram addr in RA
+              break;
+            case [false, false, true]:
+              // 0001 RARB | ST RA,RB | store RB to ram addr in RA
+              break;
+            case [false, true, false]:
+              // 0010 00RB | DATA RB,addr | load these 8 bits into RB;
+              break;
+            case [false, true, true]:
+              // 0011 00RB | JMPR RB | jump to the addr in RB
+              break;
+            case [true, false, false]:
+              // 0100 0000 | JMP addr | jump to the address in the next byte
+              break;
+            case [true, false, true]:
+              // 0101 caez | JCAEZ addr | jump if any tested Flag is on
+              break;
+            case [true, true, false]:
+              // 0110 0000 | CLF | clear all flags
+              break;
+            default:
+              break;
+          }
+          break;
+        default:
+          break;
+      }
     }
   };
 
   runStepOne = () => {
     const step = this.stepper.get()[0];
-    console.log(this.stepper.getIndex());
     this.clockEnable = true;
     this.accReg.enable();
 
@@ -312,8 +347,6 @@ class Cpu {
 
     return decoded;
   };
-
-  runStepFour = () => {};
 }
 
 export default Cpu;

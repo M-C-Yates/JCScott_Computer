@@ -2,4 +2,6 @@ import Cpu from "./cpu/Cpu";
 
 const cpu = new Cpu();
 
-cpu.cycle();
+for (let i = 0; i < 7; i++) {
+  cpu.cycle();
+}

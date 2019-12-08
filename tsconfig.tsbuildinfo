@@ -94,60 +94,60 @@
         "signature": "789262e5706abf5892d04d84bd105aba2da26f4e808d01a63ebbd5ea852b8b18"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts": {
-        "version": "0c12ac61fa632e96b8f9b9ed00af4987e3601cf4348f107cb17fa277650f89b4",
-        "signature": "d27f18194584f2ac4effd8e50f989e49988397c78377a8bfe332ace7a47efb76"
+        "version": "d1f1f1d5c39f192069f96e483e6c3973a5d702416c2889387dcd8e60592c585e",
+        "signature": "89e3c7871488f05fa090cdd5b6d9a063eb8475101c2efd2c08f9d87f1e7d8ec8"
       },
       "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts": {
         "version": "a27d6b999d4c79e948e29c7f2cbdc884bfac7a95b4d6db158c94fe795b347749",
         "signature": "e810cd9cb59b71dcf081ac16d072ed3ceabeeacea7e8a947f2fd863796efa6af"
       },
       "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts": {
-        "version": "d1d4e9735c8791c186aabcc84b87675cbdf5d67bee3c859cebb2bb96bb2cfd56",
-        "signature": "3123f1a2a9bcb44312841e17154232e3fe7ad8d26d3168dac8f5b2348774a53a"
+        "version": "65e886034b0bc899589c07a75e6885d7d3a026529a39f9665795869699eef3a5",
+        "signature": "19e955c8ea28c6ffc9c75e2896dd70e4aa92de783459c828a7eee0d5806b2df2"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/bus.ts": {
-        "version": "8e853711f43daa8d1fd535ab4ec4228c4dad016c4f81a97d14de89cc2ce2f8a5",
-        "signature": "705fc9eca04fa17bbbf7da483f17185c42d5ced3f7dd3f83455f2b451939dcd1"
+        "version": "deede9072626d9b59d2bd336034a67ebe989772ab47d8d80b0d9f8f2068faef2",
+        "signature": "19fb4e2f97ebb7657272ef9a73fe769984ba3f62514a69a3cbb89b953aa73546"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/register.ts": {
-        "version": "577f98616b5821647cf2769fc90ffb332423ceb700b6c883493894c0c34e8bc2",
-        "signature": "ce6fd89281da83f459aa11a56c4bbdd34490a4cb6a43f8a661f71aa012344250"
+        "version": "a39aa664f39db5ce36322f9aeecb13c1004e10a61546f899990b63338f4e7e8d",
+        "signature": "003b8062ebd65e7f2d9505c93c579f1aab2da5925e04bcfe13b4929e405f1c0d"
       },
       "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": {
-        "version": "f38b5fce155340372f4ba729c6ad35e7ef4123b2dada47a2c4e53dca124e9493",
-        "signature": "eba76767949c23218e742ac692a07fbc34e9ec82bb16cb216e81c739716a20e0"
+        "version": "e6f35482b5997f1337fb2662c00c933d79f815023cc7b83a2e1b609a6e35728e",
+        "signature": "853f4c17fe8a7ae5db7b375a7bbec1c0be65886758ca7d6aa37b87de82a7f1cc"
       },
       "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts": {
-        "version": "273b90357c5777065bda62e56392d2481bcc9cf42dbb64d90d8e23a92331b0ac",
+        "version": "5ae2deb3d3d14929ae6761aa903a8ad6f39bcd2070bf1c6143a5e02b754df008",
         "signature": "ff9090fd843dcda9ffb4ea9ff3b483d2151037d9af4f51b246af52ad03d9db36"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": {
-        "version": "f43dc2f9f41a6ddb57a5bcdb38e64f5445a6ba3fd2d0050a37dff2a8caefaa0d",
-        "signature": "cf4f585daab08a6caa07ab8a79d13c0436efa58776e946bda4d3ab8ed32cc656"
+        "version": "8992f7c5fcf5829e973f47ab804608affe53de76df21d8641a81d39564169625",
+        "signature": "3065afea6583d8ec79fc2eb1e8369ab49e7c58cbb43421421d30b529ae5858e4"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": {
-        "version": "9537e3d5f22af8260a734186c30d30dcf960f42ea632df367a697614e9ee6842",
-        "signature": "3adb7caea6366fd5c856f426b9878b529803f332eed95baf26ec34e9a6932be4"
+        "version": "cfd2e16960e9b38b36c625a40eb206f07b0033cd022c7260abe33ffa60ac9443",
+        "signature": "f2c5f37d341094663764674ce2ec9b9c851a598a9664b701ab4211f13132c0ea"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts": {
-        "version": "d496b17abbcd4fd19e635f2ec8fffe52cd386790b7fda7a06cff936db0b98466",
+        "version": "7dc0e6dec1d57d112bd9c680a51bc919791f54fa6d0c21bae94b2eefdd6d61ce",
         "signature": "e8d2a1be0238fbc8f8260247604f023b96321f0e0ddcbcc6993c72889f6cc478"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/components.ts": {
-        "version": "13b1b9269427f42bd556e3c12bc3f916b7475c07a73838ab1735c9b3b6c97e51",
+        "version": "b4953075443d53e0a5f3803c024eb29119bfa65c1f46ecdbb2d4c34d22ba6955",
         "signature": "1a768f6f4d8764cca743e1e571b21090938158c1a91939e0216ce11224e7ffdd"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts": {
-        "version": "6c6f827ab62ab0d02acb3d524d9a140900762ed8c9f1f7bbe0edc1c61283ae37",
+        "version": "5bd1b3e7e59bbf9706d34bdf599663418f3809cb2a2d072373e18f17c3df5ccf",
         "signature": "8c9107701e3177ead088a5847323f41b3564617097372707e04a9463e087af6e"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts": {
-        "version": "7da569211fdeb0766d60adad4b979fa4fc66af41cc18c104ed20d5be5bbd924a",
+        "version": "4044cccf0c0dea42d0544df506120de4a6f960e84984d7ce89384a57ed8ae218",
         "signature": "573dbc6c165279c8169929282f8f367e5c0c98792ff6dae147e5c09ded33cd39"
       },
       "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts": {
-        "version": "cf0958697580d3caf98ac1cad85b4becf325669c33d387c91a34b3c602fca0ac",
-        "signature": "bb38f8cd7892aca037f394bbe746c6402fe434c33e4362731347afa92f13cc32"
+        "version": "a440842d8ad2a3e4329248309fa676fc5e5f0c92a04ff63d011e8bb19c8d65cd",
+        "signature": "d59133dc868c3f24ef75c65cca87e3cb76e408e6c50089dfc643cb6c35207f10"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts": {
         "version": "c6eea57fc314fdbda0f4f3e194cff1a418ae9e1352704388d1031ec05ddc581e",
@@ -158,7 +158,7 @@
         "signature": "74f9bcff3ff74cf869dd567eefb979e017a6d5d7503c39ee11582f7c10e21d02"
       },
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": {
-        "version": "f47a75b1bfc43f8eab3744f30fae749afbdc79c554c4d4b1d2fa139094c2de63",
+        "version": "fc7d86e548572c0fc7060e8508025cd2deb1e29ac6957b8cec3c8846a1e0f6b9",
         "signature": "ec5d246ad81b1ebc25770b8db22c0647cc2e9112391c1444e5b158f7972f9906"
       },
       "c:/webstuff/projects/jcscottcomp/src/index.ts": {
@@ -174,7 +174,7 @@
         "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts": {
-        "version": "06905fac452f25e976fc700cba267bf81a35881c99b791ebe126ed798d55999b",
+        "version": "8e3f4b17cda9503f3a2f9caf8b1670ad3f65ed5705a9cf28fad01109f6af7969",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts": {
@@ -190,23 +190,23 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/adder.test.ts": {
-        "version": "af1d9a8f18f8345f34e711a63c60d6eca6d772b4067c9649eac907981656113f",
+        "version": "9442ff0b9312bd68da1c6249ef9b3abdad25235bef86465fb054cc89854e0bb9",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts": {
-        "version": "98890c552df83137647412dcecee27fcf122df2ab1ad3a9212988ecea385643e",
+        "version": "5e821c998f72bf2fbdd0e5fb1db97307e1ced692a92ce4b496fd75f3973f7f13",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/busone.test.ts": {
-        "version": "239b5021f10a8c936953eacf0994efd333ace77561746b9470d0d0ea991b4a8f",
+        "version": "584833db960edb19f6f1fe627d49eb6886c10fa1daadfc0146a34b531f7c54a0",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/comparator.test.ts": {
-        "version": "24429189b512d94a0b5c6c9fb42cdbbfbeb40369ab276928b460073c815ec622",
+        "version": "65ace101ba9269643c7e52e22e54efd0cab395184efa85b0b95d082723f49f5c",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/components.test.ts": {
-        "version": "1a962f513f33c7aac4db7fc2dfff3f5b38b23916abcbc8391bb73b9ef04c2378",
+        "version": "6f925c2e0ae256407bb83c6ead1c884b8720e7626fa8bc16063672f0b2943a74",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/decoders.test.ts": {
@@ -214,19 +214,19 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts": {
-        "version": "2e32d9476a2467042e4dba9abd79153a42073dc546e27673be2ef07245a190fa",
+        "version": "aadc7bd2711c632b27eff3e0fd73380b2e66d5c40f2a4c9dbdbbfb9fe6431399",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/iszero.test.ts": {
-        "version": "56f7d21e6fcdb92301c567289a98ae6ca01473526b02914560bf0896caabc396",
+        "version": "0080eef1ebca1cba1ff3b76516296e4d9c1d8381afd74350f4a28b6d04b46f69",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/register.test.ts": {
-        "version": "ea86054cea3a9b4e42be486d9d9dfb6770f494dd119a8b754785b8a782c73f3b",
+        "version": "f4a285cf9161579ae5aa91b8de7be2825c5a852f508264a9d211a3b3fc95025e",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts": {
-        "version": "c62553fff8ee633f1f3ce8d721aadebb6ff3423a8ebe7dd263a4934b8efd61af",
+        "version": "6fc7673507ef6fa51ed529d2549c535c1e760fb132462367908886b33191ab2b",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/stepper.test.ts": {
@@ -234,7 +234,7 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts": {
-        "version": "e5e059896336f89aef70eb0a29b9f9e1ade42d05dc3b4e011543c73d027609b4",
+        "version": "39242b35be86dddad83e3d9a963f57324a8b745f9bd9afafe06bcfca31077ac0",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/utils/binnumtostring.ts": {
@@ -628,9 +628,9 @@
       "c:/webstuff/projects/jcscottcomp/src/cpu/controlsection.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/circuits/byte.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/adder.test.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/busone.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/comparator.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/components.test.ts",
@@ -659,7 +659,7 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/circuits/byte.test.ts"
+      "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts"
     ]
   },
   "version": "3.5.3"

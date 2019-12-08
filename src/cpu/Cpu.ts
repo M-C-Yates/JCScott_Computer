@@ -129,7 +129,7 @@ class Cpu {
     // alu | op | RA | RB
     switch (instruction[0]) {
       case true:
-        this.alu.setOp([...instruction[1]]);
+        this.alu.op = [...instruction[1]];
 
         switch (this.stepper.getIndex()) {
           case 3:

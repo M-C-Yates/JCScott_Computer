@@ -44,7 +44,7 @@ class Memory256B {
       this.set = set;
     }
 
-    const address = this.addressRegister.get();
+    const address = this.addressRegister.output;
     this.decoderRow.update(address[0], address[1], address[2], address[3]);
     this.decoderCol.update(address[4], address[5], address[6], address[7]);
 
@@ -54,23 +54,23 @@ class Memory256B {
   };
 
   readMem = (row: number, col: number) => {
-    return this.memory[row][col].get();
+    return this.memory[row][col].read();
   };
 
   setMem = (row: number, col: number, byte: number) => {
     this.memory[row][col].setCell(byte);
   };
   setBus = () => {
-    const address = this.addressRegister.get();
+    const address = this.addressRegister.output;
     this.decoderRow.update(address[0], address[1], address[2], address[3]);
     this.decoderCol.update(address[4], address[5], address[6], address[7]);
 
     this.address[0] = this.decoderRow.getIndex();
     this.address[1] = this.decoderCol.getIndex();
 
-    this.outputBus.set([
-      ...this.memory[this.address[0]][this.address[1]].get()
-    ]);
+    this.outputBus.data = [
+      ...this.memory[this.address[0]][this.address[1]].read()
+    ];
   };
   getAddress = () => {
     return this.addressRegister.readByte();

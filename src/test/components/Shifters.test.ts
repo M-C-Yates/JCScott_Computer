@@ -6,9 +6,9 @@ describe("left shifter", () => {
   const testByte = [true, false, false, false, false, false, false, true];
   const lShift = new leftShifter(bus, bus);
   it("it should give correct output with wrapping disabled", () => {
-    bus.set(testByte);
+    bus.data = testByte;
     lShift.update(false);
-    expect(bus.get()).toEqual([
+    expect(bus.data).toEqual([
       false,
       false,
       false,
@@ -18,13 +18,13 @@ describe("left shifter", () => {
       true,
       false
     ]);
-    bus.set(new Array(8).fill(false));
+    bus.data = new Array(8).fill(false);
   });
   it("should give correct output with wrapping enabled", () => {
-    bus.set(testByte);
+    bus.data = testByte;
 
     lShift.update(true);
-    expect(bus.get()).toEqual([
+    expect(bus.data).toEqual([
       false,
       false,
       false,
@@ -43,9 +43,9 @@ describe("right Shifter", () => {
   const testByte = [true, false, false, false, false, false, false, true];
 
   it("should give the correct output with wrapping disabled", () => {
-    bus.set(testByte);
+    bus.data = testByte;
     rShift.update(false);
-    expect(bus.get()).toEqual([
+    expect(bus.data).toEqual([
       false,
       true,
       false,
@@ -57,9 +57,9 @@ describe("right Shifter", () => {
     ]);
   });
   it("should give the correct output with wrapping enabled", () => {
-    bus.set(testByte);
+    bus.data = testByte;
     rShift.update(true);
-    expect(bus.get()).toEqual([
+    expect(bus.data).toEqual([
       true,
       true,
       false,

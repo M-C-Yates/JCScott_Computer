@@ -14,14 +14,14 @@ class Notter {
   private output = new Array(8).fill(false);
   constructor(private inputBus: Bus, private outputBus: Bus) {}
   update = () => {
-    this.output = [...this.inputBus.get()];
+    this.output = [...this.inputBus.data];
 
     for (let i = 0; i < 8; i++) {
       this.notGates[i].update(this.output[i]);
       this.output[i] = this.notGates[i].get();
     }
 
-    this.outputBus.set([...this.output]);
+    this.outputBus.data = this.output;
   };
 }
 
@@ -47,8 +47,8 @@ export class Ander {
   ) {}
 
   update = () => {
-    this.data1 = [...this.inputA.get()];
-    this.data2 = [...this.inputB.get()];
+    this.data1 = [...this.inputA.data];
+    this.data2 = [...this.inputB.data];
 
     for (let i = 0; i < 8; i++) {
       this.andGates[i].update(this.data1[i], this.data2[i]);
@@ -56,7 +56,7 @@ export class Ander {
       this.output[i] = this.andGates[i].get();
     }
 
-    this.outputBus.set([...this.output]);
+    this.outputBus.data = [...this.output];
   };
 }
 
@@ -81,14 +81,14 @@ export class ORer {
   ) {}
 
   update = () => {
-    this.data1 = [...this.inputA.get()];
-    this.data2 = [...this.inputB.get()];
+    this.data1 = [...this.inputA.data];
+    this.data2 = [...this.inputB.data];
 
     for (let i = 0; i < 8; i++) {
       this.orGates[i].update(this.data1[i], this.data2[i]);
       this.output[i] = this.orGates[i].get();
     }
-    this.outputBus.set([...this.output]);
+    this.outputBus.data = [...this.output];
   };
 }
 
@@ -112,14 +112,14 @@ export class XORer {
     private outputBus: Bus
   ) {}
   update = () => {
-    this.data1 = [...this.inputA.get()];
-    this.data2 = [...this.inputB.get()];
+    this.data1 = [...this.inputA.data];
+    this.data2 = [...this.inputB.data];
 
     for (let i = 0; i < 8; i++) {
       this.xorGates[i].update(this.data1[i], this.data2[i]);
       this.output[i] = this.xorGates[i].get();
     }
-    this.outputBus.set([...this.output]);
+    this.outputBus.data = [...this.output];
   };
 }
 

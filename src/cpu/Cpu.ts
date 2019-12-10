@@ -207,6 +207,8 @@ class Cpu {
               break;
             case OR:
               // 1101 RARB | OR RA,RB | OR
+              this.aluTwoInputInstr(RA, RB);
+
               break;
             case XOR:
               // 1110 RARB | XOR RA,RB | XOR

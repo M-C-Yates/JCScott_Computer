@@ -3,9 +3,6 @@ import Cpu from "../../cpu/Cpu";
 
 describe("Cpu", () => {
   const cpu = new Cpu();
-  const ADD = 0b10000110;
-  const SHR = 0b10010001;
-  const SHL = 0b10101101;
 
   const cycleCpu = () => {
     for (let i = 0; i < 1; i++) {
@@ -102,6 +99,25 @@ describe("Cpu", () => {
       true,
       false,
       false,
+      true
+    ]);
+  });
+
+  it("ALU OR should correcly AND contents of RA to left and place result in RB", () => {
+    cpu.setRam([0, 5], 0b11011001);
+    cpu.setGp(2, 0b00001011);
+    cpu.setGp(1, 0b00001101);
+
+    cycleCpu();
+
+    expect(cpu.readGp(1)).toEqual([
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
       true
     ]);
   });

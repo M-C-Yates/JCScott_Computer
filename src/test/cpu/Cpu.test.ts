@@ -103,7 +103,7 @@ describe("Cpu", () => {
     ]);
   });
 
-  it("ALU OR should correcly AND contents of RA to left and place result in RB", () => {
+  it("ALU OR should correcly OR contents of RA to left and place result in RB", () => {
     cpu.setRam([0, 5], 0b11011001);
     cpu.setGp(2, 0b00001011);
     cpu.setGp(1, 0b00001101);
@@ -119,6 +119,25 @@ describe("Cpu", () => {
       true,
       true,
       true
+    ]);
+  });
+
+  it("ALU XOR should correcly XOR contents of RA to left and place result in RB", () => {
+    cpu.setRam([0, 6], 0b11101001);
+    cpu.setGp(2, 0b00001011);
+    cpu.setGp(1, 0b00001101);
+
+    cycleCpu();
+
+    expect(cpu.readGp(1)).toEqual([
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false
     ]);
   });
 });

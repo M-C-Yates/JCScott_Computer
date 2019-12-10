@@ -212,6 +212,7 @@ class Cpu {
               break;
             case XOR:
               // 1110 RARB | XOR RA,RB | XOR
+              this.aluTwoInputInstr(RA, RB);
               break;
             case CMP:
               // 1111 RARB | CMP RA,RB | Compare

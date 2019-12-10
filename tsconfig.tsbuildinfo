@@ -158,7 +158,7 @@
         "signature": "74f9bcff3ff74cf869dd567eefb979e017a6d5d7503c39ee11582f7c10e21d02"
       },
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": {
-        "version": "51505bf7a446d89f956fa0835b895a3be125d365c1d4d497740e90557785562d",
+        "version": "0f6ac3bad86832fb3bb7aa02b1a73c5f12d315459b6dcd2bf46489cd40eab3d6",
         "signature": "316903292556f7649de94b9edd16f5c980e0aa7a1123053da39df7a054374656"
       },
       "c:/webstuff/projects/jcscottcomp/src/index.ts": {
@@ -234,7 +234,7 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts": {
-        "version": "261c0535a9f6cddf226a15a719f92f20438dd220b3ab37eddb1018eeaabc1bf0",
+        "version": "871e88493ad61e2eacdf2789c3adf3f56c2d63aeaba8131504d12656ce8ec706",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts": {

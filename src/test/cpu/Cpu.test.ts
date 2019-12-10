@@ -1,21 +1,15 @@
 import { binToBool } from "./../../utils/binUtils";
 import Cpu from "../../cpu/Cpu";
 
-describe("Cpu", () => {
+describe("Cpu alu", () => {
   const cpu = new Cpu();
-
-  const cycleCpu = () => {
-    for (let i = 0; i < 1; i++) {
-      cpu.cycle();
-    }
-  };
 
   it("ALU Add opcode should add RA and RB together and store the result in RB", () => {
     cpu.setRam([0, 0], 0b10000110);
     cpu.setGp(1, 0b1);
     cpu.setGp(2, 0b1);
 
-    cycleCpu();
+    cpu.cycle();
 
     expect(cpu.readGp(2)).toEqual([
       false,
@@ -34,7 +28,7 @@ describe("Cpu", () => {
     cpu.setGp(0, 0b10);
     cpu.setGp(1, 0b110);
 
-    cycleCpu();
+    cpu.cycle();
 
     expect(cpu.readGp(1)).toEqual([
       false,
@@ -52,7 +46,7 @@ describe("Cpu", () => {
     cpu.setGp(3, 0b1);
     cpu.setGp(1, 0b11);
 
-    cycleCpu();
+    cpu.cycle();
 
     expect(cpu.readGp(1)).toEqual([
       false,
@@ -70,7 +64,7 @@ describe("Cpu", () => {
     cpu.setGp(2, 0b00001111);
     cpu.setGp(1, 0b11);
 
-    cycleCpu();
+    cpu.cycle();
 
     expect(cpu.readGp(1)).toEqual([
       true,
@@ -89,7 +83,7 @@ describe("Cpu", () => {
     cpu.setGp(2, 0b00001011);
     cpu.setGp(1, 0b00001101);
 
-    cycleCpu();
+    cpu.cycle();
 
     expect(cpu.readGp(1)).toEqual([
       false,
@@ -108,7 +102,7 @@ describe("Cpu", () => {
     cpu.setGp(2, 0b00001011);
     cpu.setGp(1, 0b00001101);
 
-    cycleCpu();
+    cpu.cycle();
 
     expect(cpu.readGp(1)).toEqual([
       false,
@@ -127,7 +121,7 @@ describe("Cpu", () => {
     cpu.setGp(2, 0b00001011);
     cpu.setGp(1, 0b00001101);
 
-    cycleCpu();
+    cpu.cycle();
 
     expect(cpu.readGp(1)).toEqual([
       false,
@@ -145,10 +139,52 @@ describe("Cpu", () => {
     cpu.setRam([0, 6], 0b11111001);
     cpu.setGp(2, 0b11);
     cpu.setGp(1, 0b01);
+    cpu.cycle();
 
-    cycleCpu();
-    console.log(cpu.readFlags());
     expect(cpu.readFlags()[1]).toEqual(true);
     expect(cpu.readFlags()[2]).toEqual(false);
+  });
+});
+
+describe("Cpu Instrs", () => {
+  const cpu = new Cpu();
+  it("LD should correcly store contents of the location indicated by the address in RA in RB", () => {
+    cpu.setRam([0, 0], 0b00000001);
+    cpu.setRam([0, 1], 0b00000101);
+    cpu.setGp(0, 0b00000001);
+    cpu.setGp(1, 0b00);
+    // console.log(cpu.readGp(0));
+    // console.log(cpu.readGp(1));
+    cpu.cycle();
+
+    expect(cpu.readGp(1)).toEqual([
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true
+    ]);
+  });
+
+  it("ST should correctly store contents of RB to address in RA", () => {
+    cpu.setIAR(0b10);
+    cpu.setRam([0, 2], 0b00010001);
+    cpu.setGp(0, 0b00000100);
+    cpu.setGp(1, 0b10101);
+
+    cpu.cycle();
+    expect(cpu.readMem(0, 4)).toEqual([
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      true
+    ]);
   });
 });

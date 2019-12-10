@@ -187,7 +187,7 @@ class Cpu {
           switch (op) {
             case ADD:
               // 1000 RARB | ADD RA,RB | add
-              this.addInstr(RA, RB);
+              this.aluTwoInputInstr(RA, RB);
               break;
             case SHR:
               // 1001 RARB | SHR RA,RB | shift right
@@ -203,6 +203,7 @@ class Cpu {
               break;
             case AND:
               // 1100 RARB | AND RA,RB | AND
+              this.aluTwoInputInstr(RA, RB);
               break;
             case OR:
               // 1101 RARB | OR RA,RB | OR
@@ -298,7 +299,7 @@ class Cpu {
     this.mainBus.clear();
   };
 
-  private addInstr = (RA: number, RB: number) => {
+  private aluTwoInputInstr = (RA: number, RB: number) => {
     this.gpRegs[RB].enable();
     this.gpRegs[RB].update();
 
@@ -384,6 +385,8 @@ class Cpu {
     this.mainBus.clear();
     this.stepper.update(this.clockState);
   };
+
+  private cmpInstr = (RA: number, RB: number) => {};
 }
 
 export default Cpu;

@@ -14,7 +14,7 @@ describe("Cpu", () => {
   };
 
   it("ALU Add opcode should add RA and RB together and store the result in RB", () => {
-    cpu.setRam([0, 0], ADD);
+    cpu.setRam([0, 0], 0b10000110);
     cpu.setGp(1, 0b1);
     cpu.setGp(2, 0b1);
 
@@ -33,10 +33,9 @@ describe("Cpu", () => {
   });
 
   it("ALU SHR should correctly shift contents of RA to right and place result in RB", () => {
-    cpu.setRam([0, 1], SHR);
+    cpu.setRam([0, 1], 0b10010001);
     cpu.setGp(0, 0b10);
     cpu.setGp(1, 0b110);
-    // cpu.setIAR(0b0);
 
     cycleCpu();
 
@@ -55,7 +54,6 @@ describe("Cpu", () => {
     cpu.setRam([0, 2], 0b10101101);
     cpu.setGp(3, 0b1);
     cpu.setGp(1, 0b11);
-    // cpu.setIAR(0b0);
 
     cycleCpu();
 
@@ -70,11 +68,10 @@ describe("Cpu", () => {
       false
     ]);
   });
-  it("ALU NOT should correcly shift contents of RA to left and place result in RB", () => {
+  it("ALU NOT should correcly NOT contents of RA to left and place result in RB", () => {
     cpu.setRam([0, 3], 0b10111001);
     cpu.setGp(2, 0b00001111);
     cpu.setGp(1, 0b11);
-    // cpu.setIAR(0b0);
 
     cycleCpu();
 
@@ -87,6 +84,25 @@ describe("Cpu", () => {
       false,
       false,
       false
+    ]);
+  });
+
+  it("ALU AND should correcly AND contents of RA to left and place result in RB", () => {
+    cpu.setRam([0, 4], 0b11001001);
+    cpu.setGp(2, 0b00001011);
+    cpu.setGp(1, 0b00001101);
+
+    cycleCpu();
+
+    expect(cpu.readGp(1)).toEqual([
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true
     ]);
   });
 });

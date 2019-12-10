@@ -1,11 +1,12 @@
 import Cpu from "./cpu/Cpu";
 
 const cpu = new Cpu();
+const SHL = 0b10101101;
 
-cpu.setRam([0, 0], 0b10010001);
-cpu.setGp(0, 0b10);
-cpu.setGp(1, 0b110);
+cpu.setRam([0, 0], SHL);
+cpu.setGp(3, 0b1);
+cpu.setGp(1, 0b0);
 
-for (let i = 0; i < 7; i++) {
-  cpu.cycle();
-}
+cpu.cycle();
+
+console.log(cpu.readGp(1));

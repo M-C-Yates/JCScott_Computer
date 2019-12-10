@@ -127,6 +127,7 @@ class Alu {
     this._carryOut = this.leftShifter.getShiftOut();
     this.enablers[this.index].update(this.enablerBus.data, true);
     this.outputBus.data = this.enablers[this.index].output;
+    // console.log(this.outputBus.data);
   };
 
   private updateRightShifter = () => {

@@ -12,8 +12,6 @@ import { throwStatement } from "@babel/types";
 
 class Cpu {
   private clockState: boolean = false;
-  private clockEnable: boolean = false;
-  private clockSet: boolean = false;
 
   // busses
   private accBus = new Bus(8);
@@ -87,27 +85,28 @@ class Cpu {
   cycle = () => {
     this.clockState = true;
     this.step();
-    this.clockState = false;
-    this.step();
+    // this.clockState = false;
+    // this.step();
   };
   private step = () => {
     this.stepper.update(this.clockState);
-    switch (this.stepper.getIndex()) {
-      case 0:
-        this.runStepOne();
-        break;
-      case 1:
-        this.runStepTwo();
-        break;
-      case 2:
-        this.runStepThree();
-        break;
-      case 3:
-        this.handleInstruction();
-        break;
-      default:
-        break;
-    }
+    // switch (this.stepper.getIndex()) {
+    // case 0:
+    this.alu.op = [false, false, false];
+    this.runStepOne();
+    // break;
+    // case 1:
+    this.runStepTwo();
+    // break;
+    // case 2:
+    this.runStepThree();
+    // break;
+    // case 3:
+    // break;
+    // default:
+    // break;
+    // }
+    this.handleInstruction();
     this.mainBus.clear();
   };
 
@@ -119,10 +118,9 @@ class Cpu {
     // const op = [instruction[1], instruction[2], instruction[3]];
     const registerA = this.instructionDecoderEnables2x4[0].getIndex();
     const registerB = this.instructionDecoderEnables2x4[1].getIndex();
-    const op = instruction.slice(1, 4);
     let decoded: [boolean, boolean[], number, number] = [
       instruction[0],
-      op,
+      instruction.slice(1, 4),
       registerA,
       registerB
     ];
@@ -132,6 +130,10 @@ class Cpu {
 
   setIR = (instruction: number) => {
     this.iRegister.setByte(instruction);
+  };
+
+  setIAR = (address: number) => {
+    this.iARegister.setByte(address);
   };
 
   setGp = (reg: number, byte: number) => {
@@ -190,10 +192,12 @@ class Cpu {
 
             case SHR:
               // 1001 RARB | SHR RA,RB | shift right
-              this.shiftRInstr(RA, RB);
+              this.shiftInstr(RA, RB);
               break;
             case SHL:
               // 1010 RARB | SHL RA,RB | shift left
+              this.shiftInstr(RA, RB);
+
               break;
             case NOT:
               // 1011 RARB | NOT RA,RB | Not
@@ -248,58 +252,49 @@ class Cpu {
   };
 
   private runStepOne = () => {
-    const step = this.stepper.get()[0];
-    this.clockEnable = true;
     this.accReg.enable();
 
     this.iARegister.enable();
-    this.iARegister.update();
-
-    this.clockSet = true;
+    this.iARegister.set();
+    this.iARegister.update;
+    this.mainBus.data = this.iARegister.output;
     this.accReg.set();
-    this.busOne.update(step);
+    this.busOne.update(true);
 
     this.memory.updateAddress();
     this.alu.update();
     this.accReg.update();
 
-    this.clockSet = false;
     this.accReg.unSet();
 
-    this.clockEnable = false;
     this.accReg.disable();
     this.iARegister.disable();
     this.mainBus.clear();
   };
 
   private runStepTwo = () => {
-    this.clockEnable = true;
     this.memory.setBus();
 
-    this.clockSet = true;
     this.iRegister.set();
     this.iRegister.update();
 
-    this.clockSet = false;
     this.iRegister.unSet();
 
-    this.clockEnable = false;
     this.mainBus.clear();
   };
 
   private runStepThree = () => {
-    this.clockEnable = true;
     this.accReg.enable();
     this.accReg.setBus();
 
-    this.clockSet = true;
+    this.iARegister.enable();
     this.iARegister.set();
+
     this.iARegister.update();
 
-    this.clockSet = false;
     this.iARegister.unSet();
+    this.iARegister.disable();
 
-    this.clockEnable = false;
     this.accReg.disable();
     this.mainBus.clear();
   };
@@ -320,7 +315,7 @@ class Cpu {
 
     this.gpRegs[RA].enable();
     this.gpRegs[RA].update();
-    this.alu.carryIn = this.flagBus.data[0];
+
     this.alu.update();
 
     this.accReg.set();
@@ -351,8 +346,7 @@ class Cpu {
     this.stepper.update(this.clockState);
   };
 
-  private shiftRInstr = (RA: number, RB: number) => {
-    this.mainBus.clear();
+  private shiftInstr = (RA: number, RB: number) => {
     this.stepper.update(this.clockState);
     // step5
 
@@ -362,7 +356,6 @@ class Cpu {
     this.accReg.enable();
     this.accReg.set();
 
-    this.alu.carryIn = this.flagBus.data[0];
     this.alu.update();
 
     this.accReg.update();

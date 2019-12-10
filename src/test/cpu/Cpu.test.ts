@@ -140,4 +140,15 @@ describe("Cpu", () => {
       false
     ]);
   });
+
+  it("ALU XOR should correcly XOR contents of RA to left and place result in RB", () => {
+    cpu.setRam([0, 6], 0b11111001);
+    cpu.setGp(2, 0b11);
+    cpu.setGp(1, 0b01);
+
+    cycleCpu();
+    console.log(cpu.readFlags());
+    expect(cpu.readFlags()[1]).toEqual(true);
+    expect(cpu.readFlags()[2]).toEqual(false);
+  });
 });

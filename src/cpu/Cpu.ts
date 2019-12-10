@@ -34,15 +34,10 @@ class Cpu {
 
   private tmpReg = new Register(this.mainBus, this.tmpBus, "tmp");
   private accReg = new Register(this.accBus, this.mainBus, "acc");
-  private flagsReg = new Register(this.aluToFlagBus, this.flagBus, "flags");
+  private flagsReg = new Register(this.flagBus, this.flagBus, "flags");
 
   // components
-  private alu = new Alu(
-    this.mainBus,
-    this.tmpBus,
-    this.accBus,
-    this.aluToFlagBus
-  );
+  private alu = new Alu(this.mainBus, this.tmpBus, this.accBus, this.flagBus);
 
   // control section
   private stepper = new Stepper();
@@ -145,6 +140,10 @@ class Cpu {
     this.memory.setMem(cell[0], cell[1], byte);
   };
 
+  readFlags = () => {
+    return this.flagBus.data;
+  };
+
   readGp = (reg: number) => {
     return this.gpRegs[reg].readByte();
   };
@@ -216,6 +215,7 @@ class Cpu {
               break;
             case CMP:
               // 1111 RARB | CMP RA,RB | Compare
+              this.cmpInstr(RA, RB);
               break;
             default:
               break;
@@ -316,10 +316,16 @@ class Cpu {
     this.stepper.update(this.clockState);
     // step 5
 
+    this.flagsReg.enable();
+
     this.gpRegs[RA].enable();
     this.gpRegs[RA].update();
 
+    this.flagsReg.set();
     this.alu.update();
+    this.flagsReg.update();
+    this.flagsReg.disable();
+    this.flagsReg.unSet();
 
     this.accReg.set();
     this.accReg.enable();
@@ -389,7 +395,37 @@ class Cpu {
     this.stepper.update(this.clockState);
   };
 
-  private cmpInstr = (RA: number, RB: number) => {};
+  private cmpInstr = (RA: number, RB: number) => {
+    this.gpRegs[RB].enable();
+    this.gpRegs[RB].update();
+
+    this.tmpReg.set();
+    this.tmpReg.update();
+    this.tmpReg.unSet();
+
+    this.gpRegs[RB].disable();
+
+    this.mainBus.clear();
+    this.stepper.update(this.clockState);
+    // step 5
+
+    this.gpRegs[RA].enable();
+    this.gpRegs[RA].update();
+
+    this.alu.update();
+    console.log(this.flagBus.data);
+
+    this.accReg.set();
+    this.accReg.enable();
+    this.accReg.update();
+    this.accReg.disable();
+    this.accReg.unSet();
+
+    this.gpRegs[RA].disable();
+
+    this.mainBus.clear();
+    this.stepper.update(this.clockState);
+  };
 }
 
 export default Cpu;

@@ -70,4 +70,23 @@ describe("Cpu", () => {
       false
     ]);
   });
+  it("ALU NOT should correcly shift contents of RA to left and place result in RB", () => {
+    cpu.setRam([0, 3], 0b10111001);
+    cpu.setGp(2, 0b00001111);
+    cpu.setGp(1, 0b11);
+    // cpu.setIAR(0b0);
+
+    cycleCpu();
+
+    expect(cpu.readGp(1)).toEqual([
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+    ]);
+  });
 });

@@ -189,18 +189,17 @@ class Cpu {
               // 1000 RARB | ADD RA,RB | add
               this.addInstr(RA, RB);
               break;
-
             case SHR:
               // 1001 RARB | SHR RA,RB | shift right
-              this.shiftInstr(RA, RB);
+              this.aluOneInputInstr(RA, RB);
               break;
             case SHL:
               // 1010 RARB | SHL RA,RB | shift left
-              this.shiftInstr(RA, RB);
-
+              this.aluOneInputInstr(RA, RB);
               break;
             case NOT:
               // 1011 RARB | NOT RA,RB | Not
+              this.aluOneInputInstr(RA, RB);
               break;
             case AND:
               // 1100 RARB | AND RA,RB | AND
@@ -346,7 +345,7 @@ class Cpu {
     this.stepper.update(this.clockState);
   };
 
-  private shiftInstr = (RA: number, RB: number) => {
+  private aluOneInputInstr = (RA: number, RB: number) => {
     this.stepper.update(this.clockState);
     // step5
 

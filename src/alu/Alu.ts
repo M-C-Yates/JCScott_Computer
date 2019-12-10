@@ -78,21 +78,21 @@ class Alu {
     this._op = op;
   }
 
-  updateOpDecoder = () => {
+  private updateOpDecoder = () => {
     this.opDecoder.update(this._op[0], this._op[1], this._op[2]);
   };
 
-  enableComparator = () => {
+  private enableComparator = () => {
     this.outputBus.data = new Array(8).fill(false);
   };
 
-  updateComparator = () => {
+  private updateComparator = () => {
     this.comparator.update();
     this._largerThanOut = this.comparator.getLarger();
     this._equalOut = this.comparator.getEqual();
   };
 
-  updateAdder = () => {
+  private updateAdder = () => {
     this.adder.update(this._carryIn);
     this._carryOut = this.adder.carryOut;
     this.enablerBus.data = [...this.adder.sum];
@@ -100,36 +100,37 @@ class Alu {
     this.outputBus.data = this.enablers[this.index].output;
   };
 
-  updateXorer = () => {
+  private updateXorer = () => {
     this.enablers[this.index].update(this.enablerBus.data, true);
     this.outputBus.data = this.enablers[this.index].output;
   };
 
-  updateOr = () => {
+  private updateOr = () => {
     this.orer.update();
     this.enablers[this.index].update(this.enablerBus.data, true);
     this.outputBus.data = this.enablers[this.index].output;
   };
-  updateAnd = () => {
+  private updateAnd = () => {
     this.ander.update();
     this.enablers[this.index].update(this.enablerBus.data, true);
     this.outputBus.data = this.enablers[this.index].output;
   };
 
-  updateNot = () => {
+  private updateNot = () => {
     this.notter.update();
     this.enablers[this.index].update(this.enablerBus.data, true);
     this.outputBus.data = this.enablers[this.index].output;
   };
 
-  updateLeftShifter = () => {
+  private updateLeftShifter = () => {
     this.leftShifter.update(this._carryIn);
     this._carryOut = this.leftShifter.getShiftOut();
     this.enablers[this.index].update(this.enablerBus.data, true);
     this.outputBus.data = this.enablers[this.index].output;
   };
 
-  updateRightShifter = () => {
+  private updateRightShifter = () => {
+    // console.log(this.inputA.data, 1);
     this.rightShifter.update(this._carryIn);
     this._carryOut = this.rightShifter.getShiftOut();
     this.enablers[this.index].update(this.enablerBus.data, true);
@@ -178,6 +179,7 @@ class Alu {
       default:
         break;
     }
+    // console.log(this.outputBus.data);
 
     this._isZero = this.isZeroer.get();
     this.flagBus.data = [

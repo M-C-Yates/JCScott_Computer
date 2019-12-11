@@ -221,4 +221,21 @@ describe("Cpu Instrs", () => {
       false
     ]);
   });
+
+  it("JMP should move contents from next ram byte into the IAR", () => {
+    // cpu.setIAR(0b1000);
+    cpu.setRam([0, 8], 0b01000000);
+    cpu.setRam([0, 9], 0b1010);
+    cpu.cycle();
+    expect(cpu.IAR).toEqual([
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false
+    ]);
+  });
 });

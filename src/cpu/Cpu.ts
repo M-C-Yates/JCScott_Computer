@@ -179,7 +179,6 @@ class Cpu {
         const JMP = "00000100";
         const JCAEZ = "00000101";
         const CLF = "00000110";
-
         switch (op) {
           case LD:
             // 0000 RARB | LD RA,RB | load RB from ram addr in RA
@@ -199,6 +198,7 @@ class Cpu {
             break;
           case JMP:
             // 0100 0000 | JMP addr | jump to the address in the next byte
+            this.jmpInstr(RB);
             break;
           case JCAEZ:
             // 0101 caez | JCAEZ addr | jump if any tested Flag is on
@@ -472,6 +472,26 @@ class Cpu {
     this.gpRegs[RB].enable();
     this.gpRegs[RB].update();
     this.gpRegs[RB].disable();
+
+    this.iARegister.enable();
+    this.iARegister.set();
+    this.iARegister.update();
+    this.iARegister.unSet();
+    this.iARegister.disable();
+
+    this.mainBus.clear();
+  };
+
+  private jmpInstr = (RB: number) => {
+    this.mainBus.clear();
+
+    this.mainBus.data = this.iARegister.output;
+
+    this.memory.updateAddress();
+
+    this.mainBus.clear();
+
+    this.memory.update(false, true);
 
     this.iARegister.enable();
     this.iARegister.set();

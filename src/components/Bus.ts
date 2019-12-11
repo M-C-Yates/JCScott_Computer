@@ -15,9 +15,6 @@ class Bus {
   clear = () => {
     this._data = [...new Array(8).fill(false)];
   };
-  clear = () => {
-    this.data = [...new Array(8).fill(false)];
-  };
 }
 
 export default Bus;

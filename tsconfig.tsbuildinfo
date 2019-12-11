@@ -1,0 +1,669 @@
+{
+  "program": {
+    "fileInfos": {
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0",
+        "signature": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
+        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1",
+        "signature": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743",
+        "signature": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4",
+        "signature": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52",
+        "signature": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0",
+        "signature": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3",
+        "signature": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21",
+        "signature": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2",
+        "signature": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
+        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
+        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
+        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
+        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0",
+        "signature": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "ff8ad203e83338289b0f5defc1a5b5c253fb7d251b464db497383f915a0df3f4",
+        "signature": "ff8ad203e83338289b0f5defc1a5b5c253fb7d251b464db497383f915a0df3f4"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f",
+        "signature": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c",
+        "signature": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6",
+        "signature": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46",
+        "signature": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/index.ts": {
+        "version": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts": {
+        "version": "5ceb7d816ce3fedd81b5a543ced5771cbb24c60cd0c151f7bded0e00b62f92cf",
+        "signature": "cad4309a0f33de0311f9424b45eb46952576de29b00b6ede959fde93658af1fc"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": {
+        "version": "cf8acc4212c11bdec08cc8bb10a62dc36aab040f30252c0f28a937c6a4277417",
+        "signature": "789262e5706abf5892d04d84bd105aba2da26f4e808d01a63ebbd5ea852b8b18"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/bus.ts": {
+        "version": "deede9072626d9b59d2bd336034a67ebe989772ab47d8d80b0d9f8f2068faef2",
+        "signature": "19fb4e2f97ebb7657272ef9a73fe769984ba3f62514a69a3cbb89b953aa73546"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": {
+        "version": "cfd2e16960e9b38b36c625a40eb206f07b0033cd022c7260abe33ffa60ac9443",
+        "signature": "f2c5f37d341094663764674ce2ec9b9c851a598a9664b701ab4211f13132c0ea"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts": {
+        "version": "7dc0e6dec1d57d112bd9c680a51bc919791f54fa6d0c21bae94b2eefdd6d61ce",
+        "signature": "e8d2a1be0238fbc8f8260247604f023b96321f0e0ddcbcc6993c72889f6cc478"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/components.ts": {
+        "version": "b4953075443d53e0a5f3803c024eb29119bfa65c1f46ecdbb2d4c34d22ba6955",
+        "signature": "1a768f6f4d8764cca743e1e571b21090938158c1a91939e0216ce11224e7ffdd"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts": {
+        "version": "5bd1b3e7e59bbf9706d34bdf599663418f3809cb2a2d072373e18f17c3df5ccf",
+        "signature": "8c9107701e3177ead088a5847323f41b3564617097372707e04a9463e087af6e"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts": {
+        "version": "4044cccf0c0dea42d0544df506120de4a6f960e84984d7ce89384a57ed8ae218",
+        "signature": "573dbc6c165279c8169929282f8f367e5c0c98792ff6dae147e5c09ded33cd39"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts": {
+        "version": "d1f1f1d5c39f192069f96e483e6c3973a5d702416c2889387dcd8e60592c585e",
+        "signature": "89e3c7871488f05fa090cdd5b6d9a063eb8475101c2efd2c08f9d87f1e7d8ec8"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts": {
+        "version": "e531f6a1ca28f1ed255b9dadcda7b586ce37227a48030ed27447e85cad0c49fb",
+        "signature": "43763b423495508f0d7cd205b42a7a083ac8096ad80b36af4af49b18958df1ec"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts": {
+        "version": "ab040290ccef1c9bc44979f93378fa49118b8cd7c55e93d7dd76997e13b578e8",
+        "signature": "e810cd9cb59b71dcf081ac16d072ed3ceabeeacea7e8a947f2fd863796efa6af"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts": {
+        "version": "65e886034b0bc899589c07a75e6885d7d3a026529a39f9665795869699eef3a5",
+        "signature": "19e955c8ea28c6ffc9c75e2896dd70e4aa92de783459c828a7eee0d5806b2df2"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": {
+        "version": "e463ec417b44f2be823aa82577e5d7ff48a180acc99815e6414948ab993d1ea8",
+        "signature": "3065afea6583d8ec79fc2eb1e8369ab49e7c58cbb43421421d30b529ae5858e4"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts": {
+        "version": "867f414966eecb6c9c313457883da083e9e795ca22c32037dd30f02ea0aa8695",
+        "signature": "597f4ca9b6638e1ed577269d34df876c71e4eb968e08190af7ab6cbb0ff24baa"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/register.ts": {
+        "version": "17bd2942d74aa2e55930a7c5459202dfb1e7c2d6ed6b1087e614f33ad73954db",
+        "signature": "003b8062ebd65e7f2d9505c93c579f1aab2da5925e04bcfe13b4929e405f1c0d"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts": {
+        "version": "e82fa495c3695d0042b1fc24e226fc0a5f91a11169b49ea4506f6d569f8dad9f",
+        "signature": "90e2238ec015a09977a72b76ed8f82278273824574a92604b18b40bcb3d9a6b8"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": {
+        "version": "e6f35482b5997f1337fb2662c00c933d79f815023cc7b83a2e1b609a6e35728e",
+        "signature": "853f4c17fe8a7ae5db7b375a7bbec1c0be65886758ca7d6aa37b87de82a7f1cc"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts": {
+        "version": "7381e343a0d543010071799f3b42f07eb129bd3ccf4c514a51cfc87decff9d5c",
+        "signature": "ff9090fd843dcda9ffb4ea9ff3b483d2151037d9af4f51b246af52ad03d9db36"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": {
+        "version": "7ea624c6a522c07b6fbbddc61ac9709b78967560462bb493cc34ce9128ccdded",
+        "signature": "e6abb43b47c8e874473fe7bf7d5bd3c49163e392b9d25fa77ad931a89d9d685d"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts": {
+        "version": "cb09c3afa993ae7b49f959caaf73c2b4e43b50995aa95a9ff770cfbdfd703442",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/cpu/instructions.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts": {
+        "version": "8e3f4b17cda9503f3a2f9caf8b1670ad3f65ed5705a9cf28fad01109f6af7969",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts": {
+        "version": "17500c52b84399a8578a0fd3a5bc90befc26d8477d80c776634de2e8f7bcf493",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/circuits/byte.test.ts": {
+        "version": "e82c3c1386a47915f68ce4927660a032ac288bcd721cf658659daaa1c95576be",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts": {
+        "version": "afc4f1022ae19656115fce44e30f0df971de0a806969b23e8f2fe23805dcef00",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/adder.test.ts": {
+        "version": "9442ff0b9312bd68da1c6249ef9b3abdad25235bef86465fb054cc89854e0bb9",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts": {
+        "version": "5e821c998f72bf2fbdd0e5fb1db97307e1ced692a92ce4b496fd75f3973f7f13",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/busone.test.ts": {
+        "version": "584833db960edb19f6f1fe627d49eb6886c10fa1daadfc0146a34b531f7c54a0",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/comparator.test.ts": {
+        "version": "65ace101ba9269643c7e52e22e54efd0cab395184efa85b0b95d082723f49f5c",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/components.test.ts": {
+        "version": "6f925c2e0ae256407bb83c6ead1c884b8720e7626fa8bc16063672f0b2943a74",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/decoders.test.ts": {
+        "version": "72012f5f01db6cc2d69f9187325f1e4790be1764e1d220c6f43f40053c3f5595",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts": {
+        "version": "aadc7bd2711c632b27eff3e0fd73380b2e66d5c40f2a4c9dbdbbfb9fe6431399",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/iszero.test.ts": {
+        "version": "0080eef1ebca1cba1ff3b76516296e4d9c1d8381afd74350f4a28b6d04b46f69",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/register.test.ts": {
+        "version": "f4a285cf9161579ae5aa91b8de7be2825c5a852f508264a9d211a3b3fc95025e",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts": {
+        "version": "6fc7673507ef6fa51ed529d2549c535c1e760fb132462367908886b33191ab2b",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/components/stepper.test.ts": {
+        "version": "6f2ee69362eb8e0db00f125b6652aff5c3483bcd1666e5068d75f74812c83388",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts": {
+        "version": "513ff4657104ad1a9a596d93ee4d23d04e3f1223f74d5a6779fdcc9d75b6c925",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts": {
+        "version": "662d6693d7bae2f18cb1a5c22f7f98f31cd8e7c1376ad380334230366786b73a",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/utils/binnumtostring.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/utils/bintobool.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/utils/booltobinary.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts": {
+        "version": "74f9bcff3ff74cf869dd567eefb979e017a6d5d7503c39ee11582f7c10e21d02",
+        "signature": "74f9bcff3ff74cf869dd567eefb979e017a6d5d7503c39ee11582f7c10e21d02"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts": {
+        "version": "b71b7d1e18c61f41ed9b3917a6ccf2929022278154d9f55e2b8990549c1826a9",
+        "signature": "b71b7d1e18c61f41ed9b3917a6ccf2929022278154d9f55e2b8990549c1826a9"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts": {
+        "version": "44d81327b8fbb2d7ca0701f5b7bb73e48036eb99a87356acf95f19ed96e907aa",
+        "signature": "44d81327b8fbb2d7ca0701f5b7bb73e48036eb99a87356acf95f19ed96e907aa"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts": {
+        "version": "56dede90729ef85351f132d66e05510851211d627e2f2c6621475d4f7938f365",
+        "signature": "56dede90729ef85351f132d66e05510851211d627e2f2c6621475d4f7938f365"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__template/index.d.ts": {
+        "version": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8",
+        "signature": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__core/index.d.ts": {
+        "version": "8b6748f9e15ad7bac494dc3cd3b13ba0a8be195aca97f7c10a96b1c74a956f32",
+        "signature": "8b6748f9e15ad7bac494dc3cd3b13ba0a8be195aca97f7c10a96b1c74a956f32"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-coverage/index.d.ts": {
+        "version": "9e951ec338c4232d611552a1be7b4ecec79a8c2307a893ce39701316fe2374bd",
+        "signature": "9e951ec338c4232d611552a1be7b4ecec79a8c2307a893ce39701316fe2374bd"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-report/index.d.ts": {
+        "version": "70c61ff569aabdf2b36220da6c06caaa27e45cd7acac81a1966ab4ee2eadc4f2",
+        "signature": "70c61ff569aabdf2b36220da6c06caaa27e45cd7acac81a1966ab4ee2eadc4f2"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-reports/index.d.ts": {
+        "version": "93b59bc67329d5add033e3198583c39aa939cef891e6a2b763e0bea2b514ea9b",
+        "signature": "93b59bc67329d5add033e3198583c39aa939cef891e6a2b763e0bea2b514ea9b"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest-diff/index.d.ts": {
+        "version": "6ecb326999da47034eff85653423767152858fbb7acf0433f7603c9abf1e3f06",
+        "signature": "6ecb326999da47034eff85653423767152858fbb7acf0433f7603c9abf1e3f06"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/types.d.ts": {
+        "version": "71ba0678a3c647f5c0706ae975c031ace0d464e60f9ce56eaa7f1678d065aab7",
+        "signature": "71ba0678a3c647f5c0706ae975c031ace0d464e60f9ce56eaa7f1678d065aab7"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/index.d.ts": {
+        "version": "162c6f2951bd80ae6e16679378f382200b26bba9de8f255af3a2895fbfa670b4",
+        "signature": "162c6f2951bd80ae6e16679378f382200b26bba9de8f255af3a2895fbfa670b4"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest/index.d.ts": {
+        "version": "4178f96c88b72f2787fa9e59f941cf3e16fa573a54c880582af8c0527cafd89c",
+        "signature": "4178f96c88b72f2787fa9e59f941cf3e16fa573a54c880582af8c0527cafd89c"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts": {
+        "version": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49",
+        "signature": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts": {
+        "version": "e65fca93c26b09681d33dad7b3af32ae42bf0d114d859671ffed30a92691439c",
+        "signature": "e65fca93c26b09681d33dad7b3af32ae42bf0d114d859671ffed30a92691439c"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts": {
+        "version": "989ea8e89ef2d6a07a1872fcee14be6b9e1920b04f19a4ab149d673f89af67e6",
+        "signature": "989ea8e89ef2d6a07a1872fcee14be6b9e1920b04f19a4ab149d673f89af67e6"
+      }
+    },
+    "options": {
+      "target": 4,
+      "module": 1,
+      "lib": [
+        "lib.es2017.d.ts",
+        "lib.dom.d.ts"
+      ],
+      "declaration": true,
+      "sourceMap": true,
+      "outDir": "C:/webStuff/projects/JCScottComp/dist",
+      "rootDir": "C:/webStuff/projects/JCScottComp/src",
+      "composite": true,
+      "downlevelIteration": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "watch": true,
+      "configFilePath": "C:/webStuff/projects/JCScottComp/tsconfig.json"
+    },
+    "referencedMap": {
+      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/components.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/adder.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/register.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
+        "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
+        "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
+        "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
+        "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/circuits/byte.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/adder.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/adder.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/busone.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/comparator.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/components.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/decoders.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/iszero.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/register.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/components/stepper.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
+        "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__template/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__core/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__template/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-report/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-reports/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-report/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/types.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest-diff/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/components.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/register.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__template/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__core/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__template/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-report/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-reports/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-report/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-coverage/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/types.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest-diff/index.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "c:/webstuff/projects/jcscottcomp/src/index.ts",
+      "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/adder.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
+      "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
+      "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
+      "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
+      "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts",
+      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
+      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
+      "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+      "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts",
+      "c:/webstuff/projects/jcscottcomp/src/cpu/instructions.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/circuits/byte.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/adder.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/busone.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/comparator.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/components.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/decoders.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/iszero.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/register.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/components/stepper.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts",
+      "c:/webstuff/projects/jcscottcomp/src/utils/binnumtostring.ts",
+      "c:/webstuff/projects/jcscottcomp/src/utils/bintobool.ts",
+      "c:/webstuff/projects/jcscottcomp/src/utils/booltobinary.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__template/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__core/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-coverage/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-report/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-reports/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest-diff/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/types.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts"
+    ]
+  },
+  "version": "3.5.3"
+}

@@ -50,5 +50,4 @@ npm run test
 
 ## License
 
-Copyright © 2019 [Matthew Yates](https://github.com/M-C-Yates).<br />
 This project is [MIT](https://github.com/M-C-Yates/basic-computer/blob/master/LICENSE) licensed.

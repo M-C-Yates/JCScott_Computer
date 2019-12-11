@@ -211,32 +211,33 @@ class Cpu {
   };
 
   private runStepOne = () => {
-    this.accReg.enable();
-
     this.iARegister.enable();
     this.iARegister.set();
     this.iARegister.update;
+    this.iARegister.disable();
+
     this.mainBus.data = this.iARegister.output;
-    this.accReg.set();
     this.busOne.update(true);
 
     this.memory.updateAddress();
     this.alu.update();
+
+    this.accReg.enable();
+    this.accReg.set();
     this.accReg.update();
-
     this.accReg.unSet();
-
     this.accReg.disable();
-    this.iARegister.disable();
+
     this.mainBus.clear();
   };
 
   private runStepTwo = () => {
+    this.mainBus.clear();
+
     this.memory.setBus();
 
     this.iRegister.set();
     this.iRegister.update();
-
     this.iRegister.unSet();
 
     this.mainBus.clear();
@@ -245,6 +246,7 @@ class Cpu {
   private runStepThree = () => {
     this.accReg.enable();
     this.accReg.setBus();
+    this.accReg.disable();
 
     this.iARegister.enable();
     this.iARegister.set();
@@ -254,7 +256,6 @@ class Cpu {
     this.iARegister.unSet();
     this.iARegister.disable();
 
-    this.accReg.disable();
     this.mainBus.clear();
   };
 
@@ -271,13 +272,13 @@ class Cpu {
     this.mainBus.clear();
     // step 5
 
-    this.flagsReg.enable();
-
     this.gpRegs[RA].enable();
     this.gpRegs[RA].update();
 
-    this.flagsReg.set();
     this.alu.update();
+
+    this.flagsReg.enable();
+    this.flagsReg.set();
     this.flagsReg.update();
     this.flagsReg.disable();
     this.flagsReg.unSet();
@@ -293,34 +294,31 @@ class Cpu {
     this.mainBus.clear();
     // step6
 
+    this.accReg.enable();
+    this.accReg.setBus();
+    this.accReg.disable();
+
     this.gpRegs[RB].enable();
     this.gpRegs[RB].set();
-    this.accReg.enable();
-
-    this.accReg.setBus();
-
     this.gpRegs[RB].update();
     this.gpRegs[RB].unSet();
-
-    this.accReg.disable();
     this.gpRegs[RB].disable();
 
     this.mainBus.clear();
   };
 
   private aluOneInputInstr = (RA: number, RB: number) => {
+    this.mainBus.clear();
     // step5
 
     this.gpRegs[RA].enable();
     this.gpRegs[RA].update();
 
-    this.accReg.enable();
-    this.accReg.set();
-
     this.alu.update();
 
+    this.accReg.enable();
+    this.accReg.set();
     this.accReg.update();
-
     this.accReg.unSet();
     this.accReg.disable();
 
@@ -333,11 +331,9 @@ class Cpu {
 
     this.accReg.enable();
     this.accReg.update();
-
-    this.gpRegs[RB].update();
-
     this.accReg.disable();
 
+    this.gpRegs[RB].update();
     this.gpRegs[RB].unSet();
     this.gpRegs[RB].disable();
 
@@ -376,6 +372,7 @@ class Cpu {
 
   private loadInstr = (RA: number, RB: number) => {
     this.mainBus.clear();
+
     this.gpRegs[RA].enable();
     this.mainBus.data = this.gpRegs[RA].output;
 
@@ -410,12 +407,12 @@ class Cpu {
     this.mainBus.clear();
 
     this.gpRegs[RB].enable();
-
     this.gpRegs[RB].update();
+
     this.memory.update(true, false);
     this.memory.updateSet(false);
-
     this.memory.updateEnable(false);
+
     this.gpRegs[RB].disable();
 
     this.mainBus.clear();
@@ -426,10 +423,21 @@ class Cpu {
 
     this.iARegister.enable();
     this.mainBus.data = this.iARegister.output;
+    this.busOne.update(true);
+
     this.memory.updateAddress();
+
+    this.alu.op = [false, false, false];
+    this.alu.update();
+
+    this.accReg.set();
+    this.accReg.update();
+    this.accReg.unSet();
+
     this.iARegister.disable();
 
     this.mainBus.clear();
+
     this.gpRegs[RB].set();
     this.memory.update(false, true);
 
@@ -437,6 +445,18 @@ class Cpu {
     this.gpRegs[RB].unSet();
 
     this.memory.updateEnable(false);
+
+    this.mainBus.clear();
+
+    this.accReg.enable();
+    this.accReg.update();
+    this.accReg.disable();
+
+    this.iARegister.enable();
+    this.iARegister.set();
+    this.iARegister.update();
+    this.iARegister.unSet();
+    this.iARegister.disable();
 
     this.mainBus.clear();
   };

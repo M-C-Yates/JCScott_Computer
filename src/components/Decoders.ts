@@ -231,6 +231,7 @@ export class Decoder4x16 {
       let val = this.andGates[i].get();
       if (val) {
         this.index = i;
+        console.log(this.index);
       }
       this.output[i] = val;
     }

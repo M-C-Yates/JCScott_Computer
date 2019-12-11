@@ -172,11 +172,11 @@ describe("Cpu Instrs", () => {
   it("ST should correctly store contents of RB to address in RA", () => {
     cpu.setIAR(0b10);
     cpu.setRam([0, 2], 0b00010001);
-    cpu.setGp(0, 0b00000100);
+    cpu.setGp(0, 0b0000011);
     cpu.setGp(1, 0b10101);
 
     cpu.cycle();
-    expect(cpu.readMem(0, 4)).toEqual([
+    expect(cpu.readMem(0, 3)).toEqual([
       false,
       false,
       false,

@@ -6,7 +6,7 @@ import { And } from "../circuit/Gates";
 
 class Memory256B {
   private addressRegister = new Register(this.inputBus, this.outputBus, "MAR");
-  private address = new Array(2).fill(0);
+  private address = [0, 0];
   private decoderCol = new Decoder4x16();
   private decoderRow = new Decoder4x16();
   private memory: Cell[][] = new Array(16).fill([]);
@@ -46,10 +46,13 @@ class Memory256B {
 
     const address = this.addressRegister.output;
     this.decoderRow.update(address[0], address[1], address[2], address[3]);
+
     this.decoderCol.update(address[4], address[5], address[6], address[7]);
+    // this.decoderCol.update(false, false, true, false);
 
     this.address[0] = this.decoderRow.getIndex();
     this.address[1] = this.decoderCol.getIndex();
+    console.log(this.address);
     this.memory[this.address[0]][this.address[1]].update(this.set, this.enable);
   };
 

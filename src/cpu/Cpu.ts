@@ -56,7 +56,6 @@ class Cpu {
     this.iARegister.setByte(0b0);
   }
   cycle = () => {
-    // this.clockState = true;
     this.alu.op = [false, false, false];
     this.runStepOne();
     this.runStepTwo();
@@ -64,7 +63,6 @@ class Cpu {
 
     this.handleInstruction();
     this.mainBus.clear();
-    // this.step();
   };
 
   private instructionDecode = () => {
@@ -97,7 +95,6 @@ class Cpu {
   };
 
   setRam = (cell: number[], byte: number) => {
-    this.instructionDecoderSet2x4.update(false, true);
     this.memory.setMem(cell[0], cell[1], byte);
   };
 

@@ -153,8 +153,6 @@ describe("Cpu Instrs", () => {
     cpu.setRam([0, 1], 0b00000101);
     cpu.setGp(0, 0b00000001);
     cpu.setGp(1, 0b00);
-    // console.log(cpu.readGp(0));
-    // console.log(cpu.readGp(1));
     cpu.cycle();
 
     expect(cpu.readGp(1)).toEqual([
@@ -184,6 +182,24 @@ describe("Cpu Instrs", () => {
       false,
       true,
       false,
+      true
+    ]);
+  });
+
+  it("DATA should correctly store contents from ram in RB", () => {
+    cpu.setIAR(0b100);
+    cpu.setRam([0, 4], 0b00100000);
+    cpu.setRam([0, 5], 0b1111);
+
+    cpu.cycle();
+    expect(cpu.readGp(0)).toEqual([
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
       true
     ]);
   });

@@ -52,7 +52,6 @@ class Memory256B {
 
     this.address[0] = this.decoderRow.getIndex();
     this.address[1] = this.decoderCol.getIndex();
-    console.log(this.address);
     this.memory[this.address[0]][this.address[1]].update(this.set, this.enable);
   };
 

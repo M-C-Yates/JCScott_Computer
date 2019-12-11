@@ -127,11 +127,9 @@ class Alu {
     this._carryOut = this.leftShifter.getShiftOut();
     this.enablers[this.index].update(this.enablerBus.data, true);
     this.outputBus.data = this.enablers[this.index].output;
-    // console.log(this.outputBus.data);
   };
 
   private updateRightShifter = () => {
-    // console.log(this.inputA.data, 1);
     this.rightShifter.update(this._carryIn);
     this._carryOut = this.rightShifter.getShiftOut();
     this.enablers[this.index].update(this.enablerBus.data, true);
@@ -180,7 +178,6 @@ class Alu {
       default:
         break;
     }
-    // console.log(this.outputBus.data);
 
     this._isZero = this.isZeroer.get();
     this.flagBus.data = [

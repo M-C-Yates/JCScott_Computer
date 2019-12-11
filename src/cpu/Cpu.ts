@@ -187,6 +187,7 @@ class Cpu {
             break;
           case DATA:
             // 0010 00RB | DATA RB,addr | load these 8 bits into RB;
+            this.dataInstr(RB);
             break;
           case JMPR:
             // 0011 00RB | JMPR RB | jump to the addr in RB
@@ -400,6 +401,7 @@ class Cpu {
 
   private storeInstr = (RA: number, RB: number) => {
     this.mainBus.clear();
+
     this.gpRegs[RA].enable();
     this.mainBus.data = this.gpRegs[RA].output;
     this.memory.updateAddress();
@@ -415,6 +417,28 @@ class Cpu {
 
     this.memory.updateEnable(false);
     this.gpRegs[RB].disable();
+
+    this.mainBus.clear();
+  };
+
+  private dataInstr = (RB: number) => {
+    this.mainBus.clear();
+
+    this.iARegister.enable();
+    this.mainBus.data = this.iARegister.output;
+    this.memory.updateAddress();
+    this.iARegister.disable();
+
+    this.mainBus.clear();
+    this.gpRegs[RB].set();
+    this.memory.update(false, true);
+
+    this.gpRegs[RB].update();
+    this.gpRegs[RB].unSet();
+
+    this.memory.updateEnable(false);
+
+    this.mainBus.clear();
   };
 }
 

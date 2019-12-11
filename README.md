@@ -8,6 +8,7 @@
 
 - `Memory`: 256 bytes
 - 4x general purpose registers
+- 8-bit word-size
 
 ## Install
 
@@ -26,6 +27,26 @@ npm run start
 ```sh
 npm run test
 ```
+
+## Instructions
+
+| instruction code | shorthand | description                                                                                                     |
+| :--------------: | :-------: | --------------------------------------------------------------------------------------------------------------- |
+|    1000 rarb     |    ADD    | Adds contents of ra and rb together, then places result into rb.                                                |
+|    1001 rarb     |    SHR    | Shifts contents of ra to the right by one bit, then places result the into rb.                                  |
+|    1010 rarb     |    SHL    | shifts contents of ra to the left by one bit, then places the result into rb.                                   |
+|    1011 rarb     |    NOT    | Performs a NOT operation between the bytes stored in ra and rb,<br> then places the result into rb.             |
+|    1100 rarb     |    AND    | Performs a AND operation between the bytes stored in ra and rb,<br> then places the result into rb.             |
+|    1101 rarb     |    OR     | Performs a OR operation between the bytes stored in ra and rb,<br> then places the result into rb.              |
+|    1110 rarb     |    XOR    | Performs a XOR operation between the bytes stored in ra and rb,<br> then places the result into rb.             |
+|    1111 rarb     |    CMP    | Compares the bytes stored in ra and rb,<br> discards output byte, places result of comparison in flag register. |
+|    0000 rarb     |    LD     | Loads contents of ram address stored from ra into rb.                                                           |
+|    0001 rarb     |    ST     | Stores contents of rb into ram address from ra.                                                                 |
+|    0010 00rb     |   DATA    | Loads the byte following this instruction into rb.                                                              |
+|    0011 00rb     |   JMPR    | Jump to the address stored in rb.                                                                               |
+|    0100 0000     |    JMP    | Jump to the address indicated in the byte following this instruction.                                           |
+|    0101 caez     |   JCAEZ   | Jump if any tested flag is on using JMP, else move IAR forward two bytes.                                       |
+|    0110 0000     |    CLF    | Clears the flag register.                                                                                       |
 
 ## License
 

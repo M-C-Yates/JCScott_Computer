@@ -7,7 +7,8 @@
 ## Specs
 
 - `Memory`: 256 bytes
-- 4x geneRAl purpose registers
+- 4x general purpose registers
+- 8-bit word-size
 
 ## Install
 

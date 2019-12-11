@@ -238,4 +238,51 @@ describe("Cpu Instrs", () => {
       false
     ]);
   });
+
+  it("JCAEZ should jump if any tested flags are on", () => {
+    cpu.setRam([0, 10], 0b10000110);
+    cpu.setGp(1, 0b1);
+    cpu.setGp(2, 0b1);
+    // cpu.setIAR(0b1000);
+    cpu.cycle();
+
+    cpu.setRam([0, 11], 0b01010010);
+    cpu.setRam([0, 12], 0b00001110);
+
+    cpu.cycle();
+    expect(cpu.IAR).toEqual([
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false
+    ]);
+  });
+
+  it("JCAEZ should move ahead 2 bytes if no tested flags are on", () => {
+    cpu.setRam([0, 10], 0b10000110);
+    cpu.setGp(1, 0b0);
+    cpu.setGp(2, 0b0);
+    // cpu.setIAR(0b1000);
+    cpu.cycle();
+
+    cpu.setRam([0, 11], 0b01010000);
+    cpu.setRam([0, 12], 0b00001110);
+
+    cpu.cycle();
+    console.log(cpu.IAR);
+    expect(cpu.IAR).toEqual([
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false
+    ]);
+  });
 });

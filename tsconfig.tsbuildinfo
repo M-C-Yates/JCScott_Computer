@@ -150,11 +150,11 @@
         "signature": "43763b423495508f0d7cd205b42a7a083ac8096ad80b36af4af49b18958df1ec"
       },
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": {
-        "version": "84155a18ac78de6f49e431275dc58d0f2bbbef264f091482218ae4fcdbe3089f",
-        "signature": "8eec89519e39f5adbccdd85b97523cc8dbb7a2674873c655d0e94caf50a42bce"
+        "version": "54c22f04880b584d3dcdb361fabfa6982f29e088afea63578bdfd34c8b4a80e6",
+        "signature": "2cde5601627b9bb693c19cba6bb31208e67cf82993646e7d07b853cd453b1a90"
       },
       "c:/webstuff/projects/jcscottcomp/src/index.ts": {
-        "version": "a6bf172b5d3d2a2ace980ce30afd0deb7ed2fb2cc22600366e80d253396181a1",
+        "version": "989121a396b35c0edfb344de79b90e972a58257971ef256fb977a7487cb4ad99",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts": {
@@ -230,7 +230,7 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts": {
-        "version": "c3767c2429248d152712a61176768acc6d4f774b12ad1e80e50756e5cada3b6f",
+        "version": "49e6a441f15b280b0c7ebe3c2ac1b4a0cc840bbaf6d030f41fcc3c94e6ad6a47",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts": {

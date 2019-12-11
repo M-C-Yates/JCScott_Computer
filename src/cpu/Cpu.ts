@@ -72,11 +72,14 @@ class Cpu {
 
     const registerA = this.instructionDecoderEnables2x4[0].getIndex();
     const registerB = this.instructionDecoderEnables2x4[1].getIndex();
-    let decoded: [boolean, boolean[], number, number] = [
+    const testFlags: boolean[] = instruction.slice(4);
+
+    let decoded: [boolean, boolean[], number, number, boolean[]] = [
       instruction[0],
       instruction.slice(1, 4),
       registerA,
-      registerB
+      registerB,
+      testFlags
     ];
 
     return decoded;
@@ -119,6 +122,7 @@ class Cpu {
     const RA = instruction[2];
     const RB = instruction[3];
     const op = boolToBinary(instruction[1]);
+    const flags = instruction[4];
 
     // instruction breakdown
     // alu | op | RA | RB
@@ -198,10 +202,11 @@ class Cpu {
             break;
           case JMP:
             // 0100 0000 | JMP addr | jump to the address in the next byte
-            this.jmpInstr(RB);
+            this.jmpInstr();
             break;
           case JCAEZ:
             // 0101 caez | JCAEZ addr | jump if any tested Flag is on
+            this.jcaezInstr(flags);
             break;
           case CLF:
             // 0110 0000 | CLF | clear all flags
@@ -482,7 +487,7 @@ class Cpu {
     this.mainBus.clear();
   };
 
-  private jmpInstr = (RB: number) => {
+  private jmpInstr = () => {
     this.mainBus.clear();
 
     this.mainBus.data = this.iARegister.output;
@@ -497,6 +502,50 @@ class Cpu {
     this.iARegister.set();
     this.iARegister.update();
     this.iARegister.unSet();
+    this.iARegister.disable();
+
+    this.mainBus.clear();
+  };
+
+  private jcaezInstr = (flags: boolean[]) => {
+    this.mainBus.clear();
+
+    this.mainBus.data = this.iARegister.output;
+
+    this.memory.updateAddress();
+
+    this.busOne.update(true);
+    this.alu.update();
+
+    this.accReg.enable();
+    this.accReg.set();
+    this.accReg.update();
+    this.accReg.unSet();
+    this.accReg.disable();
+
+    this.mainBus.clear();
+
+    const indexInstr = flags.findIndex(flag => flag === true);
+    const indexFlagReg = this.flagsReg.output.findIndex(flag => flag === true);
+    if (indexInstr !== -1 && indexFlagReg !== -1) {
+      if (indexInstr === indexFlagReg) {
+        this.memory.update(false, true);
+
+        this.iARegister.enable();
+        this.iARegister.set();
+        this.iARegister.update();
+        this.iARegister.unSet;
+        this.iARegister.disable();
+        this.mainBus.clear();
+        return;
+      }
+    }
+
+    this.mainBus.data = this.accReg.output;
+    this.iARegister.enable();
+    this.iARegister.set();
+    this.iARegister.update();
+    this.iARegister.unSet;
     this.iARegister.disable();
 
     this.mainBus.clear();

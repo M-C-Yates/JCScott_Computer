@@ -32,9 +32,9 @@ npm run test
 
 | instruction code | shorthand | description                                                                                                     |
 | :--------------: | :-------: | --------------------------------------------------------------------------------------------------------------- |
-|    1000 rarb     |    ADD    | Adds contents of ra and rb together,<br>then places result into rb.                                             |
-|    1001 rarb     |    SHR    | Shifts contents of ra to the right by one bit,<br> then places result the into rb.                              |
-|    1010 rarb     |    SHL    | shifts contents of ra to the left by one bit,<br> then places the result into rb.                               |
+|    1000 rarb     |    ADD    | Adds contents of ra and rb together, then places result into rb.                                                |
+|    1001 rarb     |    SHR    | Shifts contents of ra to the right by one bit, then places result the into rb.                                  |
+|    1010 rarb     |    SHL    | shifts contents of ra to the left by one bit, then places the result into rb.                                   |
 |    1011 rarb     |    NOT    | Performs a NOT operation between the bytes stored in ra and rb,<br> then places the result into rb.             |
 |    1100 rarb     |    AND    | Performs a AND operation between the bytes stored in ra and rb,<br> then places the result into rb.             |
 |    1101 rarb     |    OR     | Performs a OR operation between the bytes stored in ra and rb,<br> then places the result into rb.              |

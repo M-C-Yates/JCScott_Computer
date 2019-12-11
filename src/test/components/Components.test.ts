@@ -8,14 +8,14 @@ describe("Notter", () => {
   const testByte = new Array(8).fill(false);
   const testbyte2 = [true, false, true, false, true, false, true, false];
   it("should give correct output", () => {
-    bus.set(testByte);
+    bus.data = testByte;
     notter.update();
-    expect(bus.get()).toEqual(new Array(8).fill(true));
+    expect(bus.data).toEqual(new Array(8).fill(true));
   });
   it("should give the correct output2", () => {
-    bus.set(testbyte2);
+    bus.data = testbyte2;
     notter.update();
-    expect(bus.get()).toEqual([
+    expect(bus.data).toEqual([
       false,
       true,
       false,
@@ -36,10 +36,10 @@ describe("Ander", () => {
   const testByte1 = [false, true, true, false, false, true, false, true];
   const testByte2 = [true, true, false, true, false, false, true, true];
   it("should give the correct output", () => {
-    busA.set(testByte1);
-    busB.set(testByte2);
+    busA.data = testByte1;
+    busB.data = testByte2;
     ander.update();
-    expect(busC.get()).toEqual([
+    expect(busC.data).toEqual([
       false,
       true,
       false,
@@ -60,10 +60,10 @@ describe("ORer", () => {
   const testByte1 = [false, true, true, false, false, true, false, true];
   const testByte2 = [true, true, false, true, false, false, true, true];
   it("should give the correct output", () => {
-    busA.set(testByte1);
-    busB.set(testByte2);
+    busA.data = testByte1;
+    busB.data = testByte2;
     orer.update();
-    expect(busC.get()).toEqual([
+    expect(busC.data).toEqual([
       true,
       true,
       true,
@@ -84,10 +84,10 @@ describe("XORer", () => {
   const testByte1 = [false, true, true, false, false, true, false, true];
   const testByte2 = [true, true, false, true, false, false, true, true];
   it("should give the correct output", () => {
-    busA.set(testByte1);
-    busB.set(testByte2);
+    busA.data = testByte1;
+    busB.data = testByte2;
     xorer.update();
-    expect(busC.get()).toEqual([
+    expect(busC.data).toEqual([
       true,
       false,
       true,

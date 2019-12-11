@@ -4,8 +4,12 @@ class Decoder2x4 {
   private andGates: And[] = [new And(), new And(), new And(), new And()];
   private notGates: Not[] = [new Not(), new Not()];
   private outputs: boolean[] = new Array(4).fill(false);
+  private index: number = 0;
   get = () => {
     return this.outputs;
+  };
+  getIndex = () => {
+    return this.index;
   };
   update = (inputA: boolean, inputB: boolean) => {
     this.notGates[0].update(inputA);
@@ -22,6 +26,13 @@ class Decoder2x4 {
 
     this.andGates[3].update(inputA, inputB);
     this.outputs[3] = this.andGates[3].get();
+
+    for (let i = 0; i < 4; i++) {
+      if (this.outputs[i]) {
+        this.index = i;
+        break;
+      }
+    }
   };
 }
 

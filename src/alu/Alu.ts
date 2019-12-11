@@ -34,15 +34,15 @@ class Alu {
   private isZeroer = new IsZero(this.enablerBus);
 
   private opDecoder = new Decoder3x8();
-  private op: boolean[] = new Array(3).fill(false);
+  private _op: boolean[] = new Array(3).fill(false);
   private index: number = 0;
   private enablers: Enabler[] = [];
 
-  private carryOut: boolean = false;
-  private carryIn: boolean = false;
-  private largerThanOut: boolean = false;
-  private equalOut: boolean = false;
-  private isZero: boolean = false;
+  private _carryOut: boolean = false;
+  private _carryIn: boolean = false;
+  private _largerThanOut: boolean = false;
+  private _equalOut: boolean = false;
+  private _isZero: boolean = false;
 
   constructor(
     private inputA: Bus,
@@ -54,87 +54,86 @@ class Alu {
       this.enablers[i] = new Enabler();
     }
   }
+  get isZero(): boolean {
+    return this._isZero;
+  }
 
-  getZero = () => {
-    return this.isZero;
+  get carryOut(): boolean {
+    return this._carryOut;
+  }
+
+  get largerThanOut(): boolean {
+    return this._largerThanOut;
+  }
+
+  get equalOut(): boolean {
+    return this._equalOut;
+  }
+
+  set carryIn(carryIn: boolean) {
+    this._carryIn = carryIn;
+  }
+
+  set op(op: boolean[]) {
+    this._op = op;
+  }
+
+  private updateOpDecoder = () => {
+    this.opDecoder.update(this._op[0], this._op[1], this._op[2]);
   };
 
-  getCarry = () => {
-    return this.carryOut;
+  private enableComparator = () => {
+    this.outputBus.data = new Array(8).fill(false);
   };
 
-  getLarger = () => {
-    return this.largerThanOut;
-  };
-
-  getEqual = () => {
-    return this.equalOut;
-  };
-
-  setCarryIn = (carryIn: boolean) => {
-    this.carryIn = carryIn;
-  };
-
-  setOp = (op: boolean[]) => {
-    this.op = op;
-  };
-
-  updateOpDecoder = () => {
-    this.opDecoder.update(this.op[0], this.op[1], this.op[2]);
-  };
-
-  enableComparator = () => {
-    this.outputBus.set(new Array(8).fill(false));
-  };
-
-  updateComparator = () => {
+  private updateComparator = () => {
     this.comparator.update();
-    this.largerThanOut = this.comparator.getLarger();
-    this.equalOut = this.comparator.getEqual();
+    this._largerThanOut = this.comparator.getLarger();
+    this._equalOut = this.comparator.getEqual();
   };
 
-  updateAdder = () => {
-    this.adder.update(this.carryIn);
-    this.carryOut = this.adder.getCarry();
-    this.enablerBus.set([...this.adder.get()]);
-    this.enablers[this.index].update(this.enablerBus.get(), true);
-    this.outputBus.set(this.enablers[this.index].get());
+  private updateAdder = () => {
+    this.adder.update(this._carryIn);
+    this._carryOut = this.adder.carryOut;
+    this.enablerBus.data = [...this.adder.sum];
+    this.enablers[this.index].update(this.enablerBus.data, true);
+    this.outputBus.data = this.enablers[this.index].output;
   };
 
-  updateXorer = () => {
-    this.enablers[this.index].update(this.enablerBus.get(), true);
-    this.outputBus.set(this.enablers[this.index].get());
+  private updateXorer = () => {
+    this.enablers[this.index].update(this.enablerBus.data, true);
+    this.outputBus.data = this.enablers[this.index].output;
   };
 
-  updateOr = () => {
+  private updateOr = () => {
     this.orer.update();
-    this.enablers[this.index].update(this.enablerBus.get(), true);
-    this.outputBus.set(this.enablers[this.index].get());
+    this.enablers[this.index].update(this.enablerBus.data, true);
+    this.outputBus.data = this.enablers[this.index].output;
   };
-  updateAnd = () => {
+  private updateAnd = () => {
     this.ander.update();
-    this.enablers[this.index].update(this.enablerBus.get(), true);
-    this.outputBus.set(this.enablers[this.index].get());
+    this.enablers[this.index].update(this.enablerBus.data, true);
+    this.outputBus.data = this.enablers[this.index].output;
   };
 
-  updateNot = () => {
+  private updateNot = () => {
     this.notter.update();
-    this.enablers[this.index].update(this.enablerBus.get(), true);
-    this.outputBus.set(this.enablers[this.index].get());
+    this.enablers[this.index].update(this.enablerBus.data, true);
+    this.outputBus.data = this.enablers[this.index].output;
   };
 
-  updateLeftShifter = () => {
-    this.leftShifter.update(this.carryIn);
-    this.carryOut = this.leftShifter.getShiftOut();
-    this.enablers[this.index].update(this.enablerBus.get(), true);
-    this.outputBus.set(this.enablers[this.index].get());
+  private updateLeftShifter = () => {
+    this.leftShifter.update(this._carryIn);
+    this._carryOut = this.leftShifter.getShiftOut();
+    this.enablers[this.index].update(this.enablerBus.data, true);
+    this.outputBus.data = this.enablers[this.index].output;
   };
 
-  updateRightShifter = () => {
-    this.rightShifter.update(this.carryIn);
-    this.carryOut = this.rightShifter.getShiftOut();
-    this.enablers[this.index].update(this.enablerBus.get(), true);
-    this.outputBus.set(this.enablers[this.index].get());
+  private updateRightShifter = () => {
+    this.rightShifter.update(this._carryIn);
+    this._carryOut = this.rightShifter.getShiftOut();
+    this.enablers[this.index].update(this.enablerBus.data, true);
+    this.outputBus.data = this.enablers[this.index].output;
   };
 
   update = () => {
@@ -180,17 +179,18 @@ class Alu {
         break;
     }
 
-    this.isZero = this.isZeroer.get();
-    this.flagBus.set([
-      this.carryOut,
-      this.largerThanOut,
-      this.equalOut,
-      this.isZero,
+    this._isZero = this.isZeroer.get();
+
+    this.flagBus.data = [
+      this._carryOut,
+      this._largerThanOut,
+      this._equalOut,
+      this._isZero,
       false,
       false,
       false,
       false
-    ]);
+    ];
   };
 }
 

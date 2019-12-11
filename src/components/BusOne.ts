@@ -1,13 +1,16 @@
 import Bus from "./Bus";
 class BusOne {
-  private output = new Array(8).fill(false);
+  
+  private _output = new Array(8).fill(false);
+  
   constructor(private inputBus: Bus, private outputBus: Bus) {}
-  get = () => {
-    return this.output;
-  };
+  get output() {
+    return this._output;
+  }
+
   update = (bus1: boolean) => {
     if (bus1) {
-      this.outputBus.set([
+      this.outputBus.data = [
         false,
         false,
         false,
@@ -16,9 +19,9 @@ class BusOne {
         false,
         false,
         true
-      ]);
+      ];
     } else {
-      this.outputBus.set([...this.inputBus.get()]);
+      this.outputBus.data = this.inputBus.data;
     }
   };
 }

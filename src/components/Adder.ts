@@ -8,54 +8,60 @@ export class Add {
   private xor1 = new Xor();
   private xor2 = new Xor();
 
-  private carryout: boolean = false;
-  private sum: boolean = false;
+  private _carryOut: boolean = false;
+  private _sum: boolean = false;
 
-  get = () => {
-    return this.sum;
-  };
-  getCarryOut = () => {
-    return this.carryout;
-  };
+  get sum(): boolean {
+    return this._sum;
+  }
+
+  get carryOut(): boolean {
+    return this._carryOut;
+  }
   update = (inputA: boolean, inputB: boolean, carryIn: boolean) => {
     this.xor1.update(inputA, inputB);
     this.xor2.update(this.xor1.get(), carryIn);
-    this.sum = this.xor2.get();
+    this._sum = this.xor2.get();
 
     this.and1.update(carryIn, this.xor1.get());
     this.and2.update(inputA, inputB);
     this.or1.update(this.and1.get(), this.and2.get());
-    this.carryout = this.or1.get();
+    this._carryOut = this.or1.get();
   };
 }
 
 export class Adder {
-  private carryOut: boolean = false;
+  private _carryOut: boolean = false;
   private carryIn: boolean = false;
   private adds: Add[] = new Array(8);
-  private sum: boolean[] = new Array(8);
+  private _sum: boolean[] = new Array(8);
   constructor(private inputA: Bus, private inputB: Bus) {
     for (let i = 0; i < 8; i++) {
       this.adds[i] = new Add();
       this.sum[i] = false;
     }
   }
-  get = () => {
-    return this.sum;
-  };
+  get sum(): boolean[] {
+    return this._sum;
+  }
+
   getCarry = () => {
     return this.carryOut;
   };
 
+  get carryOut(): boolean {
+    return this._carryOut;
+  }
+
   update = (carryIn: boolean) => {
-    const byte1 = [...this.inputA.get()];
-    const byte2 = [...this.inputB.get()];
+    const byte1 = [...this.inputA.data];
+    const byte2 = [...this.inputB.data];
     this.carryIn = carryIn;
     for (let i = 7; i >= 0; i--) {
       this.adds[i].update(byte1[i], byte2[i], this.carryIn);
-      this.sum[i] = this.adds[i].get();
-      this.carryIn = this.adds[i].getCarryOut();
-      this.carryOut = this.adds[i].getCarryOut();
+      this.sum[i] = this.adds[i].sum;
+      this.carryIn = this.adds[i].carryOut;
+      this._carryOut = this.adds[i].carryOut;
     }
   };
 }

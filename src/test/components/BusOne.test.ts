@@ -9,13 +9,13 @@ describe("BusOne", () => {
   const testOut = [false, false, false, false, false, false, false, true];
 
   it("should correctly set bus to one", () => {
-    inputBus.set(testArr1);
+    inputBus.data = testArr1;
     busOne.update(true);
-    expect(outputBus.get()).toEqual(testOut);
+    expect(outputBus.data).toEqual(testOut);
   });
   it("should correctly keep input byte", () => {
-    inputBus.set(testArr1);
+    inputBus.data = testArr1;
     busOne.update(false);
-    expect(outputBus.get()).toEqual(testArr1);
+    expect(outputBus.data).toEqual(testArr1);
   });
 });

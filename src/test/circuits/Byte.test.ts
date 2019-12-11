@@ -10,9 +10,9 @@ describe("Byte", () => {
 
     byte.update(byteIn, true);
     byte.update(byteIn2, false);
-    expect(byte.get()).toEqual(byteIn);
+    expect(byte.output).toEqual(byteIn);
     byte.update(byteIn2, true);
     byte.update(byteIn3, false);
-    expect(byte.get()).toEqual(byteIn2);
+    expect(byte.output).toEqual(byteIn2);
   });
 });

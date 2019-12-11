@@ -10,7 +10,7 @@ class IsZero {
   };
 
   update = () => {
-    this.or8.update([...this.inputA.get()]);
+    this.or8.update([...this.inputA.data]);
     this.notGate.update(this.or8.get());
     this.output = this.notGate.get();
   };

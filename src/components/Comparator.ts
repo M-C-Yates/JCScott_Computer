@@ -69,8 +69,8 @@ class Comparator {
     return this.isLargerOut;
   };
   update = () => {
-    const byte1 = [...this.inputA.get()];
-    const byte2 = [...this.inputB.get()];
+    const byte1 = [...this.inputA.data];
+    const byte2 = [...this.inputB.data];
 
     this.comparers[0].update(byte1[0], byte2[0], true, false);
     this.comparers[1].update(
@@ -123,7 +123,7 @@ class Comparator {
       this.output[i] = this.comparers[i].get();
     }
 
-    this.outputBus.set([...this.output]);
+    this.outputBus.data = [...this.output];
   };
 }
 

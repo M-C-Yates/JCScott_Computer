@@ -33,17 +33,17 @@ describe("Alu", () => {
     expectedCarry: boolean,
     expectedZero: boolean
   ) => {
-    busA.set([...inputA]);
-    busB.set([...inputB]);
-    alu.setCarryIn(carryIn);
-    alu.setOp(op);
+    busA.data = inputA;
+    busB.data = inputB;
+    alu.carryIn = carryIn;
+    alu.op = op;
     alu.update();
 
-    expect(outputBus.get()).toEqual(output);
-    expect(alu.getCarry()).toEqual(flagBus.get()[0]);
-    expect(alu.getEqual()).toEqual(flagBus.get()[3]);
-    expect(alu.getLarger()).toEqual(flagBus.get()[1]);
-    expect(alu.getZero()).toEqual(flagBus.get()[3]);
+    expect(outputBus.data).toEqual(output);
+    expect(alu.carryOut).toEqual(flagBus.data[0]);
+    expect(alu.equalOut).toEqual(flagBus.data[3]);
+    expect(alu.largerThanOut).toEqual(flagBus.data[1]);
+    expect(alu.isZero).toEqual(flagBus.data[3]);
   };
   it("Alu Add should have correct output", () => {
     const ADD = [false, false, false];

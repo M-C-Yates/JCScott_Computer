@@ -8,12 +8,12 @@ describe("IsZero", () => {
   const testByte2 = [false, false, false, false, false, false, false, true];
 
   it("should provide the correct output", () => {
-    busA.set(testByte1);
+    busA.data = testByte1;
     isZero.update();
     expect(isZero.get()).toEqual(true);
   });
   it("should provide the correct output", () => {
-    busA.set(testByte2);
+    busA.data = testByte2;
     isZero.update();
     expect(isZero.get()).toEqual(false);
   });

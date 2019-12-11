@@ -36,8 +36,8 @@ describe("Comparator", () => {
     const byte1 = [false, false, false, false, false, false, false, false];
     const byte2 = [false, false, false, false, false, false, false, false];
 
-    busA.set(byte1);
-    busB.set(byte2);
+    busA.data = byte1;
+    busB.data = byte2;
     comparer.update();
     expect(comparer.getEqual()).toBe(true);
     expect(comparer.getLarger()).toBe(false);
@@ -47,8 +47,8 @@ describe("Comparator", () => {
     const byte1 = [false, false, false, false, false, false, false, true];
     const byte2 = [false, false, false, false, false, false, false, false];
 
-    busA.set(byte1);
-    busB.set(byte2);
+    busA.data = byte1;
+    busB.data = byte2;
     comparer.update();
     expect(comparer.getEqual()).toBe(false);
     expect(comparer.getLarger()).toBe(true);
@@ -58,8 +58,8 @@ describe("Comparator", () => {
     const byte1 = [false, false, false, false, false, false, false, false];
     const byte2 = [false, false, false, false, false, false, false, true];
 
-    busA.set(byte1);
-    busB.set(byte2);
+    busA.data = byte1;
+    busB.data = byte2;
     comparer.update();
     expect(comparer.getEqual()).toBe(false);
     expect(comparer.getLarger()).toBe(false);
@@ -69,8 +69,8 @@ describe("Comparator", () => {
     const byte1 = [false, false, false, true, true, false, false, true];
     const byte2 = [false, false, false, true, true, false, false, true];
 
-    busA.set(byte1);
-    busB.set(byte2);
+    busA.data = byte1;
+    busB.data = byte2;
     comparer.update();
     expect(comparer.getEqual()).toBe(true);
     expect(comparer.getLarger()).toBe(false);
@@ -80,8 +80,8 @@ describe("Comparator", () => {
     const byte1 = [false, false, false, true, true, false, false, true]; // 25
     const byte2 = [false, false, false, true, true, false, false, true]; // 25
 
-    busA.set(byte1);
-    busB.set(byte2);
+    busA.data = byte1;
+    busB.data = byte2;
     comparer.update();
     expect(comparer.getEqual()).toBe(true);
     expect(comparer.getLarger()).toBe(false);

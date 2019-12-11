@@ -7,7 +7,7 @@ class leftShifter {
   constructor(private inputBus: Bus, private outputBus: Bus) {}
 
   update = (shiftIn: boolean) => {
-    this.output = [...this.inputBus.get()];
+    this.output = [...this.inputBus.data];
     this.shiftIn = shiftIn;
     this.shiftOut = this.output[0];
 
@@ -20,7 +20,7 @@ class leftShifter {
     this.output[6] = this.output[7];
     this.output[7] = this.shiftIn;
 
-    this.outputBus.set([...this.output]);
+    this.outputBus.data = [...this.output];
   };
   getShiftOut = () => {
     return this.shiftOut;
@@ -34,7 +34,7 @@ export class rightShifter {
 
   constructor(private inputBus: Bus, private outputBus: Bus) {}
   update = (shiftIn: boolean) => {
-    this.output = [...this.inputBus.get()];
+    this.output = [...this.inputBus.data];
     this.shiftIn = shiftIn;
     this.shiftOut = this.output[7];
 
@@ -46,7 +46,7 @@ export class rightShifter {
     this.output[2] = this.output[1];
     this.output[1] = this.output[0];
     this.output[0] = this.shiftIn;
-    this.outputBus.set([...this.output]);
+    this.outputBus.data = [...this.output];
   };
   getShiftOut = () => {
     return this.shiftOut;

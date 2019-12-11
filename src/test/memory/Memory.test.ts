@@ -10,42 +10,41 @@ describe("Memory", () => {
 
   const falseArr = new Array(8).fill(false);
 
-  bus.set(address);
+  bus.data = address;
 
   it("test write", () => {
     mem.updateAddress();
-    bus.set(testVal);
-
-    // mem.update(true, true);
+    bus.data = testVal;
     mem.updateEnable(true);
     mem.updateSet(true);
     mem.update();
+    
     expect(mem.readMem(0, 14)).toEqual(falseArr);
     expect(mem.readMem(0, 15)).toEqual(testVal);
-    expect(bus.get()).toEqual(testVal);
+    expect(bus.data).toEqual(testVal);
 
-    bus.set(testVal2);
+    bus.data = testVal2;
     mem.update(true, true);
-
+    
     expect(mem.readMem(0, 14)).toEqual(falseArr);
     expect(mem.readMem(0, 15)).toEqual(testVal2);
-    expect(bus.get()).toEqual(testVal2);
-    bus.set(falseArr);
+    expect(bus.data).toEqual(testVal2);
+    bus.data = falseArr;
     mem.update(true, true);
   });
 
   it("does not update when set is false", () => {
     mem.updateAddress();
-    bus.set(testVal);
+    bus.data = testVal;
     mem.update(false, true);
 
     expect(mem.readMem(0, 15)).toEqual(falseArr);
-    expect(bus.get()).toEqual(falseArr);
+    expect(bus.data).toEqual(falseArr);
 
-    bus.set(testVal2);
+    bus.data = testVal2;
     mem.update(false, true);
 
     expect(mem.readMem(0, 15)).toEqual(falseArr);
-    expect(bus.get()).toEqual(falseArr);
+    expect(bus.data).toEqual(falseArr);
   });
 });

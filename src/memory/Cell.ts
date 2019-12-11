@@ -10,7 +10,7 @@ class Cell {
 
   constructor(private inputBus: Bus, private outputBus: Bus) {}
 
-  get = () => {
+  read = () => {
     return [...this.register.readByte()];
   };
 

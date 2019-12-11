@@ -180,6 +180,7 @@ class Alu {
     }
 
     this._isZero = this.isZeroer.get();
+
     this.flagBus.data = [
       this._carryOut,
       this._largerThanOut,

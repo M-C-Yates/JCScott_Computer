@@ -102,7 +102,7 @@ class Cpu {
   };
 
   readFlags = () => {
-    return this.flagBus.data;
+    return this.flagsReg.readByte();
   };
 
   readGp = (reg: number) => {
@@ -183,6 +183,7 @@ class Cpu {
         const JMP = "00000100";
         const JCAEZ = "00000101";
         const CLF = "00000110";
+
         switch (op) {
           case LD:
             // 0000 RARB | LD RA,RB | load RB from ram addr in RA
@@ -210,6 +211,7 @@ class Cpu {
             break;
           case CLF:
             // 0110 0000 | CLF | clear all flags
+            this.clfInstr();
             break;
           default:
             break;
@@ -354,28 +356,33 @@ class Cpu {
     // step 5
     this.gpRegs[RB].enable();
     this.gpRegs[RB].update();
+    this.gpRegs[RB].disable();
 
+    this.tmpReg.enable();
     this.tmpReg.set();
     this.tmpReg.update();
     this.tmpReg.unSet();
-
-    this.gpRegs[RB].disable();
+    this.tmpReg.disable();
 
     this.mainBus.clear();
     // step 6
 
     this.gpRegs[RA].enable();
     this.gpRegs[RA].update();
-
+    this.gpRegs[RA].disable();
     this.alu.update();
+
+    this.flagsReg.enable();
+    this.flagsReg.set();
+    this.flagsReg.update();
+    this.flagsReg.unSet();
+    this.flagsReg.disable();
 
     this.accReg.set();
     this.accReg.enable();
     this.accReg.update();
     this.accReg.disable();
     this.accReg.unSet();
-
-    this.gpRegs[RA].disable();
 
     this.mainBus.clear();
   };
@@ -548,6 +555,18 @@ class Cpu {
     this.iARegister.unSet;
     this.iARegister.disable();
 
+    this.mainBus.clear();
+  };
+
+  private clfInstr = () => {
+    this.mainBus.clear();
+
+    this.flagsReg.enable();
+    this.flagsReg.setByte(0b0);
+    this.flagBus.data = new Array(8).fill(false);
+    this.flagsReg.disable();
+
+    this.accBus.clear();
     this.mainBus.clear();
   };
 }

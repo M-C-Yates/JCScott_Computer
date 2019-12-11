@@ -135,8 +135,8 @@ describe("Cpu alu", () => {
     ]);
   });
 
-  it("ALU XOR should correcly XOR contents of RA to left and place result in RB", () => {
-    cpu.setRam([0, 6], 0b11111001);
+  it("ALU CMP should correcly compar input a and b", () => {
+    cpu.setRam([0, 7], 0b11111001);
     cpu.setGp(2, 0b11);
     cpu.setGp(1, 0b01);
     cpu.cycle();
@@ -243,7 +243,6 @@ describe("Cpu Instrs", () => {
     cpu.setRam([0, 10], 0b10000110);
     cpu.setGp(1, 0b1);
     cpu.setGp(2, 0b1);
-    // cpu.setIAR(0b1000);
     cpu.cycle();
 
     cpu.setRam([0, 11], 0b01010010);
@@ -266,19 +265,36 @@ describe("Cpu Instrs", () => {
     cpu.setRam([0, 10], 0b10000110);
     cpu.setGp(1, 0b0);
     cpu.setGp(2, 0b0);
-    // cpu.setIAR(0b1000);
     cpu.cycle();
 
     cpu.setRam([0, 11], 0b01010000);
     cpu.setRam([0, 12], 0b00001110);
 
     cpu.cycle();
-    console.log(cpu.IAR);
     expect(cpu.IAR).toEqual([
       false,
       false,
       false,
       true,
+      false,
+      false,
+      false,
+      false
+    ]);
+  });
+
+  it("CLF should clear flag register", () => {
+    cpu.setIAR(0b0);
+    // console.log(cpu.readFlags());
+    cpu.setRam([0, 0], 0b01100000);
+
+    cpu.cycle();
+
+    expect(cpu.readFlags()).toEqual([
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,

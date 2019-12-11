@@ -15,18 +15,17 @@ describe("Memory", () => {
   it("test write", () => {
     mem.updateAddress();
     bus.data = testVal;
-
-    // mem.update(true, true);
     mem.updateEnable(true);
     mem.updateSet(true);
     mem.update();
+    
     expect(mem.readMem(0, 14)).toEqual(falseArr);
     expect(mem.readMem(0, 15)).toEqual(testVal);
     expect(bus.data).toEqual(testVal);
 
     bus.data = testVal2;
     mem.update(true, true);
-
+    
     expect(mem.readMem(0, 14)).toEqual(falseArr);
     expect(mem.readMem(0, 15)).toEqual(testVal2);
     expect(bus.data).toEqual(testVal2);

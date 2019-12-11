@@ -6,6 +6,7 @@ class Bit {
   private nand3 = new Nand();
   private nand4 = new Nand();
   private _output: boolean = false;
+
   constructor() {}
   get = (): boolean => {
     return this.output;

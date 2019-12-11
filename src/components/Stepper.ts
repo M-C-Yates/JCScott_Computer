@@ -16,6 +16,7 @@ class Stepper {
   private outputOrGate: Or = new Or();
   private index: number = 0;
 
+
   constructor() {
     for (let i = 0; i < 12; i++) {
       if (i < 5) {

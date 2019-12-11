@@ -110,6 +110,10 @@ class Cpu {
     return this.memory.readMem(row, col);
   };
 
+  get IAR(): boolean[] {
+    return this.iARegister.output;
+  }
+
   private handleInstruction = () => {
     const instruction = this.instructionDecode();
     const RA = instruction[2];
@@ -191,6 +195,7 @@ class Cpu {
             break;
           case JMPR:
             // 0011 00RB | JMPR RB | jump to the addr in RB
+            this.jmprInstr(RB);
             break;
           case JMP:
             // 0100 0000 | JMP addr | jump to the address in the next byte
@@ -451,6 +456,22 @@ class Cpu {
     this.accReg.enable();
     this.accReg.update();
     this.accReg.disable();
+
+    this.iARegister.enable();
+    this.iARegister.set();
+    this.iARegister.update();
+    this.iARegister.unSet();
+    this.iARegister.disable();
+
+    this.mainBus.clear();
+  };
+
+  private jmprInstr = (RB: number) => {
+    this.mainBus.clear();
+
+    this.gpRegs[RB].enable();
+    this.gpRegs[RB].update();
+    this.gpRegs[RB].disable();
 
     this.iARegister.enable();
     this.iARegister.set();

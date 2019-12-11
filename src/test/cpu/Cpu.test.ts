@@ -186,7 +186,7 @@ describe("Cpu Instrs", () => {
     ]);
   });
 
-  it("DATA should correctly store contents from ram in RB", () => {
+  it("DATA should correctly store contents from ram into RB", () => {
     cpu.setIAR(0b100);
     cpu.setRam([0, 4], 0b00100000);
     cpu.setRam([0, 5], 0b1111);
@@ -201,6 +201,24 @@ describe("Cpu Instrs", () => {
       true,
       true,
       true
+    ]);
+  });
+
+  it("JMPR should move contents from RB into the IAR", () => {
+    cpu.setIAR(0b110);
+    cpu.setRam([0, 6], 0b00110000);
+    cpu.setGp(0, 0b1000);
+
+    cpu.cycle();
+    expect(cpu.IAR).toEqual([
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
     ]);
   });
 });

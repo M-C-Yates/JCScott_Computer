@@ -39,8 +39,8 @@ describe("Comparator", () => {
     busA.data = byte1;
     busB.data = byte2;
     comparer.update();
-    expect(comparer.getEqual()).toBe(true);
-    expect(comparer.getLarger()).toBe(false);
+    expect(comparer.equalOut).toBe(true);
+    expect(comparer.isLargerOut).toBe(false);
   });
 
   it("should give correct output", () => {
@@ -50,8 +50,8 @@ describe("Comparator", () => {
     busA.data = byte1;
     busB.data = byte2;
     comparer.update();
-    expect(comparer.getEqual()).toBe(false);
-    expect(comparer.getLarger()).toBe(true);
+    expect(comparer.equalOut).toBe(false);
+    expect(comparer.isLargerOut).toBe(true);
   });
 
   it("should give correct output", () => {
@@ -61,8 +61,8 @@ describe("Comparator", () => {
     busA.data = byte1;
     busB.data = byte2;
     comparer.update();
-    expect(comparer.getEqual()).toBe(false);
-    expect(comparer.getLarger()).toBe(false);
+    expect(comparer.equalOut).toBe(false);
+    expect(comparer.isLargerOut).toBe(false);
   });
 
   it("should give correct output", () => {
@@ -72,8 +72,8 @@ describe("Comparator", () => {
     busA.data = byte1;
     busB.data = byte2;
     comparer.update();
-    expect(comparer.getEqual()).toBe(true);
-    expect(comparer.getLarger()).toBe(false);
+    expect(comparer.equalOut).toBe(true);
+    expect(comparer.isLargerOut).toBe(false);
   });
 
   it("should give correct output", () => {
@@ -83,7 +83,7 @@ describe("Comparator", () => {
     busA.data = byte1;
     busB.data = byte2;
     comparer.update();
-    expect(comparer.getEqual()).toBe(true);
-    expect(comparer.getLarger()).toBe(false);
+    expect(comparer.equalOut).toBe(true);
+    expect(comparer.isLargerOut).toBe(false);
   });
 });

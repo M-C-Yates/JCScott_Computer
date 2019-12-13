@@ -10,7 +10,7 @@ class Enabler /* implements ComponentInterface */ {
   update = (inputs: boolean[], enable: boolean) => {
     for (let i = 0; i < 8; i++) {
       this.gates[i].update(inputs[i], enable);
-      this.output[i] = this.gates[i].get();
+      this.output[i] = this.gates[i].output;
     }
   };
 }

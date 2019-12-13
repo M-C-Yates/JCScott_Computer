@@ -50,8 +50,8 @@ class Memory256B {
     this.decoderCol.update(address[4], address[5], address[6], address[7]);
     // this.decoderCol.update(false, false, true, false);
 
-    this.address[0] = this.decoderRow.getIndex();
-    this.address[1] = this.decoderCol.getIndex();
+    this.address[0] = this.decoderRow.index;
+    this.address[1] = this.decoderCol.index;
     this.memory[this.address[0]][this.address[1]].update(this.set, this.enable);
   };
 
@@ -67,8 +67,8 @@ class Memory256B {
     this.decoderRow.update(address[0], address[1], address[2], address[3]);
     this.decoderCol.update(address[4], address[5], address[6], address[7]);
 
-    this.address[0] = this.decoderRow.getIndex();
-    this.address[1] = this.decoderCol.getIndex();
+    this.address[0] = this.decoderRow.index;
+    this.address[1] = this.decoderCol.index;
 
     this.outputBus.data = [
       ...this.memory[this.address[0]][this.address[1]].read()

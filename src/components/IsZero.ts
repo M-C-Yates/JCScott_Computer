@@ -1,18 +1,19 @@
 import { Not, Or8 } from "./../circuit/Gates";
 import Bus from "./Bus";
 class IsZero {
-  private output: boolean = false;
+  private _output: boolean = false;
   private or8 = new Or8();
   private notGate = new Not();
   constructor(private inputA: Bus) {}
-  get = () => {
-    return this.output;
-  };
+
+  get output(): boolean {
+    return this._output;
+  }
 
   update = () => {
     this.or8.update([...this.inputA.data]);
-    this.notGate.update(this.or8.get());
-    this.output = this.notGate.get();
+    this.notGate.update(this.or8.output);
+    this._output = this.notGate.output;
   };
 }
 

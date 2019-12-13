@@ -18,7 +18,7 @@ class Notter {
 
     for (let i = 0; i < 8; i++) {
       this.notGates[i].update(this.output[i]);
-      this.output[i] = this.notGates[i].get();
+      this.output[i] = this.notGates[i].output;
     }
 
     this.outputBus.data = this.output;
@@ -53,7 +53,7 @@ export class Ander {
     for (let i = 0; i < 8; i++) {
       this.andGates[i].update(this.data1[i], this.data2[i]);
 
-      this.output[i] = this.andGates[i].get();
+      this.output[i] = this.andGates[i].output;
     }
 
     this.outputBus.data = [...this.output];
@@ -86,7 +86,7 @@ export class ORer {
 
     for (let i = 0; i < 8; i++) {
       this.orGates[i].update(this.data1[i], this.data2[i]);
-      this.output[i] = this.orGates[i].get();
+      this.output[i] = this.orGates[i].output;
     }
     this.outputBus.data = [...this.output];
   };
@@ -117,7 +117,7 @@ export class XORer {
 
     for (let i = 0; i < 8; i++) {
       this.xorGates[i].update(this.data1[i], this.data2[i]);
-      this.output[i] = this.xorGates[i].get();
+      this.output[i] = this.xorGates[i].output;
     }
     this.outputBus.data = [...this.output];
   };

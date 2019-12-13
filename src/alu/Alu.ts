@@ -88,8 +88,8 @@ class Alu {
 
   private updateComparator = () => {
     this.comparator.update();
-    this._largerThanOut = this.comparator.getLarger();
-    this._equalOut = this.comparator.getEqual();
+    this._largerThanOut = this.comparator.isLargerOut;
+    this._equalOut = this.comparator.equalOut;
   };
 
   private updateAdder = () => {
@@ -138,7 +138,7 @@ class Alu {
 
   update = () => {
     this.updateOpDecoder();
-    this.index = this.opDecoder.getIndex();
+    this.index = this.opDecoder.index;
     this.updateComparator();
     this.isZeroer.update();
 
@@ -179,7 +179,7 @@ class Alu {
         break;
     }
 
-    this._isZero = this.isZeroer.get();
+    this._isZero = this.isZeroer.output;
 
     this.flagBus.data = [
       this._carryOut,

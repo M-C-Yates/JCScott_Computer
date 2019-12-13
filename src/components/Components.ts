@@ -103,14 +103,17 @@ export class XORer {
     new Xor(),
     new Xor()
   ];
+
   private data1 = new Array(8).fill(false);
   private data2 = new Array(8).fill(false);
   private output = new Array(8).fill(false);
+
   constructor(
     private inputA: Bus,
     private inputB: Bus,
     private outputBus: Bus
   ) {}
+
   update = () => {
     this.data1 = [...this.inputA.data];
     this.data2 = [...this.inputB.data];

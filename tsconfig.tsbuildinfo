@@ -106,7 +106,7 @@
         "signature": "e8d2a1be0238fbc8f8260247604f023b96321f0e0ddcbcc6993c72889f6cc478"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/components.ts": {
-        "version": "2d591f7243641acba94a51882f41f1aef3f9e6daaaa08f65abc734dedaa985a3",
+        "version": "fbe535e211defa49b170849ebb050afc22b7b65ddbc8c6670deaceb437b947ce",
         "signature": "1a768f6f4d8764cca743e1e571b21090938158c1a91939e0216ce11224e7ffdd"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts": {
@@ -154,12 +154,8 @@
         "signature": "ff9090fd843dcda9ffb4ea9ff3b483d2151037d9af4f51b246af52ad03d9db36"
       },
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": {
-        "version": "7ea624c6a522c07b6fbbddc61ac9709b78967560462bb493cc34ce9128ccdded",
-        "signature": "e6abb43b47c8e874473fe7bf7d5bd3c49163e392b9d25fa77ad931a89d9d685d"
-      },
-      "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts": {
-        "version": "cb09c3afa993ae7b49f959caaf73c2b4e43b50995aa95a9ff770cfbdfd703442",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+        "version": "b57e44479e6c5a033695ec7649fb925a52cb21e2a4aa99ebe9e8e459485dc4ce",
+        "signature": "5522daa853d6b9d5e79efa4df21eb05baa5aaa35f3331e7b6e749bc2a8a2a6f5"
       },
       "c:/webstuff/projects/jcscottcomp/src/cpu/instructions.ts": {
         "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -393,10 +389,6 @@
         "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts"
       ],
-      "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
-        "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts"
-      ],
       "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
@@ -597,8 +589,6 @@
       "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
       "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
       "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
-      "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
-      "c:/webstuff/projects/jcscottcomp/src/computer/computer.ts",
       "c:/webstuff/projects/jcscottcomp/src/cpu/instructions.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts",
@@ -613,7 +603,6 @@
       "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/register.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/utils/binnumtostring.ts",
       "c:/webstuff/projects/jcscottcomp/src/utils/bintobool.ts",
@@ -633,7 +622,9 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts"
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts"
     ]
   },
   "version": "3.5.3"

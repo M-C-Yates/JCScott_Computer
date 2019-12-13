@@ -85,38 +85,6 @@ class Cpu {
     return decoded;
   };
 
-  setIR = (instruction: number) => {
-    this.iRegister.setByte(instruction);
-  };
-
-  setIAR = (address: number) => {
-    this.iARegister.setByte(address);
-  };
-
-  setGp = (reg: number, byte: number) => {
-    this.gpRegs[reg].setByte(byte);
-  };
-
-  setRam = (cell: number[], byte: number) => {
-    this.memory.setMem(cell[0], cell[1], byte);
-  };
-
-  readFlags = () => {
-    return this.flagsReg.readByte();
-  };
-
-  readGp = (reg: number) => {
-    return this.gpRegs[reg].readByte();
-  };
-
-  readMem = (row: number, col: number) => {
-    return this.memory.readMem(row, col);
-  };
-
-  get IAR(): boolean[] {
-    return this.iARegister.output;
-  }
-
   private handleInstruction = () => {
     const instruction = this.instructionDecode();
     const RA = instruction[2];
@@ -569,6 +537,38 @@ class Cpu {
     this.accBus.clear();
     this.mainBus.clear();
   };
+
+  setIR = (instruction: number) => {
+    this.iRegister.setByte(instruction);
+  };
+
+  setIAR = (address: number) => {
+    this.iARegister.setByte(address);
+  };
+
+  setGp = (reg: number, byte: number) => {
+    this.gpRegs[reg].setByte(byte);
+  };
+
+  setRam = (cell: number[], byte: number) => {
+    this.memory.setMem(cell[0], cell[1], byte);
+  };
+
+  readFlags = () => {
+    return this.flagsReg.readByte();
+  };
+
+  readGp = (reg: number) => {
+    return this.gpRegs[reg].readByte();
+  };
+
+  readMem = (row: number, col: number) => {
+    return this.memory.readMem(row, col);
+  };
+
+  get IAR(): boolean[] {
+    return this.iARegister.output;
+  }
 }
 
 export default Cpu;

@@ -14,7 +14,7 @@ class Cell {
     return [...this.register.readByte()];
   };
 
-  setCell = (byte: number) => {
+  setCell = (byte: number | string) => {
     this.register.setByte(byte);
   };
 

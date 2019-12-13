@@ -3,13 +3,31 @@ import Register from "../components/Register";
 import Cell from "./Cell";
 import { Decoder4x16, Decoder8x256 } from "../components/Decoders";
 import { And } from "../circuit/Gates";
+import { binToBool } from "../utils/binUtils";
 
 class Memory256B {
   private addressRegister = new Register(this.inputBus, this.outputBus, "MAR");
   private address = [0, 0];
   private decoderCol = new Decoder4x16();
   private decoderRow = new Decoder4x16();
-  private memory: Cell[][] = new Array(16).fill([]);
+  private memory: Cell[][] = [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ];
 
   // flags
   private enable: boolean = false;
@@ -59,7 +77,7 @@ class Memory256B {
     return this.memory[row][col].read();
   };
 
-  setMem = (row: number, col: number, byte: number) => {
+  setMem = (row: number, col: number, byte: number | string) => {
     this.memory[row][col].setCell(byte);
   };
   setBus = () => {

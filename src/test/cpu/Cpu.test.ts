@@ -285,7 +285,6 @@ describe("Cpu Instrs", () => {
 
   it("CLF should clear flag register", () => {
     cpu.setIAR(0b0);
-    // console.log(cpu.readFlags());
     cpu.setRam([0, 0], 0b01100000);
 
     cpu.cycle();

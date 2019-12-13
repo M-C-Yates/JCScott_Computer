@@ -41,14 +41,24 @@ class Register {
     }
   };
 
-  setByte = (byte: number) => {
-    let data: string = binToString(byte);
-    const dataBool = binToBool(data);
-    this.enable();
-    this.set();
-    this.update([...dataBool]);
-    this.disable();
-    this.unSet();
+  setByte = (byte: number | string) => {
+    if (typeof byte === "number") {
+      let data: string = binToString(byte);
+      const dataBool = binToBool(data);
+      this.enable();
+      this.set();
+      this.update([...dataBool]);
+      this.disable();
+      this.unSet();
+      return;
+    } else if (typeof byte === "string") {
+      const data = binToBool(byte);
+      this.enable();
+      this.set();
+      this.update([...data]);
+      this.disable();
+      this.unSet();
+    }
   };
 
   disable = () => {

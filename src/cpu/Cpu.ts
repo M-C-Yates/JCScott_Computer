@@ -73,7 +73,6 @@ class Cpu {
     const registerA = this.instructionDecoderEnables2x4[0].getIndex();
     const registerB = this.instructionDecoderEnables2x4[1].getIndex();
     const testFlags: boolean[] = instruction.slice(4);
-
     let decoded: [boolean, boolean[], number, number, boolean[]] = [
       instruction[0],
       instruction.slice(1, 4),
@@ -82,6 +81,7 @@ class Cpu {
       testFlags
     ];
 
+    console.log(boolToBinary(instruction));
     return decoded;
   };
 
@@ -91,7 +91,6 @@ class Cpu {
     const RB = instruction[3];
     const op = boolToBinary(instruction[1]);
     const flags = instruction[4];
-
     // instruction breakdown
     // alu | op | RA | RB
     switch (instruction[0]) {
@@ -151,7 +150,6 @@ class Cpu {
         const JMP = "00000100";
         const JCAEZ = "00000101";
         const CLF = "00000110";
-
         switch (op) {
           case LD:
             // 0000 RARB | LD RA,RB | load RB from ram addr in RA
@@ -423,9 +421,9 @@ class Cpu {
 
     this.mainBus.clear();
 
-    this.gpRegs[RB].set();
     this.memory.update(false, true);
 
+    this.gpRegs[RB].set();
     this.gpRegs[RB].update();
     this.gpRegs[RB].unSet();
 
@@ -550,7 +548,7 @@ class Cpu {
     this.gpRegs[reg].setByte(byte);
   };
 
-  setRam = (cell: number[], byte: number) => {
+  setRam = (cell: number[], byte: number | string) => {
     this.memory.setMem(cell[0], cell[1], byte);
   };
 

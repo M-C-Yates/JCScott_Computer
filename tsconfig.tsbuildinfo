@@ -86,8 +86,8 @@
         "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       },
       "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts": {
-        "version": "5ceb7d816ce3fedd81b5a543ced5771cbb24c60cd0c151f7bded0e00b62f92cf",
-        "signature": "cad4309a0f33de0311f9424b45eb46952576de29b00b6ede959fde93658af1fc"
+        "version": "f892b01492d20c6fcf1341c830a687defe0ca8601c77c2b63798e72e286556db",
+        "signature": "52b2c19f3e5ab262d296b9495ff4f01136b8f9a03b7689428eed7375ce089745"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": {
         "version": "cf8acc4212c11bdec08cc8bb10a62dc36aab040f30252c0f28a937c6a4277417",
@@ -98,7 +98,7 @@
         "signature": "19fb4e2f97ebb7657272ef9a73fe769984ba3f62514a69a3cbb89b953aa73546"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": {
-        "version": "cfd2e16960e9b38b36c625a40eb206f07b0033cd022c7260abe33ffa60ac9443",
+        "version": "ef55649b373bdc8784287f4b89737bbad4bf98fb323a9e3c6aa900ccece8c9b1",
         "signature": "f2c5f37d341094663764674ce2ec9b9c851a598a9664b701ab4211f13132c0ea"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts": {
@@ -110,8 +110,8 @@
         "signature": "1a768f6f4d8764cca743e1e571b21090938158c1a91939e0216ce11224e7ffdd"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts": {
-        "version": "5bd1b3e7e59bbf9706d34bdf599663418f3809cb2a2d072373e18f17c3df5ccf",
-        "signature": "8c9107701e3177ead088a5847323f41b3564617097372707e04a9463e087af6e"
+        "version": "cba80a499404c63fd389af1ff76b957e32380771b13b1b7e0751486de8907e91",
+        "signature": "1129302cf00e755241af04b6fd8eb84f6f1f67606e8c5656d8cc91cf59904935"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts": {
         "version": "4044cccf0c0dea42d0544df506120de4a6f960e84984d7ce89384a57ed8ae218",
@@ -126,8 +126,8 @@
         "signature": "43763b423495508f0d7cd205b42a7a083ac8096ad80b36af4af49b18958df1ec"
       },
       "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts": {
-        "version": "ab040290ccef1c9bc44979f93378fa49118b8cd7c55e93d7dd76997e13b578e8",
-        "signature": "e810cd9cb59b71dcf081ac16d072ed3ceabeeacea7e8a947f2fd863796efa6af"
+        "version": "5ac0cd72cb9f353b509617479a2582bbed111a31d6b2601344cc9882a45c0a31",
+        "signature": "d986558562fcc08c0420711200f89dcc7afad763f8fbae0dde00810f20393f28"
       },
       "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts": {
         "version": "65e886034b0bc899589c07a75e6885d7d3a026529a39f9665795869699eef3a5",
@@ -144,10 +144,6 @@
       "c:/webstuff/projects/jcscottcomp/src/components/register.ts": {
         "version": "17bd2942d74aa2e55930a7c5459202dfb1e7c2d6ed6b1087e614f33ad73954db",
         "signature": "003b8062ebd65e7f2d9505c93c579f1aab2da5925e04bcfe13b4929e405f1c0d"
-      },
-      "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts": {
-        "version": "e82fa495c3695d0042b1fc24e226fc0a5f91a11169b49ea4506f6d569f8dad9f",
-        "signature": "90e2238ec015a09977a72b76ed8f82278273824574a92604b18b40bcb3d9a6b8"
       },
       "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": {
         "version": "e6f35482b5997f1337fb2662c00c933d79f815023cc7b83a2e1b609a6e35728e",
@@ -182,7 +178,7 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts": {
-        "version": "afc4f1022ae19656115fce44e30f0df971de0a806969b23e8f2fe23805dcef00",
+        "version": "255bb75e988ba4e149f1f56d00b316608c4176d51a71ff337b10ca9631a920e6",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/adder.test.ts": {
@@ -198,7 +194,7 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/comparator.test.ts": {
-        "version": "65ace101ba9269643c7e52e22e54efd0cab395184efa85b0b95d082723f49f5c",
+        "version": "42af55a85cb9b4f2ffebe8aae58a3ff5e7a4b30ccfbcd9a78b3f52f0ddd14d42",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/components.test.ts": {
@@ -223,10 +219,6 @@
       },
       "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts": {
         "version": "6fc7673507ef6fa51ed529d2549c535c1e760fb132462367908886b33191ab2b",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
-      },
-      "c:/webstuff/projects/jcscottcomp/src/test/components/stepper.test.ts": {
-        "version": "6f2ee69362eb8e0db00f125b6652aff5c3483bcd1666e5068d75f74812c83388",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts": {
@@ -384,10 +376,6 @@
         "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
       ],
-      "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
-        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
-      ],
       "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
         "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
@@ -462,9 +450,6 @@
       "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/test/components/stepper.test.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
@@ -607,21 +592,728 @@
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
       "c:/webstuff/projects/jcscottcomp/src/index.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+      [
+        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+        [
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 572,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 596,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 644,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 699,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 755,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 818,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 866,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 961,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 1795,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 1826,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 1857,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 1911,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And3'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 1974,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2005,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2074,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And3'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2137,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2183,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2237,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And3'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2292,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2356,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And3'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2434,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2465,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2519,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And3'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2582,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2638,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And3'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2709,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2757,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And3'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2860,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And3'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 2938,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And3'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4094,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4125,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4156,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4187,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4255,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4286,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4317,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4400,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4431,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4477,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4545,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4576,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4676,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4722,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4753,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4821,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4867,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 4950,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5011,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5071,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5174,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5205,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5236,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5319,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5350,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5449,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5495,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5564,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5675,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5706,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5783,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 5870,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+            "start": 6013,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And4'."
+          }
+        ]
+      ],
       "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
+      [
+        "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
+        [
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
+            "start": 556,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
+            "start": 1290,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
+            "start": 2013,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Or'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
+            "start": 2744,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Xor'."
+          }
+        ]
+      ],
+      [
+        "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+        [
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2111,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getEqual' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2148,
+            "length": 9,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getLarger' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2258,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getEqual' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2295,
+            "length": 9,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getLarger' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2405,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getEqual' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2442,
+            "length": 9,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getLarger' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2552,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getEqual' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2589,
+            "length": 9,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getLarger' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2699,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getEqual' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2736,
+            "length": 9,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getLarger' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2846,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getEqual' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2883,
+            "length": 9,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getLarger' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 2993,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getEqual' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 3030,
+            "length": 9,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getLarger' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 3091,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getEqual' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 3145,
+            "length": 9,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'getLarger' does not exist on type 'bitComparer'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
+            "start": 3237,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'bitComparer'."
+          }
+        ]
+      ],
+      [
+        "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
+        [
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
+            "start": 373,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Or8'."
+          },
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
+            "start": 413,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'Not'."
+          }
+        ]
+      ],
+      [
+        "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
+        [
+          {
+            "file": "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
+            "start": 446,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'get' does not exist on type 'And'."
+          }
+        ]
+      ],
       "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
       "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/stepper.ts",
       "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
       "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
@@ -641,7 +1333,6 @@
       "c:/webstuff/projects/jcscottcomp/src/test/components/iszero.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/register.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/components/stepper.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/utils/binnumtostring.ts",

@@ -20,13 +20,13 @@ export class Add {
   }
   update = (inputA: boolean, inputB: boolean, carryIn: boolean) => {
     this.xor1.update(inputA, inputB);
-    this.xor2.update(this.xor1.get(), carryIn);
-    this._sum = this.xor2.get();
+    this.xor2.update(this.xor1.output, carryIn);
+    this._sum = this.xor2.output;
 
-    this.and1.update(carryIn, this.xor1.get());
+    this.and1.update(carryIn, this.xor1.output);
     this.and2.update(inputA, inputB);
-    this.or1.update(this.and1.get(), this.and2.get());
-    this._carryOut = this.or1.get();
+    this.or1.update(this.and1.output, this.and2.output);
+    this._carryOut = this.or1.output;
   };
 }
 

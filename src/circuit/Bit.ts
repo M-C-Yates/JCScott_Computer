@@ -8,9 +8,6 @@ class Bit {
   private _output: boolean = false;
 
   constructor() {}
-  get = (): boolean => {
-    return this.output;
-  };
 
   get output(): boolean {
     return this._output;
@@ -20,12 +17,12 @@ class Bit {
   }
   update = (inputI: boolean, inputS: boolean) => {
     this.nand1.update(inputI, inputS);
-    this.nand2.update(this.nand1.get(), inputS);
-    this.nand4.update(this.nand3.get(), this.nand2.get());
-    this.nand3.update(this.nand1.get(), this.nand4.get());
-    this.nand4.update(this.nand3.get(), this.nand2.get());
+    this.nand2.update(this.nand1.output, inputS);
+    this.nand4.update(this.nand3.output, this.nand2.output);
+    this.nand3.update(this.nand1.output, this.nand4.output);
+    this.nand4.update(this.nand3.output, this.nand2.output);
     if (inputS) {
-      this.output = this.nand3.get();
+      this._output = this.nand3.output;
     }
   };
 }

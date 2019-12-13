@@ -48,6 +48,8 @@ npm run test
 |    0101 caez     |   JCAEZ   | Jump if any tested flag is on using JMP, else move IAR forward two bytes.                                       |
 |    0110 0000     |    CLF    | Clears the flag register.                                                                                       |
 
+## Cpu methods
+
 ## License
 
 This project is [MIT](https://github.com/M-C-Yates/basic-computer/blob/master/LICENSE) licensed.

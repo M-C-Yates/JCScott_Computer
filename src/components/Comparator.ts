@@ -7,21 +7,21 @@ export class bitComparer {
   private andIn3 = new And3();
   private or1 = new Or();
 
-  private output: boolean = false;
+  private _output: boolean = false;
   private equalIn: boolean = false;
-  private equalOut: boolean = false;
+  private _equalOut: boolean = false;
   private isLargerIn: boolean = false;
-  private isLargerOut: boolean = false;
+  private _isLargerOut: boolean = false;
 
-  get = () => {
-    return this.output;
-  };
-  getEqual = () => {
-    return this.equalOut;
-  };
-  getLarger = () => {
-    return this.isLargerOut;
-  };
+  get output(): boolean {
+    return this._output;
+  }
+  get equalOut(): boolean {
+    return this._equalOut;
+  }
+  get isLargerOut(): boolean {
+    return this._isLargerOut;
+  }
   update = (
     inputA: boolean,
     inputB: boolean,
@@ -31,15 +31,15 @@ export class bitComparer {
     this.equalIn = equalIn;
     this.isLargerIn = isLargerIn;
     this.xor1.update(inputA, inputB);
-    this.output = this.xor1.get();
+    this._output = this.xor1.output;
 
-    this.not1.update(this.xor1.get());
-    this.and1.update(this.not1.get(), this.equalIn);
-    this.equalOut = this.and1.get();
+    this.not1.update(this.xor1.output);
+    this.and1.update(this.not1.output, this.equalIn);
+    this._equalOut = this.and1.output;
 
-    this.andIn3.update(equalIn, inputA, this.xor1.get());
-    this.or1.update(this.isLargerIn, this.andIn3.get());
-    this.isLargerOut = this.or1.get();
+    this.andIn3.update(equalIn, inputA, this.xor1.output);
+    this.or1.update(this.isLargerIn, this.andIn3.output);
+    this._isLargerOut = this.or1.output;
   };
 }
 

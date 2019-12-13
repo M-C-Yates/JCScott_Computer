@@ -1,52 +1,60 @@
-export class Nand {
-  output: boolean = false;
-  get = (): boolean => {
-    return this.output;
-  };
+interface IGate {
+  output: boolean;
+  update(inputA: boolean, ...args: boolean[]): void;
+}
+
+export class Nand implements IGate {
+  private _output: boolean = false;
+
+  get output(): boolean {
+    return this._output;
+  }
   update = (inputA: boolean, inputB: boolean) => {
-    this.output = !(inputA && inputB);
+    this._output = !(inputA && inputB);
   };
 }
 
-export class Not {
+export class Not implements IGate {
   private nand = new Nand();
-  public output: boolean = false;
-  get = () => {
-    return this.output;
-  };
+  private _output: boolean = false;
+  get output(): boolean {
+    return this._output;
+  }
   update = (inputA: boolean) => {
-    this.output = !inputA;
+    this._output = !inputA;
   };
 }
 
-export class And {
-  private output: boolean = false;
-  get = (): boolean => {
-    return this.output;
-  };
+export class And implements IGate {
+  private _output: boolean = false;
+  get output(): boolean {
+    return this._output;
+  }
   update = (inputA: boolean, inputB: boolean) => {
-    this.output = inputA && inputB;
+    this._output = inputA && inputB;
   };
 }
 
-export class And3 {
-  private output: boolean = false;
+export class And3 implements IGate {
+  private _output: boolean = false;
 
-  get = () => {
-    return this.output;
-  };
+  get output(): boolean {
+    return this._output;
+  }
+
   update = (inputA: boolean, inputB: boolean, inputC: boolean) => {
     let gate1 = inputA && inputB;
-    this.output = gate1 && inputC;
+    this._output = gate1 && inputC;
   };
 }
 
-export class And4 {
-  private output: boolean = false;
+export class And4 implements IGate {
+  private _output: boolean = false;
 
-  get = () => {
-    return this.output;
-  };
+  get output(): boolean {
+    return this._output;
+  }
+
   update = (
     inputA: boolean,
     inputB: boolean,
@@ -55,44 +63,46 @@ export class And4 {
   ) => {
     let gate1 = inputA && inputB;
     let gate2 = inputC && inputD;
-    this.output = gate1 && gate2;
+    this._output = gate1 && gate2;
   };
 }
 
-export class Or {
-  private output: boolean = false;
+export class Or implements IGate {
+  private _output: boolean = false;
   private nand = new Nand();
   private notGates = [new Not(), new Not()];
-  get = () => {
-    return this.output;
-  };
+
+  get output(): boolean {
+    return this._output;
+  }
+
   update = (inputA: boolean, inputB: boolean) => {
     this.notGates[0].update(inputA);
     this.notGates[1].update(inputB);
-    this.nand.update(this.notGates[0].get(), this.notGates[1].get());
+    this.nand.update(this.notGates[0].output, this.notGates[1].output);
 
-    this.output = this.nand.get();
+    this._output = this.nand.output;
   };
 }
 
-export class Or3 {
-  private output: boolean = false;
+export class Or3 implements IGate {
+  private _output: boolean = false;
 
-  get = () => {
-    return this.output;
-  };
+  get output(): boolean {
+    return this._output;
+  }
 
   update = (inputA: boolean, inputB: boolean, inputC: boolean) => {
-    this.output = inputA || inputB || inputC;
+    this._output = inputA || inputB || inputC;
   };
 }
 
-export class Or4 {
-  private output: boolean = false;
+export class Or4 implements IGate {
+  private _output: boolean = false;
 
-  get = () => {
-    return this.output;
-  };
+  get output(): boolean {
+    return this._output;
+  }
 
   update = (
     inputA: boolean,
@@ -102,15 +112,15 @@ export class Or4 {
   ) => {
     const or1 = inputA || inputB;
     const or2 = inputC || inputD;
-    this.output = or1 || or2;
+    this._output = or1 || or2;
   };
 }
-export class Or5 {
-  private output: boolean = false;
+export class Or5 implements IGate {
+  private _output: boolean = false;
 
-  get = () => {
-    return this.output;
-  };
+  get output(): boolean {
+    return this._output;
+  }
 
   update = (
     inputA: boolean,
@@ -122,16 +132,16 @@ export class Or5 {
     const or1 = inputA || inputB;
     const or2 = inputC || inputD;
     const or3 = or1 || or2;
-    this.output = or3 || inputE;
+    this._output = or3 || inputE;
   };
 }
 
-export class Or6 {
-  private output: boolean = false;
+export class Or6 implements IGate {
+  private _output: boolean = false;
 
-  get = () => {
-    return this.output;
-  };
+  get output(): boolean {
+    return this._output;
+  }
 
   update = (
     inputA: boolean,
@@ -144,12 +154,12 @@ export class Or6 {
     const or1 = inputA || inputB;
     const or2 = inputC || inputD;
     const or3 = inputE || inputF;
-    this.output = or1 || or2 || or3;
+    this._output = or1 || or2 || or3;
   };
 }
 
 export class Or8 {
-  private ouput: boolean = false;
+  private _output: boolean = false;
   private orGates: Or[] = [];
   constructor() {
     for (let i = 0; i < 7; i++) {
@@ -157,9 +167,9 @@ export class Or8 {
     }
   }
 
-  get = () => {
-    return this.ouput;
-  };
+  get output(): boolean {
+    return this._output;
+  }
 
   update = (inputA: boolean[]) => {
     this.orGates[0].update(inputA[0], inputA[1]);
@@ -167,29 +177,34 @@ export class Or8 {
     this.orGates[2].update(inputA[4], inputA[5]);
     this.orGates[3].update(inputA[6], inputA[7]);
 
-    this.orGates[4].update(this.orGates[0].get(), this.orGates[1].get());
-    this.orGates[5].update(this.orGates[2].get(), this.orGates[3].get());
+    this.orGates[4].update(this.orGates[0].output, this.orGates[1].output);
+    this.orGates[5].update(this.orGates[2].output, this.orGates[3].output);
 
-    this.orGates[6].update(this.orGates[4].get(), this.orGates[5].get());
+    this.orGates[6].update(this.orGates[4].output, this.orGates[5].output);
 
-    this.ouput = this.orGates[6].get();
+    this._output = this.orGates[6].output;
   };
 }
 
-export class Xor {
-  private output: boolean = false;
+export class Xor implements IGate {
+  private _output: boolean = false;
   private nandGates = [new Nand(), new Nand(), new Nand(), new Nand()];
   constructor() {}
-  get = () => {
-    return this.output;
-  };
+
+  get output(): boolean {
+    return this._output;
+  }
+
   update = (inputA: boolean, inputB: boolean) => {
     this.nandGates[0].update(inputA, inputB);
-    this.nandGates[1].update(inputA, this.nandGates[0].get());
-    this.nandGates[2].update(this.nandGates[0].get(), inputB);
-    this.nandGates[3].update(this.nandGates[1].get(), this.nandGates[2].get());
+    this.nandGates[1].update(inputA, this.nandGates[0].output);
+    this.nandGates[2].update(this.nandGates[0].output, inputB);
+    this.nandGates[3].update(
+      this.nandGates[1].output,
+      this.nandGates[2].output
+    );
 
-    this.output = this.nandGates[3].get();
+    this._output = this.nandGates[3].output;
   };
 }
 

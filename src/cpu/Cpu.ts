@@ -573,7 +573,7 @@ class Cpu {
       gp: [this.readGp(0), this.readGp(1), this.readGp(2), this.readGp(3)],
       acc: this.accReg.readByte(),
       tmp: this.accReg.readByte(),
-      flags: this.flagsReg.readByte();
+      flags: this.flagsReg.readByte()
     };
   };
 

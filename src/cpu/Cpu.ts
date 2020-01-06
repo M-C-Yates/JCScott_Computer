@@ -575,6 +575,7 @@ class Cpu {
       tmp: this.accReg.readByte(),
       flags: this.flagsReg.readByte()
     };
+    return regs;
   };
 
   get IAR(): boolean[] {

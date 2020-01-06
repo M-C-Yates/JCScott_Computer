@@ -1,5 +1,3 @@
-import Computer from "./computer/Computer";
+import Cpu from "./cpu/Cpu";
 
-const comp = new Computer();
-
-comp.loadExampleIntoRam();
+export default Cpu;

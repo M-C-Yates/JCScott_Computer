@@ -17,6 +17,10 @@
         "version": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743",
         "signature": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743"
       },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.d.ts": {
+        "version": "2edd3ddf436ef8e12df876dcae4ecd6a8748577944c477bf4b20d5596e0c9843",
+        "signature": "2edd3ddf436ef8e12df876dcae4ecd6a8748577944c477bf4b20d5596e0c9843"
+      },
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
         "version": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4",
         "signature": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4"
@@ -81,21 +85,73 @@
         "version": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46",
         "signature": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46"
       },
-      "c:/webstuff/projects/jcscottcomp/src/index.ts": {
-        "version": "0ec55daa5784075f5cbc30a9489a92865632584f64bc2d927b8b46523215af8e",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "42102aaeb1bfec213be1e9777466a6d551eeba8567fed18c0cdbca8c35e3c6e4",
+        "signature": "42102aaeb1bfec213be1e9777466a6d551eeba8567fed18c0cdbca8c35e3c6e4"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+        "version": "1b820b57379c726f94af50cd60053674af53ff9d079c1563cc70071e8b757dd0",
+        "signature": "1b820b57379c726f94af50cd60053674af53ff9d079c1563cc70071e8b757dd0"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+        "version": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62",
+        "signature": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+        "version": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8",
+        "signature": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.intl.d.ts": {
+        "version": "f6e0c89daaf72eac38dfb1d5ef0972183f7f26a68da15bfe5bcb7cfccf0c7db8",
+        "signature": "f6e0c89daaf72eac38dfb1d5ef0972183f7f26a68da15bfe5bcb7cfccf0c7db8"
+      },
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.bigint.d.ts": {
+        "version": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8",
+        "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts": {
+        "version": "867f414966eecb6c9c313457883da083e9e795ca22c32037dd30f02ea0aa8695",
+        "signature": "597f4ca9b6638e1ed577269d34df876c71e4eb968e08190af7ab6cbb0ff24baa"
       },
       "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts": {
         "version": "f892b01492d20c6fcf1341c830a687defe0ca8601c77c2b63798e72e286556db",
         "signature": "52b2c19f3e5ab262d296b9495ff4f01136b8f9a03b7689428eed7375ce089745"
       },
-      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": {
-        "version": "2cad7ffe32a577786bd4cb0b8cf4fff6f066d758107ec27306e3d33ddef96e93",
-        "signature": "688d53576466e3f3cbb7f48946e609b9000fa787d6d114cb86344691a5b67b86"
+      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts": {
+        "version": "6fda7e2514cd6d8ab620476780c69ecc13de24323c92c01ec91f8db5240ebae3",
+        "signature": "89e3c7871488f05fa090cdd5b6d9a063eb8475101c2efd2c08f9d87f1e7d8ec8"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts": {
+        "version": "5ac0cd72cb9f353b509617479a2582bbed111a31d6b2601344cc9882a45c0a31",
+        "signature": "d986558562fcc08c0420711200f89dcc7afad763f8fbae0dde00810f20393f28"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts": {
+        "version": "65e886034b0bc899589c07a75e6885d7d3a026529a39f9665795869699eef3a5",
+        "signature": "19e955c8ea28c6ffc9c75e2896dd70e4aa92de783459c828a7eee0d5806b2df2"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/bus.ts": {
         "version": "deede9072626d9b59d2bd336034a67ebe989772ab47d8d80b0d9f8f2068faef2",
         "signature": "19fb4e2f97ebb7657272ef9a73fe769984ba3f62514a69a3cbb89b953aa73546"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/register.ts": {
+        "version": "4fa343017d5921f6fab229bf69ddf6780d130a996c267d62599abe7a89fc5602",
+        "signature": "1e0f0c5aa37f2cd7f611a1abf30cd56667268c3078fb7f40579f022175f60a88"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": {
+        "version": "4659cd0c29d948b195123c1cb48c7b38c99c1c628bb52052ccbfab3e2e31c73f",
+        "signature": "548e885d9bda7c1b36197e89a2b415b8e27820a13780582455d4a691bb7b1f3d"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": {
+        "version": "2cad7ffe32a577786bd4cb0b8cf4fff6f066d758107ec27306e3d33ddef96e93",
+        "signature": "688d53576466e3f3cbb7f48946e609b9000fa787d6d114cb86344691a5b67b86"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts": {
+        "version": "99613ce5914286123ebb83f6ab550aa5381a129887a4cbfa3dc7567bc5dd443e",
+        "signature": "f098e25eacc937941206de78471c0ea000aafcffdfec5eedc534c1f7aed4dcbb"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": {
+        "version": "e463ec417b44f2be823aa82577e5d7ff48a180acc99815e6414948ab993d1ea8",
+        "signature": "3065afea6583d8ec79fc2eb1e8369ab49e7c58cbb43421421d30b529ae5858e4"
       },
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": {
         "version": "ef55649b373bdc8784287f4b89737bbad4bf98fb323a9e3c6aa900ccece8c9b1",
@@ -117,45 +173,17 @@
         "version": "8243d78089a67dfa48efa2f09502e56042efc4656c46c5ede2250582de49ddb4",
         "signature": "291c6122f7ffb9838acef8cfedddb51df7fa468af1617fd66a80a13ec4f906a9"
       },
-      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts": {
-        "version": "6fda7e2514cd6d8ab620476780c69ecc13de24323c92c01ec91f8db5240ebae3",
-        "signature": "89e3c7871488f05fa090cdd5b6d9a063eb8475101c2efd2c08f9d87f1e7d8ec8"
-      },
       "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts": {
         "version": "a497a1746f293d8c5e5f74176abdcb5b32d34652f1f6728093934b96af812d89",
         "signature": "43763b423495508f0d7cd205b42a7a083ac8096ad80b36af4af49b18958df1ec"
       },
-      "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts": {
-        "version": "5ac0cd72cb9f353b509617479a2582bbed111a31d6b2601344cc9882a45c0a31",
-        "signature": "d986558562fcc08c0420711200f89dcc7afad763f8fbae0dde00810f20393f28"
-      },
-      "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts": {
-        "version": "65e886034b0bc899589c07a75e6885d7d3a026529a39f9665795869699eef3a5",
-        "signature": "19e955c8ea28c6ffc9c75e2896dd70e4aa92de783459c828a7eee0d5806b2df2"
-      },
-      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": {
-        "version": "e463ec417b44f2be823aa82577e5d7ff48a180acc99815e6414948ab993d1ea8",
-        "signature": "3065afea6583d8ec79fc2eb1e8369ab49e7c58cbb43421421d30b529ae5858e4"
-      },
-      "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts": {
-        "version": "867f414966eecb6c9c313457883da083e9e795ca22c32037dd30f02ea0aa8695",
-        "signature": "597f4ca9b6638e1ed577269d34df876c71e4eb968e08190af7ab6cbb0ff24baa"
-      },
-      "c:/webstuff/projects/jcscottcomp/src/components/register.ts": {
-        "version": "4fa343017d5921f6fab229bf69ddf6780d130a996c267d62599abe7a89fc5602",
-        "signature": "1e0f0c5aa37f2cd7f611a1abf30cd56667268c3078fb7f40579f022175f60a88"
-      },
-      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": {
-        "version": "4659cd0c29d948b195123c1cb48c7b38c99c1c628bb52052ccbfab3e2e31c73f",
-        "signature": "548e885d9bda7c1b36197e89a2b415b8e27820a13780582455d4a691bb7b1f3d"
-      },
-      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts": {
-        "version": "99613ce5914286123ebb83f6ab550aa5381a129887a4cbfa3dc7567bc5dd443e",
-        "signature": "f098e25eacc937941206de78471c0ea000aafcffdfec5eedc534c1f7aed4dcbb"
-      },
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": {
         "version": "20eb0457dad1e25c558b578c77c0aabd0f620d7d14d52102227c12164bfdac44",
         "signature": "ca854e5b4ca733330ea6cb94c0afa0aca2462c3e05832146f1f00af769e9250a"
+      },
+      "c:/webstuff/projects/jcscottcomp/src/index.ts": {
+        "version": "228b75d261f5f95cc8d0b58986d0835eb59d9ca1c091692ce22db97634ade543",
+        "signature": "10be028ddbb488c98ce12d9e02106341688c53406ac51bc41bdc4cf51f659d3e"
       },
       "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts": {
         "version": "8e3f4b17cda9503f3a2f9caf8b1670ad3f65ed5705a9cf28fad01109f6af7969",
@@ -269,6 +297,186 @@
         "version": "4178f96c88b72f2787fa9e59f941cf3e16fa573a54c880582af8c0527cafd89c",
         "signature": "4178f96c88b72f2787fa9e59f941cf3e16fa573a54c880582af8c0527cafd89c"
       },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/globals.d.ts": {
+        "version": "9a52fe500e1e0ed7362ae65094ec6d4f655033d21f873886211e252fc9c5b9c8",
+        "signature": "9a52fe500e1e0ed7362ae65094ec6d4f655033d21f873886211e252fc9c5b9c8"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/assert.d.ts": {
+        "version": "886ca158fd7e781ce501509505d3ac40879466f4dad4e9a0faa951d10b967d9d",
+        "signature": "886ca158fd7e781ce501509505d3ac40879466f4dad4e9a0faa951d10b967d9d"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/async_hooks.d.ts": {
+        "version": "9ee564486e9af1183affc44b4d96e15d43c4a9227407189434c55073296ef93f",
+        "signature": "9ee564486e9af1183affc44b4d96e15d43c4a9227407189434c55073296ef93f"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/buffer.d.ts": {
+        "version": "61215c1a376bbe8f51cab4cc4ddbf3746387015113c37a84d981d4738c21b878",
+        "signature": "61215c1a376bbe8f51cab4cc4ddbf3746387015113c37a84d981d4738c21b878"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/child_process.d.ts": {
+        "version": "cbfb348ae36490c9319d92f1a09859625a06dfa0fb0d6c86cab5c2be2118afb4",
+        "signature": "cbfb348ae36490c9319d92f1a09859625a06dfa0fb0d6c86cab5c2be2118afb4"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/cluster.d.ts": {
+        "version": "0a4042f587664ff71318524eb5a5935d43e7e0a77a8ac0f033cfee8d583f64ce",
+        "signature": "0a4042f587664ff71318524eb5a5935d43e7e0a77a8ac0f033cfee8d583f64ce"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/console.d.ts": {
+        "version": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d",
+        "signature": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/constants.d.ts": {
+        "version": "90c85ddbb8de82cd19198bda062065fc51b7407c0f206f2e399e65a52e979720",
+        "signature": "90c85ddbb8de82cd19198bda062065fc51b7407c0f206f2e399e65a52e979720"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/crypto.d.ts": {
+        "version": "4de782b94923b805906c5af59db97204d5d69f9dc8b17cc8660d798de62ba800",
+        "signature": "4de782b94923b805906c5af59db97204d5d69f9dc8b17cc8660d798de62ba800"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dgram.d.ts": {
+        "version": "7ecfe97b43aa6c8b8f90caa599d5648bb559962e74e6f038f73a77320569dd78",
+        "signature": "7ecfe97b43aa6c8b8f90caa599d5648bb559962e74e6f038f73a77320569dd78"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts": {
+        "version": "ef226a42de7022eacdfa0f15aabf73b46c47af93044c8ebfab8aa8e3cf6c330c",
+        "signature": "ef226a42de7022eacdfa0f15aabf73b46c47af93044c8ebfab8aa8e3cf6c330c"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/domain.d.ts": {
+        "version": "4d4c83f77ac21a72252785baa5328a5612b0b6598d512f68b8cb14f7966d059e",
+        "signature": "4d4c83f77ac21a72252785baa5328a5612b0b6598d512f68b8cb14f7966d059e"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts": {
+        "version": "cd6f4f8a318da5a62e65d033f7567f9969107d397c5a9c856d1d82d2ead9382c",
+        "signature": "cd6f4f8a318da5a62e65d033f7567f9969107d397c5a9c856d1d82d2ead9382c"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts": {
+        "version": "c8d5dc828d58651761ff4e7bc90c84d34bc3fbc783e31744c265b49c5ab01a80",
+        "signature": "c8d5dc828d58651761ff4e7bc90c84d34bc3fbc783e31744c265b49c5ab01a80"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http.d.ts": {
+        "version": "4a78ebdd7e156413225956925404741fb5fd9004f8980acd99a4e68076c698e5",
+        "signature": "4a78ebdd7e156413225956925404741fb5fd9004f8980acd99a4e68076c698e5"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http2.d.ts": {
+        "version": "272c8598c3a29a3fa3027bd0a645c5f49b3f7832dfcf8e47b7260843ec8a40f3",
+        "signature": "272c8598c3a29a3fa3027bd0a645c5f49b3f7832dfcf8e47b7260843ec8a40f3"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/https.d.ts": {
+        "version": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6",
+        "signature": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/inspector.d.ts": {
+        "version": "4218ced3933a31eed1278d350dd63c5900df0f0904f57d61c054d7a4b83dbe4c",
+        "signature": "4218ced3933a31eed1278d350dd63c5900df0f0904f57d61c054d7a4b83dbe4c"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/module.d.ts": {
+        "version": "ac33cdc80df487d154ad9bc3ff31333416e9ecb040c25036fa69da49c0aee476",
+        "signature": "ac33cdc80df487d154ad9bc3ff31333416e9ecb040c25036fa69da49c0aee476"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts": {
+        "version": "ffe8912b7c45288810c870b768190c6c097459930a587dd6ef0d900a5529a811",
+        "signature": "ffe8912b7c45288810c870b768190c6c097459930a587dd6ef0d900a5529a811"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/os.d.ts": {
+        "version": "0e12698313f413a9896fd433eb8fe205ba62af22675131dd67bef38c2b67c5d0",
+        "signature": "0e12698313f413a9896fd433eb8fe205ba62af22675131dd67bef38c2b67c5d0"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/path.d.ts": {
+        "version": "84044697c8b3e08ef24e4b32cfe6440143d07e469a5e34bda0635276d32d9f35",
+        "signature": "84044697c8b3e08ef24e4b32cfe6440143d07e469a5e34bda0635276d32d9f35"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/perf_hooks.d.ts": {
+        "version": "27ef4001526ee9d8afa57687a60bb3b59c52b32d29db0a2260094ab64726164f",
+        "signature": "27ef4001526ee9d8afa57687a60bb3b59c52b32d29db0a2260094ab64726164f"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/process.d.ts": {
+        "version": "0e0d58f5e90c0a270dac052b9c5ad8ccdfc8271118c2105b361063218d528d6e",
+        "signature": "0e0d58f5e90c0a270dac052b9c5ad8ccdfc8271118c2105b361063218d528d6e"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/punycode.d.ts": {
+        "version": "30ec6f9c683b988c3cfaa0c4690692049c4e7ed7dc6f6e94f56194c06b86f5e1",
+        "signature": "30ec6f9c683b988c3cfaa0c4690692049c4e7ed7dc6f6e94f56194c06b86f5e1"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/querystring.d.ts": {
+        "version": "66ce86394b4ced375bd59338265a190a5cbe0b78a15bdf64e34b46d3a5ffaa5d",
+        "signature": "66ce86394b4ced375bd59338265a190a5cbe0b78a15bdf64e34b46d3a5ffaa5d"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/readline.d.ts": {
+        "version": "d08dfb553aa396ac399e7c67e24f6b964b12a49e99d245009c7c579827f6d5f2",
+        "signature": "d08dfb553aa396ac399e7c67e24f6b964b12a49e99d245009c7c579827f6d5f2"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/repl.d.ts": {
+        "version": "6308155ea25177e03cd319896c815b5763371f1131e40656695b970f2e3e6733",
+        "signature": "6308155ea25177e03cd319896c815b5763371f1131e40656695b970f2e3e6733"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts": {
+        "version": "8a23e1890c968386be7b9a7f9d9abda6e9515a9b429b7b93985fefa9e9430f4e",
+        "signature": "8a23e1890c968386be7b9a7f9d9abda6e9515a9b429b7b93985fefa9e9430f4e"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/string_decoder.d.ts": {
+        "version": "7e62aac2cc9c0710d772047ad89e8d7117f52592c791eb995ce1f865fedab432",
+        "signature": "7e62aac2cc9c0710d772047ad89e8d7117f52592c791eb995ce1f865fedab432"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/timers.d.ts": {
+        "version": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9",
+        "signature": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tls.d.ts": {
+        "version": "a111f300c29a91c4dd0db95fb46a80d7f95a9da4b0c23e2d84f2a1302fffaabf",
+        "signature": "a111f300c29a91c4dd0db95fb46a80d7f95a9da4b0c23e2d84f2a1302fffaabf"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/trace_events.d.ts": {
+        "version": "a77fdb357c78b70142b2fdbbfb72958d69e8f765fd2a3c69946c1018e89d4638",
+        "signature": "a77fdb357c78b70142b2fdbbfb72958d69e8f765fd2a3c69946c1018e89d4638"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tty.d.ts": {
+        "version": "df905913ad47e24b6cb41d33f0c1f500bf9c4befe4325413a7644c9eb1e7965c",
+        "signature": "df905913ad47e24b6cb41d33f0c1f500bf9c4befe4325413a7644c9eb1e7965c"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts": {
+        "version": "c0e424dcc169a594c973e096f256f92ed36cce444e7d38e52ed4be5def47bcdd",
+        "signature": "c0e424dcc169a594c973e096f256f92ed36cce444e7d38e52ed4be5def47bcdd"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts": {
+        "version": "f883ae99a336850c40718c63f395cff612efcf05092933009072d70a13d50aa7",
+        "signature": "f883ae99a336850c40718c63f395cff612efcf05092933009072d70a13d50aa7"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/v8.d.ts": {
+        "version": "289be113bad7ee27ee7fa5b1e373c964c9789a5e9ed7db5ddcb631371120b953",
+        "signature": "289be113bad7ee27ee7fa5b1e373c964c9789a5e9ed7db5ddcb631371120b953"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/vm.d.ts": {
+        "version": "bf244a366e8ee68acda125761c6e337c8795b37eef05947d62f89b584de926b3",
+        "signature": "bf244a366e8ee68acda125761c6e337c8795b37eef05947d62f89b584de926b3"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/worker_threads.d.ts": {
+        "version": "37c509408ec3526151cdcb8b6d62928c3835652c8c635f65e28c28a8b1f35910",
+        "signature": "37c509408ec3526151cdcb8b6d62928c3835652c8c635f65e28c28a8b1f35910"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/zlib.d.ts": {
+        "version": "f409183966a1dd93d3a9cd1d54fbeb85c73101e87cd5b19467c5e37b252f3fd8",
+        "signature": "f409183966a1dd93d3a9cd1d54fbeb85c73101e87cd5b19467c5e37b252f3fd8"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/base.d.ts": {
+        "version": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce",
+        "signature": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts": {
+        "version": "1ed55651f38540dba21f4a864bd89834ddb552446dce8c8a5f9dc0b44ce0b024",
+        "signature": "1ed55651f38540dba21f4a864bd89834ddb552446dce8c8a5f9dc0b44ce0b024"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts": {
+        "version": "ffc1cd688606ad1ddb59a40e8f3defbde907af2a3402d1d9ddf69accb2903f07",
+        "signature": "ffc1cd688606ad1ddb59a40e8f3defbde907af2a3402d1d9ddf69accb2903f07"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/globals.d.ts": {
+        "version": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1",
+        "signature": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1"
+      },
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/index.d.ts": {
+        "version": "6e19418b881b57998d218487d41d85534c7fa5ab329bbc72afe571e7683d774a",
+        "signature": "6e19418b881b57998d218487d41d85534c7fa5ab329bbc72afe571e7683d774a"
+      },
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts": {
         "version": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49",
         "signature": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49"
@@ -297,34 +505,293 @@
       "downlevelIteration": true,
       "strict": true,
       "esModuleInterop": true,
-      "watch": true,
       "configFilePath": "C:/webStuff/projects/JCScottComp/tsconfig.json"
     },
     "referencedMap": {
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.intl.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.promise.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.regexp.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.intl.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/bus.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/register.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
+        "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
+        "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
+        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": [
         "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/components.ts": [
         "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts": [
         "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts": [
         "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
@@ -335,35 +802,11 @@
         "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
         "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts"
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts"
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/components/register.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
-        "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
-        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
-        "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
-        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
-        "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": [
         "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
@@ -372,101 +815,662 @@
         "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
         "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
         "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/index.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts"
+        "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/byte.test.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts"
+        "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/gates.test.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts"
+        "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/adder.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/adder.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/bus.test.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/busone.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/comparator.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/components.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/decoders.test.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/register.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts",
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
-        "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts"
+        "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
-        "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts"
+        "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts": [
-        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts": [
-        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts": [
-        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__template/index.d.ts": [
         "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts",
-        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__core/index.d.ts": [
         "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts",
         "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__traverse/index.d.ts",
         "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__template/index.d.ts",
         "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
-        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-coverage/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-report/index.d.ts": [
-        "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-coverage/index.d.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-coverage/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-reports/index.d.ts": [
         "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-report/index.d.ts",
-        "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-coverage/index.d.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/istanbul-lib-coverage/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest-diff/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/types.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/index.d.ts": [
-        "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/types.d.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/types.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest/index.d.ts": [
         "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/index.d.ts",
-        "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest-diff/index.d.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest-diff/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/globals.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/assert.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/async_hooks.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/buffer.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/child_process.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/cluster.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/child_process.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/console.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/constants.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/os.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/crypto.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/crypto.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dgram.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/domain.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http2.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tls.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/https.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tls.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/inspector.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/module.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/os.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/path.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/perf_hooks.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/async_hooks.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/process.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tty.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/punycode.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/querystring.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/readline.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/repl.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/readline.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/vm.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/string_decoder.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/timers.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tls.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/crypto.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/trace_events.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tty.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/querystring.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/v8.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/vm.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/worker_threads.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/vm.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/zlib.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/base.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/globals.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/assert.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/async_hooks.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/buffer.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/child_process.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/cluster.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/console.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/constants.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/crypto.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dgram.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/domain.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http2.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/https.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/inspector.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/module.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/os.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/path.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/perf_hooks.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/process.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/punycode.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/querystring.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/readline.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/repl.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/string_decoder.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/timers.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tls.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/trace_events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tty.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/v8.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/vm.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/worker_threads.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/zlib.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/globals.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/globals.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/base.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/globals.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts": [
-        "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts"
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
       ]
     },
     "exportedModulesMap": {
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.intl.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.promise.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.regexp.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.intl.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/register.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      ],
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
       ],
@@ -485,17 +1489,8 @@
       "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts": [
         "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
       ],
-      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/components/register.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
-      ],
-      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts": [
-        "c:/webstuff/projects/jcscottcomp/src/components/bus.ts"
+      "c:/webstuff/projects/jcscottcomp/src/index.ts": [
+        "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts"
       ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts": [
         "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts"
@@ -531,6 +1526,366 @@
         "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/index.d.ts",
         "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest-diff/index.d.ts"
       ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/globals.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/assert.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/async_hooks.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/buffer.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/child_process.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/cluster.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/child_process.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/console.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/constants.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/os.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/crypto.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/crypto.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dgram.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/domain.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http2.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tls.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/https.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tls.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/inspector.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/module.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/os.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/path.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/perf_hooks.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/async_hooks.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/process.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tty.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/punycode.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/querystring.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/readline.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/repl.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/readline.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/vm.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/string_decoder.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/timers.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tls.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/crypto.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/trace_events.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tty.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/querystring.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/v8.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/vm.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/worker_threads.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/vm.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/zlib.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/base.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/globals.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/assert.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/async_hooks.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/buffer.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/child_process.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/cluster.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/console.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/constants.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/crypto.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dgram.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/domain.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http2.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/https.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/inspector.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/module.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/os.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/path.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/perf_hooks.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/process.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/punycode.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/querystring.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/readline.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/repl.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/string_decoder.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/timers.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tls.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/trace_events.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tty.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/v8.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/vm.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/worker_threads.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/zlib.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/globals.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/globals.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/index.d.ts": [
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/base.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/globals.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+        "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts"
+      ],
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts": [
         "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts"
       ]
@@ -540,6 +1895,7 @@
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts",
@@ -556,23 +1912,29 @@
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts",
       "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "c:/users/marigi/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.bigint.d.ts",
+      "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
       "c:/webstuff/projects/jcscottcomp/src/circuit/gates.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
+      "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
+      "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/bus.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
+      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/decoders.ts",
+      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
+      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/adder.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/shifters.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/components.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/enabler.ts",
       "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
-      "c:/webstuff/projects/jcscottcomp/src/circuit/bit.ts",
-      "c:/webstuff/projects/jcscottcomp/src/circuit/byte.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/busone.ts",
-      "c:/webstuff/projects/jcscottcomp/src/utils/binutils.ts",
-      "c:/webstuff/projects/jcscottcomp/src/components/register.ts",
-      "c:/webstuff/projects/jcscottcomp/src/memory/cell.ts",
-      "c:/webstuff/projects/jcscottcomp/src/memory/memory.ts",
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts",
@@ -602,22 +1964,55 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/types.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/jest-diff/build/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/jest/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/globals.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/assert.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/async_hooks.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/buffer.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/child_process.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/cluster.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/console.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/constants.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/crypto.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dgram.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/dns.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/domain.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/events.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/fs.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/http2.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/https.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/inspector.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/module.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/net.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/os.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/path.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/perf_hooks.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/process.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/punycode.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/querystring.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/readline.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/repl.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/stream.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/string_decoder.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/timers.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tls.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/trace_events.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/tty.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/url.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/util.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/v8.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/vm.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/worker_threads.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/zlib.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/base.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/fs.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/util.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/globals.d.ts",
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
-      [
-        "c:/webstuff/projects/jcscottcomp/src/index.ts",
-        [
-          {
-            "file": "c:/webstuff/projects/jcscottcomp/src/index.ts",
-            "start": 21,
-            "length": 21,
-            "messageText": "Cannot find module './computer/Computer'.",
-            "category": 1,
-            "code": 2307
-          }
-        ]
-      ]
+      "c:/webstuff/projects/jcscottcomp/src/index.ts"
     ]
   },
   "version": "3.5.3"

@@ -41,6 +41,9 @@ class Memory256B {
     }
     this.addressRegister.enable();
   }
+  public dumpMem = () => {
+    return this.memory;
+  };
   public updateEnable = (enable: boolean) => {
     this.enable = enable;
   };

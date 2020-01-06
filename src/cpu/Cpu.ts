@@ -536,32 +536,45 @@ class Cpu {
     this.mainBus.clear();
   };
 
-  setIR = (instruction: number) => {
+  public setIR = (instruction: number) => {
     this.iRegister.setByte(instruction);
   };
 
-  setIAR = (address: number) => {
+  public setIAR = (address: number) => {
     this.iARegister.setByte(address);
   };
 
-  setGp = (reg: number, byte: number) => {
+  public setGp = (reg: number, byte: number) => {
     this.gpRegs[reg].setByte(byte);
   };
 
-  setRam = (cell: number[], byte: number | string) => {
+  public setRam = (cell: number[], byte: number | string) => {
     this.memory.setMem(cell[0], cell[1], byte);
   };
 
-  readFlags = () => {
+  public readFlags = () => {
     return this.flagsReg.readByte();
   };
 
-  readGp = (reg: number) => {
+  public readGp = (reg: number) => {
     return this.gpRegs[reg].readByte();
   };
 
-  readMem = (row: number, col: number) => {
+  public readMem = (row: number, col: number) => {
     return this.memory.readMem(row, col);
+  };
+
+  public dumpMem = () => {
+    return this.memory.dumpMem();
+  };
+
+  public dumpRegs = () => {
+    const regs = {
+      gp: [this.readGp(0), this.readGp(1), this.readGp(2), this.readGp(3)],
+      acc: this.accReg.readByte(),
+      tmp: this.accReg.readByte(),
+      flags: this.flagsReg.readByte();
+    };
   };
 
   get IAR(): boolean[] {

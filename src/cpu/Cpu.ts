@@ -568,7 +568,7 @@ class Cpu {
     }
     for (let i = 0; i < tmpArr.length; i++) {
       for (let j = 0; j < tmpArr[i].length; j++) {
-        cpu.setRam([i, j], boolToBinary(tmpArr[i][j]));
+        this.setRam([i, j], boolToBinary(tmpArr[i][j]));
         console.log(cpu.readMem(i, j));
       }
     }

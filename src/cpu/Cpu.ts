@@ -560,9 +560,16 @@ class Cpu {
   };
 
   public loadToRam = (program: boolean[][]) => {
-    for (let i = 0; i < 16; i++) {
-      for (let j = 0; j < 16; j++) {
-        this.setRam([i, j], boolToBinary(program[i]));
+    let incr = 0;
+    let tmpArr = [];
+    for (let i = 0; i <= Math.floor(program.length / 16); i++) {
+      tmpArr.push(program.slice(incr, incr + 16));
+      incr = incr + 16;
+    }
+    for (let i = 0; i < tmpArr.length; i++) {
+      for (let j = 0; j < tmpArr[i].length; j++) {
+        cpu.setRam([i, j], boolToBinary(tmpArr[i][j]));
+        console.log(cpu.readMem(i, j));
       }
     }
   };

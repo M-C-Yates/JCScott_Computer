@@ -178,8 +178,8 @@
         "signature": "43763b423495508f0d7cd205b42a7a083ac8096ad80b36af4af49b18958df1ec"
       },
       "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts": {
-        "version": "87e1855153d94902b111d0eb7ceb09d0ea5138e76a0c6f412f45b928c18cc4cd",
-        "signature": "20c62c4c6ec34c2fcc98259ae1f42ab9dd0d6303fa2c2163a1fe95f99d8ad03a"
+        "version": "e803bc2f1c592f998df027731477a43430ca6152deac9bc569a827aac970bc40",
+        "signature": "41ea7f2e37f3b3545903282fa69c891749600b38224a79ef6982b214cc9ea786"
       },
       "c:/webstuff/projects/jcscottcomp/src/index.ts": {
         "version": "228b75d261f5f95cc8d0b58986d0835eb59d9ca1c091692ce22db97634ade543",
@@ -1939,8 +1939,6 @@
       "c:/webstuff/projects/jcscottcomp/src/components/comparator.ts",
       "c:/webstuff/projects/jcscottcomp/src/components/iszero.ts",
       "c:/webstuff/projects/jcscottcomp/src/alu/alu.ts",
-      "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
-      "c:/webstuff/projects/jcscottcomp/src/index.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/alu/alu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/bit.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/circuits/byte.test.ts",
@@ -1954,7 +1952,6 @@
       "c:/webstuff/projects/jcscottcomp/src/test/components/enabler.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/register.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/components/shifters.test.ts",
-      "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts",
       "c:/webstuff/projects/jcscottcomp/src/test/memory/memory.test.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@babel/types/lib/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/babel__generator/index.d.ts",
@@ -2016,7 +2013,10 @@
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/node/ts3.2/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/stack-utils/index.d.ts",
       "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs-parser/index.d.ts",
-      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts"
+      "c:/webstuff/projects/jcscottcomp/node_modules/@types/yargs/index.d.ts",
+      "c:/webstuff/projects/jcscottcomp/src/cpu/cpu.ts",
+      "c:/webstuff/projects/jcscottcomp/src/index.ts",
+      "c:/webstuff/projects/jcscottcomp/src/test/cpu/cpu.test.ts"
     ]
   },
   "version": "3.5.3"

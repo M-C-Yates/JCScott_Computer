@@ -81,7 +81,6 @@ class Cpu {
       testFlags
     ];
 
-    console.log(boolToBinary(instruction));
     return decoded;
   };
 
@@ -558,6 +557,14 @@ class Cpu {
 
   public readGp = (reg: number) => {
     return this.gpRegs[reg].readByte();
+  };
+
+  public loadToRam = (program: boolean[][]) => {
+    for (let i = 0; i < 16; i++) {
+      for (let j = 0; j < 16; j++) {
+        this.setRam([i, j], boolToBinary(program[i]));
+      }
+    }
   };
 
   public readMem = (row: number, col: number) => {

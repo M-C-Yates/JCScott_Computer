@@ -2,7 +2,7 @@
 
 ![](https://github.com/M-C-Yates/basic-computer/workflows/test/badge.svg)
 
-> An implementation of John C. Scotts 8-bit computer written in typescript.
+> A Typescript implementation of John C. Scotts 8-bit computer written in typescript.
 
 ## Specs
 
